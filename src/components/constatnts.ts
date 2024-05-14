@@ -12,3 +12,8 @@ export class fontFamily {
   static secondaryLight = "secondary-light";
   static secondaryBlack = "secondary-black";
 }
+
+export const HERO_HEADLINE_TOP = "The Only Wallet That ";
+export const HERO_HEADLINE_BOTTOM = "Pays Back Your Gas";
+export const HERO_SECONDARY_HEADLINE =
+  "With Stello, when you transact → we refund your gas. We’re cool like that.";

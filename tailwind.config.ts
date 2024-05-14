@@ -30,6 +30,9 @@ const config: Config = {
       colors: {
         "start-gradient": "#FE756C",
         "end-gradient": "#DD1D63",
+        "start-gradient-secondary": "#FFFFFF",
+        "end-gradient-secondary": "#FFFFFF59",
+        "secondary-text": "#FFFFFF99",
       },
     },
   },
