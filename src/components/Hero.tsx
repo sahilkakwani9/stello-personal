@@ -16,7 +16,7 @@ function Hero() {
   return (
     <>
       <div className="mt-[60px]">
-        <div className="w-[90%] md:w-[40%] self-center m-auto  ">
+        <div className="w-[90%] lg:w-[50%] self-center m-auto  ">
           <div>
             <p className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-start-gradient-secondary to-end-gradient-secondary leading-tight">
               {HERO_HEADLINE_TOP}
@@ -67,7 +67,7 @@ function Hero() {
           <img
             alt="iphone-mockup"
             src="/mockup.png"
-            className="h-[400px] md:h-[500px] w-[213px] md:w-[360px] absolute top-20 md:top-52 left-[25%] md:left-[38%]"
+            className="h-[80%] md:h-[70%] w-[50%] md:w-[24%] absolute top-20 md:top-52 left-[24%] md:left-[38.5%]"
           />
           <motion.img
             alt="bitcoin"
