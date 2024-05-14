@@ -1,22 +1,23 @@
-"use client"
-import React from 'react'
-import Image from "next/image"
-import { motion } from "framer-motion"
+"use client";
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Heading from "./Heading";
+import PrimaryCTA from "./PrimaryCTA";
 export const Navbar = (props: {}) => {
   return (
-    <div className="">
+    <div className="py-[24px] px-[140px] flex flex-row items-center justify-between w-[100%]">
       <Image
         src="/logo-text.png"
-        width={200}
-        height={200}
+        width={84}
+        height={32}
         alt="Picture of the author"
       />
-      <motion.div
-      className="h-56 bg-red-500"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-      />
+      <div className="flex flex-row items-center justify-center gap-[48px]">
+        <p className="font-primary-semibold text-[16px] text-white">Features</p>
+        <p className="font-primary-semibold text-[16px] text-white">FAQs</p>
+      </div>
+      <PrimaryCTA>Download App</PrimaryCTA>
     </div>
-  )
-}
+  );
+};
