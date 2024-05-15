@@ -55,3 +55,5 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
     answer: "Contact us at help@stello.com",
   },
 ];
+
+export const INTRO_ORBS_HEADLINE = "Introducing Orbs";

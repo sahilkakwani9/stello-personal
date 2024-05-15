@@ -43,7 +43,7 @@ function Hero() {
             </div>
           </div>
           <div className="w-max mt-4 mx-auto rounded-[32px] border border-[#FFFFFF1D] px-4 py-[10px] flex gap-2 justify-center items-center bg-[#141417]">
-            <Image src={"/gift.svg"} height={24} width={24} alt="gift-png" />
+            <Image src={"/gift.svg"} height={24} width={24} alt="gift-svg" />
             <p className="text-[#FFFFFFDE] font-primary-regular">
               {HERO_GIFT_HEADLINE}
             </p>
@@ -69,6 +69,33 @@ function Hero() {
             src="/mockup.png"
             className="h-[80%] md:h-[70%] w-[50%] md:w-[24%] absolute top-20 md:top-52 left-[24%] md:left-[38.5%]"
           />
+          <img
+            alt="secondary-mockup"
+            src="/mockup_secondary.svg"
+            className="h-[50%] md:h-[30%] w-[50%] md:w-[14%] absolute bottom-0 md:bottom-[0px] left-[24%] md:left-[26.5%] z-[10] bg-[#141417] rounded-2xl"
+          />
+          {/* <div className="h-[80%] md:h-[6%] w-[50%] md:w-[18%] absolute top-20 md:top-64 left-[24%] md:left-[23%] z-[50] rounded-l-xl bg-gradient-to-r from-[#FE756C] to-[#DD1D63] border border-green-500">
+            <section className="">
+            <img src="/mockup_text_img.svg" />
+            </section>
+            <section></section>
+          </div>
+          <div></div> */}
+          <div className="h-[80%] md:h-[10%] w-[50%] md:w-[24%] absolute bottom-20 md:bottom-80 left-[24%] md:left-[15.75%]  bg-cover bg-no-repeat">
+            <img
+              alt="gas-refund"
+              src="/gas_refund.png"
+              className=""
+            />
+          </div>
+
+          <div className="h-[80%] md:h-[10%] w-[50%] md:w-[24%] absolute bottom-20 md:bottom-72 left-[24%] md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
+            <img
+              alt="congrats_text"
+              src="/congrats_text.png"
+              className=""
+            />
+          </div>
           <motion.img
             alt="bitcoin"
             src="/bitcoin.svg"

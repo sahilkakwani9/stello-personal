@@ -13,7 +13,7 @@ const Item = ({ question, answer, index, isOpen, onToggle }: Props) => {
 
   return (
     <div
-      className={`w-full lg:w-[640px] transition-all ease-in-out overflow-hidden border-gradient p-[1px]  rounded-[14px] bg-gradient-to-b from-[#a9a9a9] to-black`}
+      className={`w-full lg:w-[100%] transition-all ease-in-out overflow-hidden border-gradient p-[1px]  rounded-[14px] bg-gradient-to-b from-[#a9a9a9] to-black`}
       style={{ height: itemHeight }}
     >
       <div className="flex flex-col gap-y-2  bg-black px-5 pt-[24px] pb-[32px] rounded-[14px]  ">
