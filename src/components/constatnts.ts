@@ -57,3 +57,9 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
 ];
 
 export const INTRO_ORBS_HEADLINE = "Introducing Orbs";
+
+export const DOWNLOAD_HEADLINE_FIRST = "Hold Orbs, Get your Gas refunded –"
+export const DOWNLOAD_HEADLINE_SECOND = "Your Loyalty Rewarded!"
+export const DOWNLOAD_BUTTON = "Download App"
+export const ENCRYPTION = "Zero personal tracking with added encryption."
+export const SECOND_GRID_HEADLINE = "One wallet for assets across 100+ blockchains"

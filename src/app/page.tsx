@@ -4,6 +4,8 @@ import { Navbar } from "@/components/Navbar";
 import React from "react";
 import FAQs from "@/components/FAQs";
 import IntroToOrbs from "@/components/IntroOrbs";
+import DownloadSection from "@/components/Download";
+import GridSection from "@/components/GridView";
 
 export default function Home() {
   return (
@@ -11,7 +13,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <IntroToOrbs />
+      <GridSection />
       <FAQs />
+      <DownloadSection />
       <Footer />
     </div>
   );
