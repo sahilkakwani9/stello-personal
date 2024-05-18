@@ -6,6 +6,7 @@ import FAQs from "@/components/FAQs";
 import IntroToOrbs from "@/components/IntroOrbs";
 import DownloadSection from "@/components/Download";
 import GridSection from "@/components/GridView";
+import SectionContainer from "@/components/Sections";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <IntroToOrbs />
+      <SectionContainer />
       <GridSection />
       <FAQs />
       <DownloadSection />
