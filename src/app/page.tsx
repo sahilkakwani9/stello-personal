@@ -7,6 +7,7 @@ import IntroToOrbs from "@/components/IntroOrbs";
 import DownloadSection from "@/components/Download";
 import GridSection from "@/components/GridView";
 import SectionContainer from "@/components/Sections";
+import Txns from "@/components/Txns";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <IntroToOrbs />
+      <Txns />
       <SectionContainer />
       <GridSection />
       <FAQs />

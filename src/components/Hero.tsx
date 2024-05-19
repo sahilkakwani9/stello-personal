@@ -50,6 +50,12 @@ function Hero() {
           </div>
         </div>
         <div className="md:-mt-40 relative">
+          {/* <img
+            alt="bg-gradent-lines"
+            src="/gradient-lines.svg"
+            className="w-[100vw] hidden md:block"
+          /> */}
+
           <GradientLines />
           <GradientLinesPhone />
           <img
@@ -60,13 +66,24 @@ function Hero() {
           <img
             alt="secondary-mockup"
             src="/mockup_secondary.svg"
-            className="h-[50%] md:h-[30%] md:w-fit absolute bottom-0 md:bottom-[0px] left-[24%] md:left-[28%] z-[10] bg-[#141417] rounded-2xl"
+            className="h-[30%] sm:h-[30%] md:w-fit absolute bottom-0 md:bottom-[0px] left-[5%] sm:left-[26.5%] z-[10] bg-[#141417] rounded-2xl"
           />
-          <div className="h-[80%] md:h-[10%] w-[50%] md:w-[20%] absolute bottom-20 md:bottom-80 md:left-[20%] -z-10">
-            <img alt="gas-refund" src="/header_gas_refund.png" />
+          {/* <div className="h-[80%] md:h-[6%] w-[50%] md:w-[18%] absolute top-20 md:top-64 left-[24%] md:left-[23%] z-[50] rounded-l-xl bg-gradient-to-r from-[#FE756C] to-[#DD1D63] border border-green-500">
+            <section className="">
+            <img src="/mockup_text_img.svg" />
+            </section>
+            <section></section>
+          </div>
+          <div></div> */}
+          <div className="h-[80%] md:h-[10%] w-[50%] md:w-[24%] absolute bottom-20 md:bottom-80 hidden  md:left-[15%] md:flex left-0 bg-cover bg-no-repeat">
+            <img
+              alt="gas-refund"
+              src="/header_gas_refund.png"
+              className=""
+            />
           </div>
 
-          <div className="h-[80%] md:h-[10%] w-[50%] md:w-[18%] absolute bottom-20 md:bottom-72 left-[24%] md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
+          <div className="h-[10%] md:h-[10%] w-[40%] md:w-[24%] absolute top-24 right-2 md:top-[23rem] md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
             <img
               alt="congrats_text"
               src="/header_congratulations.png"
