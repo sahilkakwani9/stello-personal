@@ -20,6 +20,23 @@ export const HERO_SECONDARY_HEADLINE =
 
 export const HERO_GIFT_HEADLINE = "20 free orb awaits you when you sign up!";
 
+export const WalletText = {
+  topCard: {
+    heading: "Interact And Refuel Orbs",
+    subHeading:
+      "Running low on Orbs? Buy more, or complete tasks, play our daily spin, and win more Orbs!",
+  },
+  middleCard: {
+    heading: "Claim refund via Orbs",
+    subHeading:
+      "Oops, spent a lot on gas fees? No worries! Receive fee rebates via Orbs.",
+  },
+  bottomCard: {
+    heading: `Orbs are exclusive \nrewards created for \nStello users.`,
+    subHeading: "",
+  },
+};
+
 //Faqs
 
 export const FAQ_HEADER = "Frequently Asked Questions";
@@ -44,7 +61,8 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
   },
   {
     question: "Can I use Stello for interacting with dApps?",
-    answer: "Yes, Stello has inbuilt DApp Browser,which you can use to interact witch dApps.",
+    answer:
+      "Yes, Stello has inbuilt DApp Browser,which you can use to interact witch dApps.",
   },
   {
     question: "Do you have access to my private keys?",
@@ -58,13 +76,14 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
 
 export const INTRO_ORBS_HEADLINE = "Introducing Orbs";
 
-export const DOWNLOAD_HEADLINE_FIRST = "Hold Orbs, Get your Gas refunded –"
-export const DOWNLOAD_HEADLINE_SECOND = "Your Loyalty Rewarded!"
-export const DOWNLOAD_BUTTON = "Download App"
-export const ENCRYPTION = "Zero personal tracking with added encryption."
-export const SECOND_GRID_HEADLINE = "One wallet for assets across 100+ blockchains"
-export const THIRD_GRID_HEADLINE = "Access to multiple chains"
-export const FOURTH_GRID_HEADLINE = "Get 100% of your gas fee refunded"
-export const FIFTH_GRID_HEADLINE = "Spin and win rewards, every day"
-export const SIXTH_GRID_HEADLINE = "Deposit assets directly from exchanges"
-export const SEVENTH_GRID_HEADLINE = "Daily Bonus!"
+export const DOWNLOAD_HEADLINE_FIRST = "Hold Orbs, Get your Gas refunded –";
+export const DOWNLOAD_HEADLINE_SECOND = "Your Loyalty Rewarded!";
+export const DOWNLOAD_BUTTON = "Download App";
+export const ENCRYPTION = "Zero personal tracking with added encryption.";
+export const SECOND_GRID_HEADLINE =
+  "One wallet for assets across 100+ blockchains";
+export const THIRD_GRID_HEADLINE = "Access to multiple chains";
+export const FOURTH_GRID_HEADLINE = "Get 100% of your gas fee refunded";
+export const FIFTH_GRID_HEADLINE = "Spin and win rewards, every day";
+export const SIXTH_GRID_HEADLINE = "Deposit assets directly from exchanges";
+export const SEVENTH_GRID_HEADLINE = "Daily Bonus!";

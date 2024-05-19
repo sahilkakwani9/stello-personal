@@ -1,0 +1,257 @@
+/* eslint-disable @next/next/no-img-element */
+import React, { useEffect, useRef, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { WalletText } from "@/components/constatnts";
+
+function Wallet() {
+  const walletRef = useRef<HTMLDivElement>(null);
+  const firstDivControls = useAnimation();
+  const secondDivControls = useAnimation();
+  const thirdDivControls = useAnimation();
+  const pControls = useAnimation();
+  const [inView, setInView] = useState(0);
+
+  const handleScroll = () => {
+    if (walletRef.current) {
+      if (window.scrollY > 1000 && window.scrollY < 1500) {
+        setInView(1);
+      } else if (window.scrollY >= 1500 && window.scrollY <= 2000) {
+        setInView(2);
+      } else if (window.scrollY > 2000 && window.scrollY <= 2500) {
+        setInView(3);
+      } else {
+        setInView(0);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (inView === 1) {
+      thirdDivControls.start({
+        maxHeight: "60px",
+        top: 0,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+      secondDivControls.start({
+        maxHeight: "60px",
+        top: 0,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+      firstDivControls.start({
+        maxHeight: "250px",
+        top: -180,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+      pControls.start({
+        opacity: 1,
+        transition: {
+          opacity: { duration: 0.5, ease: "easeOut", delay: 0.1 },
+        },
+      });
+    } else if (inView === 2) {
+      firstDivControls.start({
+        maxHeight: "60px",
+        top: 0,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+      thirdDivControls.start({
+        maxHeight: "60px",
+        top: 0,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+      pControls.start({
+        opacity: 0,
+        transition: {
+          opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
+        },
+      });
+      secondDivControls.start({
+        maxHeight: "250px",
+        top: -170,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+    } else if (inView === 3) {
+      firstDivControls.start({
+        maxHeight: "60px",
+        top: 0,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+      pControls.start({
+        opacity: 0,
+        transition: {
+          opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
+        },
+      });
+      secondDivControls.start({
+        maxHeight: "60px",
+        top: 0,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+      thirdDivControls.start({
+        maxHeight: "250px",
+        top: -170,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+    } else {
+      firstDivControls.start({
+        maxHeight: "60px",
+        top: 0,
+        transition: {
+          maxHeight: { duration: 0.5, ease: "easeOut" },
+          top: { duration: 0.5, ease: "easeOut" },
+        },
+      });
+      pControls.start({
+        opacity: 0,
+        transition: {
+          opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
+        },
+      });
+    }
+  }, [
+    inView,
+    firstDivControls,
+    secondDivControls,
+    pControls,
+    thirdDivControls,
+  ]);
+
+  return (
+    <div className="w-[100%] min-h-[350px] relative my-40" ref={walletRef}>
+      <img
+        alt="wallet-bg"
+        src="/wallet-bg.webp"
+        className=" w-[480px] absolute -top-16 left-[26%]"
+      />
+      <div className="absolute left-[26%] bottom-20 z-0">
+        <motion.div
+          className="absolute border-gradient mx-auto left-[5%] w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4 -z-10"
+          animate={thirdDivControls}
+          initial={{
+            maxHeight: "60px",
+            top: 0,
+          }}
+        >
+          <p className="font-primary-bold text-white text-center text-[36px] leading-tight">
+            {WalletText.topCard.heading}
+          </p>
+          <p className="font-primary-regular text-[18px] text-white text-center">
+            {WalletText.topCard.subHeading}
+          </p>
+          <img
+            alt="top-card-banner"
+            src="/top-card-banner.webp"
+            className=" mx-auto"
+          />
+        </motion.div>
+        <img
+          src="/top_pocket.svg"
+          alt="top-pocket-image"
+          className="w-[480px] z-0"
+        />
+      </div>
+
+      <div className="absolute left-[26%] bottom-20">
+        <motion.div
+          className="absolute border-gradient mx-auto left-[5%] w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4"
+          animate={secondDivControls}
+          initial={{
+            maxHeight: "60px",
+            top: 0,
+          }}
+        >
+          <p className="font-primary-bold text-white text-center text-[36px] leading-tight">
+            {WalletText.middleCard.heading}
+          </p>
+          <p className="font-primary-regular text-[18px] text-white px-10 text-center">
+            {WalletText.middleCard.subHeading}
+          </p>
+          <img
+            alt="middle-card-banner"
+            src="/middle-card-banner.webp"
+            className="w-[80%] mx-auto my-4"
+          />
+        </motion.div>
+        <img
+          src="/middle_pocket.svg"
+          alt="middle-pocket-image"
+          className="relative z-10 w-[480px]"
+        />
+      </div>
+      <div className="absolute left-[26%] bottom-10 z-30">
+        <motion.div
+          className="absolute border-gradient mx-auto left-[5%] w-[90%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg"
+          animate={firstDivControls}
+          initial={{
+            maxHeight: "50px",
+            top: 0,
+          }}
+        >
+          <div className="h-full flex-col justify-center items-center p-4">
+            <img src="/star.svg" alt="star-image" className="mx-auto" />
+            <motion.p
+              className="font-primary-semibold text-[34px] mt-2 text-center leading-snug"
+              animate={pControls}
+              initial={{
+                opacity: 0,
+              }}
+            >
+              Orbs are exclusive <br />
+              rewards created for <br />
+              Stello users.
+            </motion.p>
+          </div>
+        </motion.div>
+        <div className="relative z-40">
+          <img
+            src="/logo-text.png"
+            alt="logo"
+            className="h-[61px] w-[150px] absolute bottom-12 left-[38%] z-30"
+          />
+          <img
+            src="/end_pocket.svg"
+            alt="end-pocket-image"
+            className="z-40 w-[480px]"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Wallet;

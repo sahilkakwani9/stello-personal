@@ -12,7 +12,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "introToOrbs": 'url("/IntroToOrbsBg.svg")',
+        introToOrbs: 'url("/IntroToOrbsBg.svg")',
       },
       fontFamily: {
         "primary-light": ["DegularDisplay-Light"],
@@ -34,6 +34,8 @@ const config: Config = {
         "start-gradient-secondary": "#FFFFFF",
         "end-gradient-secondary": "#FFFFFF59",
         "secondary-text": "#FFFFFF99",
+        "wallet-card-start-gradient": "#2D2D2DC4",
+        "wallet-card-end-gradient": "#08080800",
       },
     },
   },
