@@ -1,13 +1,55 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import { INTRO_ORBS_HEADLINE, TxnText } from "../constatnts";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Txns() {
+  const coinPositions = [
+    { x: 150, y: 260 },
+    { x: 210, y: 160 },
+    { x: 290, y: 80 },
+    { x: 390, y: 16 },
+    { x: 490, y: 0 },
+    { x: 590, y: 16 },
+    { x: 690, y: 80 },
+    { x: 770, y: 160 },
+    { x: 850, y: 260 },
+  ];
+
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Ensures animation is triggered only once
+    threshold: 0.5, // Determines how much of the component should be visible before triggering
+  });
+
   return (
-    <main className="relative w-[70%] bg-introToOrbs mx-auto self-center bg-cover -mt-4">
+    <main
+      ref={ref}
+      className="relative w-[70%] bg-introToOrbs mx-auto self-center bg-cover -mt-4"
+    >
+      {coinPositions.map((pos, index) => (
+        <motion.img
+          key={index}
+          src={`/dapps/dapp${index + 1}.svg`}
+          alt={`coin${index + 1}`}
+          initial={{ x: 150, y: 260, opacity: 0 }} // Set initial opacity to 0
+          animate={
+            inView
+              ? { x: pos.x, y: pos.y, opacity: 1 }
+              : { x: 150, y: 260, opacity: 0 }
+          } // Animate only when inView is true
+          transition={{
+            delay: index * 0.2,
+            duration: 1,
+            ease: "easeInOut",
+          }}
+          className="absolute w-[70px] h-[80px]"
+        />
+      ))}
       <img
         alt="mockup-with-chains"
         src="/mockup-with-chains.webp"
-        className="h-[30%] w-[45%] mx-auto pt-20"
+        className="h-[30%] w-[40%] mx-auto pt-40"
       />
       <img
         alt="middle-blend-bg"

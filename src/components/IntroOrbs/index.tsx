@@ -6,10 +6,10 @@ import Wallet from "./Wallet";
 
 function IntroToOrbs() {
   const [isSticky, setIsSticky] = useState(false);
-  const vh = window.innerHeight;
 
   const handleScroll = () => {
     console.log(window.scrollY, "her it is");
+    const vh = window.innerHeight;
     if (window.scrollY > 0.9 * vh && window.scrollY < 6.9 * vh) {
       console.log("making postion fixed");
       setIsSticky(true);
