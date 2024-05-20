@@ -76,11 +76,7 @@ function Hero() {
           </div>
           <div></div> */}
           <div className="h-[80%] md:h-[10%] w-[50%] md:w-[24%] absolute bottom-20 md:bottom-80 hidden  md:left-[15%] md:flex left-0 bg-cover bg-no-repeat">
-            <img
-              alt="gas-refund"
-              src="/header_gas_refund.png"
-              className=""
-            />
+            <img alt="gas-refund" src="/header_gas_refund.png" className="" />
           </div>
 
           <div className="h-[10%] md:h-[10%] w-[40%] md:w-[24%] absolute top-24 right-2 md:top-[23rem] md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
@@ -92,7 +88,7 @@ function Hero() {
           </div>
           <motion.img
             alt="bitcoin"
-            src="/bitcoin.svg"
+            src="/coins/bitcoin.svg"
             className="hidden md:block absolute top-48 left-20"
             animate={{
               y: [0, -20, 0],
@@ -105,7 +101,7 @@ function Hero() {
           />
           <motion.img
             alt="stellarcoin"
-            src="/stellarcoin.svg"
+            src="/coins/stellarcoin.svg"
             className="hidden md:block absolute bottom-10 left-44"
             animate={{
               y: [0, -20, 0],
@@ -118,7 +114,7 @@ function Hero() {
           />
           <motion.img
             alt="ethereumcoin"
-            src="/ethereumcoin.svg"
+            src="/coins/ethereumcoin.svg"
             className="hidden md:block absolute top-36 right-16"
             animate={{
               y: [0, -20, 0],
@@ -131,7 +127,7 @@ function Hero() {
           />
           <motion.img
             alt="litecoin"
-            src="/litecoin.svg"
+            src="/coins/litecoin.svg"
             className="hidden md:block absolute bottom-16 right-32"
             animate={{
               y: [0, -20, 0],

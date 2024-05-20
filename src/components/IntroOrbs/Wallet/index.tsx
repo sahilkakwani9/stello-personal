@@ -8,17 +8,27 @@ function Wallet() {
   const firstDivControls = useAnimation();
   const secondDivControls = useAnimation();
   const thirdDivControls = useAnimation();
+  const leftCoinControls = useAnimation();
+  const rightCoinControls = useAnimation();
   const pControls = useAnimation();
   const [inView, setInView] = useState(0);
 
   const handleScroll = () => {
+    const vh = window.innerHeight;
+
     if (walletRef.current) {
-      if (window.scrollY > 1000 && window.scrollY < 1500) {
+      const scrollY = window.scrollY;
+
+      if (scrollY > 2 * vh && scrollY < 2.5 * vh) {
         setInView(1);
-      } else if (window.scrollY >= 1500 && window.scrollY <= 2000) {
+      } else if (scrollY >= 2.5 * vh && scrollY < 3 * vh) {
         setInView(2);
-      } else if (window.scrollY > 2000 && window.scrollY <= 2500) {
+      } else if (scrollY >= 3 * vh && scrollY < 3.5 * vh) {
         setInView(3);
+      } else if (scrollY >= 3.5 * vh && scrollY < 4 * vh) {
+        setInView(4);
+      } else if (scrollY >= 4 * vh && scrollY < 4.5 * vh) {
+        setInView(5);
       } else {
         setInView(0);
       }
@@ -34,114 +44,176 @@ function Wallet() {
   }, []);
 
   useEffect(() => {
-    if (inView === 1) {
-      thirdDivControls.start({
-        maxHeight: "60px",
-        top: 0,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-      secondDivControls.start({
-        maxHeight: "60px",
-        top: 0,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-      firstDivControls.start({
-        maxHeight: "250px",
-        top: -180,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-      pControls.start({
-        opacity: 1,
-        transition: {
-          opacity: { duration: 0.5, ease: "easeOut", delay: 0.1 },
-        },
-      });
-    } else if (inView === 2) {
-      firstDivControls.start({
-        maxHeight: "60px",
-        top: 0,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-      thirdDivControls.start({
-        maxHeight: "60px",
-        top: 0,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-      pControls.start({
-        opacity: 0,
-        transition: {
-          opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
-        },
-      });
-      secondDivControls.start({
-        maxHeight: "250px",
-        top: -170,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-    } else if (inView === 3) {
-      firstDivControls.start({
-        maxHeight: "60px",
-        top: 0,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-      pControls.start({
-        opacity: 0,
-        transition: {
-          opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
-        },
-      });
-      secondDivControls.start({
-        maxHeight: "60px",
-        top: 0,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-      thirdDivControls.start({
-        maxHeight: "250px",
-        top: -170,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-    } else {
-      firstDivControls.start({
-        maxHeight: "60px",
-        top: 0,
-        transition: {
-          maxHeight: { duration: 0.5, ease: "easeOut" },
-          top: { duration: 0.5, ease: "easeOut" },
-        },
-      });
-      pControls.start({
-        opacity: 0,
-        transition: {
-          opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
-        },
-      });
+    switch (inView) {
+      case 1:
+        firstDivControls.start({
+          maxHeight: "250px",
+          top: -180,
+          transition: {
+            maxHeight: { duration: 0.5, ease: "easeOut" },
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        pControls.start({
+          opacity: 1,
+          transition: {
+            opacity: { duration: 0.5, ease: "easeOut", delay: 0.1 },
+          },
+        });
+
+        leftCoinControls.start({
+          top: "-30%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        rightCoinControls.start({
+          top: "-70%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+
+        break;
+      case 2:
+        firstDivControls.start({
+          maxHeight: "60px",
+          top: 0,
+          transition: {
+            maxHeight: { duration: 0.5, ease: "easeOut" },
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        leftCoinControls.start({
+          top: "10%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        pControls.start({
+          opacity: 0,
+          transition: {
+            opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
+          },
+        });
+        secondDivControls.start({
+          maxHeight: "60px",
+          top: 0,
+          transition: {
+            maxHeight: { duration: 0.5, ease: "easeOut" },
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+
+        rightCoinControls.start({
+          top: "-30%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        break;
+      case 3:
+        secondDivControls.start({
+          maxHeight: "250px",
+          top: -170,
+          transition: {
+            maxHeight: { duration: 0.5, ease: "easeOut" },
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        leftCoinControls.start({
+          top: "-30%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        rightCoinControls.start({
+          top: "-70%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        break;
+      case 4:
+        secondDivControls.start({
+          maxHeight: "60px",
+          top: 0,
+          transition: {
+            maxHeight: { duration: 0.5, ease: "easeOut" },
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        thirdDivControls.start({
+          maxHeight: "60px",
+          top: 0,
+          transition: {
+            maxHeight: { duration: 0.5, ease: "easeOut" },
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        leftCoinControls.start({
+          top: "10%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        rightCoinControls.start({
+          top: "-30%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+
+        break;
+      case 5:
+        thirdDivControls.start({
+          maxHeight: "250px",
+          top: -170,
+          transition: {
+            maxHeight: { duration: 0.5, ease: "easeOut" },
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        leftCoinControls.start({
+          top: "-30%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        rightCoinControls.start({
+          top: "-70%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        break;
+      default:
+        firstDivControls.start({
+          maxHeight: "60px",
+          top: 0,
+          transition: {
+            maxHeight: { duration: 0.5, ease: "easeOut" },
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        pControls.start({
+          opacity: 0,
+          transition: {
+            opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
+          },
+        });
+        leftCoinControls.start({
+          top: "10%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        rightCoinControls.start({
+          top: "-30%",
+          transition: {
+            top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
     }
   }, [
     inView,
@@ -149,10 +221,24 @@ function Wallet() {
     secondDivControls,
     pControls,
     thirdDivControls,
+    leftCoinControls,
+    rightCoinControls,
   ]);
 
   return (
     <div className="w-[100%] min-h-[350px] relative my-40" ref={walletRef}>
+      <motion.img
+        alt="stello-coin"
+        src="/coins/stellocoin.svg"
+        className="absolute -left-[5%] top-[10%] h-[150px] w-[146px]"
+        animate={leftCoinControls}
+      />
+      <motion.img
+        alt="stello-coin"
+        src="/coins/stellocoin.svg"
+        className="absolute -right-0 -top-[30%] h-[150px] w-[146px] -rotate-90"
+        animate={rightCoinControls}
+      />
       <img
         alt="wallet-bg"
         src="/wallet-bg.webp"
@@ -224,6 +310,15 @@ function Wallet() {
         >
           <div className="h-full flex-col justify-center items-center p-4">
             <img src="/star.svg" alt="star-image" className="mx-auto" />
+            <motion.img
+              src="/coins/stellocoin.svg"
+              alt="stello-coin"
+              animate={pControls}
+              className="h-[40%] w-[40%] absolute -left-[12%] bottom-4"
+              initial={{
+                opacity: 0,
+              }}
+            />
             <motion.p
               className="font-primary-semibold text-[34px] mt-2 text-center leading-snug"
               animate={pControls}
