@@ -37,6 +37,12 @@ export const WalletText = {
   },
 };
 
+export const TxnText = {
+  heading: "Settle Transactions",
+  subHeading:
+    "Interact with your favourite dApps, or send and receive crypto across 100+ networks.",
+};
+
 //Faqs
 
 export const FAQ_HEADER = "Frequently Asked Questions";

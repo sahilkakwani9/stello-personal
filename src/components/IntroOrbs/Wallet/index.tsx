@@ -93,7 +93,7 @@ function Wallet() {
         pControls.start({
           opacity: 0,
           transition: {
-            opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
+            opacity: { duration: 0.3, ease: "easeOut", delay: 0 },
           },
         });
         secondDivControls.start({
@@ -199,7 +199,7 @@ function Wallet() {
         pControls.start({
           opacity: 0,
           transition: {
-            opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
+            opacity: { duration: 0.3, ease: "easeOut", delay: 0 },
           },
         });
         leftCoinControls.start({
