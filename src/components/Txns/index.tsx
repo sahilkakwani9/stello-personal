@@ -17,6 +17,13 @@ function Txns() {
     { x: 850, y: 260 },
   ];
 
+  const startPositions = coinPositions.map((pos, index) => {
+    if (index === 0) {
+      return { x: 150, y: 260 }; // Starting position for the first coin
+    }
+    return coinPositions[index - 1]; // Previous coin's final position
+  });
+
   const [ref, inView] = useInView({
     triggerOnce: true, // Ensures animation is triggered only once
     threshold: 0.5, // Determines how much of the component should be visible before triggering
@@ -32,16 +39,24 @@ function Txns() {
           key={index}
           src={`/dapps/dapp${index + 1}.svg`}
           alt={`coin${index + 1}`}
-          initial={{ x: 150, y: 260, opacity: 0 }} // Set initial opacity to 0
+          initial={{
+            x: startPositions[index].x,
+            y: startPositions[index].y,
+            opacity: 0,
+          }} // Set initial opacity to 0
           animate={
             inView
               ? { x: pos.x, y: pos.y, opacity: 1 }
-              : { x: 150, y: 260, opacity: 0 }
+              : {
+                  x: startPositions[index].x,
+                  y: startPositions[index].y,
+                  opacity: 0,
+                }
           } // Animate only when inView is true
           transition={{
-            delay: index * 0.2,
+            delay: index * 0.3,
             duration: 1,
-            ease: "easeInOut",
+            ease: "backInOut",
           }}
           className="absolute w-[70px] h-[80px]"
         />
