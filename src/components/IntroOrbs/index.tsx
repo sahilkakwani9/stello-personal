@@ -5,10 +5,11 @@ import Wallet from "./Wallet";
 
 function IntroToOrbs() {
   const [isSticky, setIsSticky] = useState(false);
+  const vh = window.innerHeight;
 
   const handleScroll = () => {
     console.log(window.scrollY, "her it is");
-    if (window.scrollY > 990 && window.scrollY < 3000) {
+    if (window.scrollY > 0.9 * vh && window.scrollY < 6.9 * vh) {
       console.log("making postion fixed");
       setIsSticky(true);
     } else {
@@ -28,7 +29,7 @@ function IntroToOrbs() {
   }, []);
   return (
     <div
-      className={`w-[70%] min-h-[3000px] mx-auto self-center ${
+      className={`w-[70%] min-h-[650vh] mx-auto self-center ${
         isSticky ? "sticky top-0" : ""
       }`}
     >
