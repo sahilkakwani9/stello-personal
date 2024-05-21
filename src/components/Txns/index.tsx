@@ -32,7 +32,7 @@ function Txns() {
   return (
     <main
       ref={ref}
-      className="relative w-[70%] bg-introToOrbs mx-auto self-center bg-cover -mt-4"
+      className="hidden md:block relative w-[70%] bg-introToOrbs mx-auto self-center bg-cover -mt-4"
     >
       {coinPositions.map((pos, index) => (
         <motion.img

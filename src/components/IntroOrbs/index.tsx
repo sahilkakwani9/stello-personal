@@ -30,7 +30,7 @@ function IntroToOrbs() {
   }, []);
   return (
     <div
-      className={`w-[70%] min-h-[650vh] mx-auto self-center relative ${
+      className={`hidden md:block w-[70%] min-h-[650vh] mx-auto self-center relative ${
         isSticky ? "sticky top-0" : ""
       }`}
     >

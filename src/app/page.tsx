@@ -14,7 +14,6 @@ export default function Home() {
     <div className="container min-w-[100%]">
       <Navbar />
       <Hero />
-      {/* <Features /> */}
       <IntroToOrbs />
       <Txns />
       <SectionContainer />

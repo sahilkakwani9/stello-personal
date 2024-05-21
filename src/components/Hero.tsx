@@ -49,7 +49,7 @@ function Hero() {
             </p>
           </div>
         </div>
-        <div className="md:-mt-40 relative">
+        <div className="mt-8 md:-mt-40 relative">
           {/* <img
             alt="bg-gradent-lines"
             src="/gradient-lines.svg"
@@ -57,11 +57,13 @@ function Hero() {
           /> */}
 
           <GradientLines />
-          <GradientLinesPhone />
+          <div className="block md:hidden">
+            <GradientLinesPhone />
+          </div>
           <img
             alt="iphone-mockup"
             src="/mockup.png"
-            className="h-[80%] md:h-[70%] w-[50%] md:w-[24%] absolute top-20 md:top-52 left-[24%] md:left-[38.5%]"
+            className="h-[80%] md:h-[70%] w-[60%] md:w-[24%] absolute top-0 md:top-52 left-[20%] md:left-[38.5%]"
           />
           <img
             alt="secondary-mockup"

@@ -226,7 +226,7 @@ function Wallet() {
   ]);
 
   return (
-    <div className="w-[100%] min-h-[350px] relative my-40" ref={walletRef}>
+    <div className="hidden md:block w-[100%] min-h-[350px] relative my-40" ref={walletRef}>
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
