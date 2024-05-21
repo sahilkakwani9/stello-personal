@@ -49,13 +49,7 @@ function Hero() {
             </p>
           </div>
         </div>
-        <div className="mt-8 md:-mt-40 relative">
-          {/* <img
-            alt="bg-gradent-lines"
-            src="/gradient-lines.svg"
-            className="w-[100vw] hidden md:block"
-          /> */}
-
+        <div className="md:-mt-40 relative">
           <GradientLines />
           <div className="block md:hidden">
             <GradientLinesPhone />
@@ -63,31 +57,40 @@ function Hero() {
           <img
             alt="iphone-mockup"
             src="/mockup.png"
-            className="h-[80%] md:h-[70%] w-[60%] md:w-[24%] absolute top-0 md:top-52 left-[20%] md:left-[38.5%]"
+            className="h-[80%] hidden md:block md:h-[70%] w-[60%] md:w-[24%] absolute top-0 md:top-52 left-[20%] md:left-[38.5%]"
+          />
+          <img
+            alt="mockup-mobile"
+            src="/mockup-mobile.webp"
+            className="md:hidden top-10 left-0 absolute"
           />
           <img
             alt="secondary-mockup"
             src="/mockup_secondary.svg"
-            className="h-[30%] sm:h-[30%] md:w-fit absolute bottom-0 md:bottom-[0px] left-[5%] sm:left-[26.5%] z-[10] bg-[#141417] rounded-2xl"
+            className="h-[30%] sm:h-[30%] hidden md:block md:w-fit absolute bottom-20 md:bottom-[0px] left-0 sm:left-[26.5%] z-[10] bg-[#141417] rounded-2xl"
           />
-          {/* <div className="h-[80%] md:h-[6%] w-[50%] md:w-[18%] absolute top-20 md:top-64 left-[24%] md:left-[23%] z-[50] rounded-l-xl bg-gradient-to-r from-[#FE756C] to-[#DD1D63] border border-green-500">
-            <section className="">
-            <img src="/mockup_text_img.svg" />
-            </section>
-            <section></section>
-          </div>
-          <div></div> */}
+          <img
+            alt="secondary-mockup-svg"
+            src="/secondary-mockup-phone.webp"
+            className="md:hidden absolute left-0 bottom-20 w-[30%]"
+          />
+
           <div className="h-[80%] md:h-[10%] w-[50%] md:w-[24%] absolute bottom-20 md:bottom-80 hidden  md:left-[15%] md:flex left-0 bg-cover bg-no-repeat">
             <img alt="gas-refund" src="/header_gas_refund.png" className="" />
           </div>
 
-          <div className="h-[10%] md:h-[10%] w-[40%] md:w-[24%] absolute top-24 right-2 md:top-[23rem] md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
+          <div className="hidden md:block h-[10%] md:h-[10%] w-[40%] md:w-[24%] absolute top-24 right-2 md:top-[23rem] md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
             <img
               alt="congrats_text"
               src="/header_congratulations.png"
               className=""
             />
           </div>
+          <img
+            alt="middle-blend-bg"
+            src="/middle-blend-blur.svg"
+            className="absolute bottom-0 md:hidden left-0 z-10"
+          />
           <motion.img
             alt="bitcoin"
             src="/coins/bitcoin.svg"

@@ -9,8 +9,7 @@ function GradientLinesPhone() {
       viewBox="0 0 390 467"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-
-      // style={{ display: "none" }}
+      className={"-mt-60"}
     >
       <motion.path
         animate={{ opacity: [1, 0.4, 1] }}
