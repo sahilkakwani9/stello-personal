@@ -9,8 +9,8 @@ const SectionContainer = ({ data }: any) => {
       {/* {data.map((section: any, index: number) => (
         <div
           key={index}
-          className={`flex flex-row-reverse justify-center items-center border border-green-900 gap-4 md:gap-12 ${
-            index % 2 === 1 ? "border-3 border-pink-100" : ""
+          className={`flex md:flex-col justify-center items-center border border-green-900 gap-4 md:gap-12 ${
+            index % 2 === 1 ? "!flex-row-reverse md:!flex-row-reverse" : ""
           }`}
         >
           <main className="bg-[#141417] md:w-[50%] w-[90%] h-full rounded-xl md:pt-8 md:px-8 flex justify-center relative">
