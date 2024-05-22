@@ -33,8 +33,7 @@ const sectionData = [
       backgroundImageSrc2: "/sections_img_bg.png",
       pointsOneImageSrc: "/sections_crypto_swap.png",
       pointsTwoImageSrc: "/sections_crypto_wallet.png"
-    },
-    // Add more section data as needed
+    }
   ];
 
 function Sections(){
