@@ -3,10 +3,9 @@ import React from "react";
 
 const SectionContainer = ({ data }: any) => {
   return (
-    <section
-      className="flex flex-col min-h-screen justify-center items-center w-[80%] gap-12 my-[300px] mx-auto"
-      style={{ marginTop: "300px", marginBottom: "300px" }}
-    >
+    <div className="flex flex-col min-h-screen justify-center items-center w-[80%] gap-12 mx-auto" style={{
+      marginBlock: "100px"
+    }}>
       {data.map((section: any, index: number) => (
         <div
           key={index}
@@ -78,7 +77,7 @@ const SectionContainer = ({ data }: any) => {
           </div>
         </div>
       ))}
-    </section>
+    </div>
   );
 };
 
