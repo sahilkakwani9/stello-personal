@@ -66,7 +66,7 @@ function SectionItem() {
           className="font-secondary-regular text-[14px] text-white opacity-70 text-justify"
           style={{ opacity: "70%", fontSize: "16px" }}
         >
-          Earn orbs effortlessly and watch your cashback soar! The more orbs you hold, the higher your cashback percentage. It's that simple, that exciting!
+          Earn orbs effortlessly and watch your cashback soar! The more orbs you hold, the higher your cashback percentage. It&apos;s that simple, that exciting!
         </p>
         <div className="flex items-center gap-2">
           <img src={"/sections_universal.png"} alt="" style={{ width: "6%" }} />
