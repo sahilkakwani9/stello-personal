@@ -14,25 +14,25 @@ function FAQs() {
       <FaqHeader />
       <div className="flex flex-1 flex-col justify-around gap-3">
         {FAQ_ITEMS.map((faq, index) => (
-          <Item
-            key={index}
-            index={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={openIndex === index}
-            onToggle={() => handleToggle(index)}
-          />
+          <div onClick={() => handleToggle(index)}>
+            <Item
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+              isOpen={openIndex === index}
+            />
+          </div>
         ))}
       </div>
     </div>
   );
 }
 
-const FaqHeader = () => {
+const FaqHeader = React.memo(() => {
   return (
     <div className="font-secondary-light font-semibold text-2xl lg:text-5xl leading-5xl text-center flex-1 min-w-fit">
       {FAQ_HEADER}
     </div>
   );
-};
+});
 export default FAQs;
