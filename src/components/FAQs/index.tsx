@@ -10,7 +10,7 @@ function FAQs() {
     setOpenIndex((prevIndex) => (prevIndex === index ? -1 : index));
   };
   return (
-    <div className="p-12 lg:py-[100px] flex flex-col lg:flex-row justify-center lg:justify-center items-center lg:items-start gap-10 ">
+    <div className="hidden md:flex p-12 lg:py-[100px] flex-col lg:flex-row justify-center lg:justify-center items-center lg:items-start gap-10 ">
       <FaqHeader />
       <div className="flex flex-1 flex-col justify-around gap-3">
         {FAQ_ITEMS.map((faq, index) => (
