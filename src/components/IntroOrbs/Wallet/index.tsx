@@ -11,6 +11,7 @@ function Wallet() {
   const leftCoinControls = useAnimation();
   const rightCoinControls = useAnimation();
   const pControls = useAnimation();
+  const secondBannerControls = useAnimation();
   const [inView, setInView] = useState(0);
 
   const handleScroll = () => {
@@ -48,7 +49,7 @@ function Wallet() {
       case 1:
         firstDivControls.start({
           maxHeight: "250px",
-          top: -180,
+          top: "-100%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -104,6 +105,7 @@ function Wallet() {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
+        
 
         rightCoinControls.start({
           top: "0%",
@@ -111,11 +113,18 @@ function Wallet() {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
+        secondBannerControls.start({
+          opacity: 0,
+          transition: {
+            opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
+          },
+        });
+
         break;
       case 3:
         secondDivControls.start({
           maxHeight: "250px",
-          top: -170,
+          top: "-75%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -131,6 +140,12 @@ function Wallet() {
           top: "-10%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
+          },
+        });
+        secondBannerControls.start({
+          opacity: 1,
+          transition: {
+            opacity: { duration: 0.5, ease: "easeOut", delay: 0.1 },
           },
         });
         break;
@@ -163,12 +178,18 @@ function Wallet() {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
+        secondBannerControls.start({
+          opacity: 0,
+          transition: {
+            opacity: { duration: 0.5, ease: "easeOut", delay: 0 },
+          },
+        });
 
         break;
       case 5:
         thirdDivControls.start({
           maxHeight: "250px",
-          top: -170,
+          top: "-55%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -214,6 +235,12 @@ function Wallet() {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
+        secondBannerControls.start({
+          opacity: 0,
+          transition: {
+            opacity: { duration: 0.5, ease: "easeOut", delay: 0.1 },
+          },
+        });
     }
   }, [
     inView,
@@ -223,10 +250,11 @@ function Wallet() {
     thirdDivControls,
     leftCoinControls,
     rightCoinControls,
+    secondBannerControls
   ]);
 
   return (
-    <div className="w-[100%] relative min-h-screen" ref={walletRef}>
+    <div className="w-[100%] relative min-h-[90vh] md:min-h-screen" ref={walletRef}>
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
@@ -239,31 +267,31 @@ function Wallet() {
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
-        className="absolute right-0 top-[20%] h-[150px] w-[146px] -rotate-90"
+        className="absolute -right-6 md:right-0 top-[20%] h-[100px] w-[100px] md:h-[150px] md:w-[146px] -rotate-90"
         animate={rightCoinControls}
         initial={{
           top: "0%",
         }}
       />
 
-      <div className="absolute left-[24%] top-[20%] z-0">
+      <div className="absolute left-[10%] md:left-[24%] top-[20%] z-0">
         <img
           alt="wallet-bg"
           src="/wallet-bg.webp"
-          className="w-[80%] absolute -top-[16%]  -z-10"
+          className="w-[90%] md:w-[80%] absolute -top-[16%]  -z-10"
         />
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4 -z-10"
+          className="absolute border-gradient mx-auto left-[5%] w-[80%] md:w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4 -z-10"
           animate={thirdDivControls}
           initial={{
             maxHeight: "60px",
             top: 0,
           }}
         >
-          <p className="font-primary-bold text-white text-center text-[36px] leading-tight">
+          <p className="font-primary-bold text-white text-center  text-[20px] md:text-[36px] leading-tight">
             {WalletText.topCard.heading}
           </p>
-          <p className="font-primary-regular text-[18px] text-white text-center">
+          <p className="font-primary-regular text-[12px] mt-2 md:mt-0 md:text-[18px] text-white text-center">
             {WalletText.topCard.subHeading}
           </p>
           <img
@@ -275,40 +303,44 @@ function Wallet() {
         <img
           src="/top_pocket.svg"
           alt="top-pocket-image"
-          className="w-[80%]  z-0"
+          className="w-[90%] md:w-[80%]  z-0"
         />
       </div>
 
-      <div className="absolute left-[24%] top-[30%]">
+      <div className="absolute left-[10%] md:left-[24%] top-[25%] md:top-[30%]">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4"
+          className="absolute border-gradient mx-auto left-[5%] w-[80%] md:w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4"
           animate={secondDivControls}
           initial={{
             maxHeight: "60px",
             top: 0,
           }}
         >
-          <p className="font-primary-bold text-white text-center text-[36px] leading-tight">
+          <p className="font-primary-bold text-white text-center text-[20px] md:text-[36px] leading-tight">
             {WalletText.middleCard.heading}
           </p>
-          <p className="font-primary-regular text-[18px] text-white px-10 text-center">
+          <p className="font-primary-regular text-[12px] md:text-[18px] text-white px-10 text-center">
             {WalletText.middleCard.subHeading}
           </p>
-          <img
+          <motion.img
             alt="middle-card-banner"
             src="/middle-card-banner.webp"
-            className="w-[80%] mx-auto my-4"
+            className="w-[90%] mx-auto my-4"
+            animate={secondBannerControls}
+            initial={{
+              opacity: 0,
+            }}
           />
         </motion.div>
         <img
           src="/middle_pocket.svg"
           alt="middle-pocket-image"
-          className="relative z-10 w-[80%]"
+          className="relative z-10 w-[90%] md:w-[80%]"
         />
       </div>
-      <div className="absolute left-[24%] top-[40%] z-30">
+      <div className="absolute left-[10%] md:left-[24%] top-[30%] md:top-[40%] z-30">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[70%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg"
+          className="absolute border-gradient mx-auto left-[5%] w-[80%] md:w-[70%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg"
           animate={firstDivControls}
           initial={{
             maxHeight: "50px",
@@ -316,7 +348,7 @@ function Wallet() {
           }}
         >
           <div className="h-full flex-col justify-center items-center p-4">
-            <img src="/star.svg" alt="star-image" className="mx-auto" />
+            <img src="/star.svg" alt="star-image" className="mx-auto w-[12%]" />
             <motion.img
               src="/coins/stellocoin.svg"
               alt="stello-coin"
@@ -327,7 +359,7 @@ function Wallet() {
               }}
             />
             <motion.p
-              className="font-primary-semibold text-[34px] mt-2 text-center leading-snug"
+              className="font-primary-semibold  text-[20px] md:text-[34px] mt-2 text-center leading-snug"
               animate={pControls}
               initial={{
                 opacity: 0,
@@ -348,7 +380,7 @@ function Wallet() {
           <img
             src="/end_pocket.svg"
             alt="end-pocket-image"
-            className="z-40 w-[80%]"
+            className="z-40 w-[90%] md:w-[80%]"
           />
         </div>
       </div>
