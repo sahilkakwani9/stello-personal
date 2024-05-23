@@ -121,6 +121,29 @@ body {
     -webkit-mask-composite: destination-out;
   }
 
+  .grid-border-gradient {
+    position: relative;
+    padding: 0.2rem;
+    border-radius: 16px;
+  }
+  
+  .grid-border-gradient::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit; /* Ensures the border radius matches the parent */
+    padding: 1.2px; /* Adjust padding to control border thickness */
+    background: linear-gradient(142.78deg, rgba(255, 255, 255, 0.32) 0%, #000000 50.4%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+  }
+  
+
   .animate-play {
     /* Styles for playing the animation */
     max-height: 200px; /* Example */
