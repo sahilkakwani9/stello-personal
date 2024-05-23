@@ -36,6 +36,42 @@ body {
   height: 73%;
 }
 
+.border-gradient-light {
+  position: relative;
+  padding: 0.1rem;
+  border-radius: 26px;
+}
+
+.border-gradient-light::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit; /* Ensures the border radius matches the parent */
+  padding: 1.39px; /* Adjust padding to control border thickness */
+  background: linear-gradient(
+      170.69deg,
+      rgba(255, 255, 255, 0.2) 4.53%,
+      rgba(181, 181, 181, 0.141667) 7.62%,
+      rgba(152, 144, 144, 0.152) 15.14%,
+      rgba(255, 255, 255, 0.2) 20%,
+      rgba(155, 155, 155, 0.2) 30.62%,
+      rgba(0, 0, 0, 0) 61.57%,
+      rgba(82, 82, 82, 0) 92.96%
+    ),
+    linear-gradient(
+      320.86deg,
+      rgba(239, 239, 239, 0.08) 7.05%,
+      rgba(217, 216, 216, 0.0096) 52.95%
+    );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
 /* #dark_overlay{
   position: absolute;
   background: var(--primaryBackground);
@@ -56,8 +92,8 @@ body {
 @layer components {
   .border-gradient {
     position: relative;
-    padding: 0.2rem; /* Adjust padding to control border thickness */
-    border-radius: 26px; /* Adjust as needed for border radius */
+    padding: 0.2rem;
+    border-radius: 26px;
   }
 
   .border-gradient::before {
@@ -83,6 +119,7 @@ body {
     mask-composite: exclude;
     -webkit-mask-composite: destination-out;
   }
+
   .animate-play {
     /* Styles for playing the animation */
     max-height: 200px; /* Example */

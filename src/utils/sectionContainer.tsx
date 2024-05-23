@@ -14,15 +14,15 @@ const SectionContainer = ({ data }: any) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            gap: "1rem",
+            gap: "6rem",
             marginLeft: "auto",
             marginRight: "auto",
             flexDirection: index % 2 === 1 ? "row-reverse" : "row",
           }}
         >
           <main
-            className="bg-[#141417] md:w-[50%] w-[50%] h-full rounded-xl flex justify-center relative"
-            style={{ paddingTop: "60px" }}
+            className="border-gradient-light bg-[#141417] w-[45%] h-[10vh] rounded-xl flex justify-center relative"
+            style={{ paddingTop: "60px", height: "60vh" }}
           >
             <img
               src={"/gradient-ellipse.svg"}
@@ -34,14 +34,26 @@ const SectionContainer = ({ data }: any) => {
               alt="gradient-ellipse-vertical"
               className="absolute top-0 right-16 "
             />
+            <img
+              src={"/section-bottom-blend.svg"}
+              alt="section-bottom-blend"
+              className="absolute bottom-0 left-0"
+            />
 
             <img src={section.mainImageSrc} alt="phone-1" className="w-[50%]" />
           </main>
           <div className="w-[50%] flex flex-col justify-center gap-3">
-            <h1 className="font-primary-bold text-2xl">{section.title}</h1>
-            <p className="font-secondary-regular leading-5">
+            <h1
+              className="font-primary-medium text-[40px] leading-[2rem]"
+              style={{ lineHeight: "3rem", fontSize: "40px" }}
+            >
+              {section.title}
+            </h1>
+            <p
+              className="font-secondary-regular text-[14px] text-white opacity-70 text-justify"
+              style={{ opacity: "70%", fontSize: "16px" }}
+            >
               {section.description}
-              {index}
             </p>
             <div className="flex items-center gap-2">
               <img
