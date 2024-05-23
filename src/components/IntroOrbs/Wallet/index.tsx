@@ -269,7 +269,7 @@ function Wallet() {
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
-        className="hidden absolute -right-6 md:right-0 top-[20%] h-[100px] w-[100px] md:h-[150px] md:w-[146px] -rotate-90"
+        className="hidden md:block absolute -right-6 md:right-0 top-[30%] h-[100px] w-[100px] md:h-[150px] md:w-[146px] -rotate-90"
         animate={rightCoinControls}
         initial={{
           top: "0%",
@@ -278,7 +278,7 @@ function Wallet() {
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
-        className="absolute md:hidden right-0 md:right-0 top-[20%] h-[100px] w-[100px] -rotate-90"
+        className="absolute md:hidden right-0 md:right-0 top-0 h-[100px] w-[100px] -rotate-90"
       />
 
       <div className="absolute left-[10%] md:left-[24%] top-[20%] z-0">
