@@ -1,16 +1,24 @@
+/* eslint-disable @next/next/no-img-element */
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <div className="w-full flex flex-row justify-center ">
+    <div className="w-full flex flex-row justify-center items-center relative">
       <div id="radial_overlay"></div>
+      <img
+        src="/footer-top-blend.svg"
+        alt="footer-blend"
+        className="absolute top-0 left-0"
+      />
       <Image
         src="/footer-logo.png"
-        width={180}
-        height={180}
+        width={100}
+        height={140}
         alt="Stello"
-        className="absolute my-14 h-16 w-16 object-contain lg:my-36 lg:w-96 lg:h-48 "
+        className="absolute my-14 h-16 w-16 object-contain lg:my-36 lg:w-80 lg:h-40 mr-8 z-10"
       />
       <FooterSVG />
     </div>
@@ -21,11 +29,13 @@ export default Footer;
 
 const FooterSVG = () => {
   return (
-    <svg
+    <motion.svg
       viewBox="0 0 1434 600"
-      className="h-60 lg:h-auto"
+      className="h-60 lg:h-auto -z-10"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      animate={{ opacity: [1.2, 0.6, 1.2] }}
+      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
     >
       <path
         d="M0.5 580.314L10.6425 593.935L86.9596 668.659L165.835 726.082"
@@ -1348,6 +1358,6 @@ const FooterSVG = () => {
           <stop offset="1" stop-color="#DD1D63" />
         </linearGradient>
       </defs>
-    </svg>
+    </motion.svg>
   );
 };
