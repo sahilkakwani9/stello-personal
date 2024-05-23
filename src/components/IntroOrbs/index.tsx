@@ -33,11 +33,12 @@ function IntroToOrbs() {
       className={`md:w-[70%] min-h-[650vh] mx-auto self-center relative ${
         isSticky ? "sticky top-0" : ""
       }`}
-    > <img
-    alt="middle-blend-bg"
-    src="/middle-blend-blur.svg"
-    className="md:hidden absolute -top-36 z-10 left-0"
-  />
+    >
+      <img
+        alt="middle-blend-bg"
+        src="/middle-blend-blur.svg"
+        className="md:hidden absolute -top-36 z-10 left-0"
+      />
       <section className="bg-introToOrbs relative w-full md:bg-cover bg-opacity-20 min-h-screen">
         <div className="relative" id="dark_overlay">
           <h1 className="pt-12 pb-8 font-primary-semibold text-[48px] px-24 md:px-0 md:text-[52px] text-center text-transparent bg-gradient-to-r bg-clip-text from-start-gradient to-end-gradient leading-tight">

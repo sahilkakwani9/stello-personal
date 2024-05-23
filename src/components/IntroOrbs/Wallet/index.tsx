@@ -62,7 +62,7 @@ function Wallet() {
         });
 
         leftCoinControls.start({
-          top: "0%",
+          top: "10%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -85,7 +85,7 @@ function Wallet() {
           },
         });
         leftCoinControls.start({
-          top: "10%",
+          top: "20%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -122,7 +122,7 @@ function Wallet() {
           },
         });
         leftCoinControls.start({
-          top: "0%",
+          top: "10%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -175,7 +175,7 @@ function Wallet() {
           },
         });
         leftCoinControls.start({
-          top: "0%",
+          top: "10%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -226,21 +226,27 @@ function Wallet() {
   ]);
 
   return (
-    <div className="w-[100%] relative  min-h-screen" ref={walletRef}>
+    <div className="w-[100%] relative min-h-screen" ref={walletRef}>
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
-        className="hidden md:block absolute -left-[5%] top-[20%] h-[150px] w-[146px]"
+        className="hidden md:block absolute -left-[5%] top-[10%] h-[150px] w-[146px]"
         animate={leftCoinControls}
+        initial={{
+          top: "20%",
+        }}
       />
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
         className="absolute right-0 top-[20%] h-[150px] w-[146px] -rotate-90"
         animate={rightCoinControls}
+        initial={{
+          top: "0%",
+        }}
       />
 
-      <div className="absolute left-[24%] top-[10%] z-0">
+      <div className="absolute left-[24%] top-[20%] z-0">
         <img
           alt="wallet-bg"
           src="/wallet-bg.webp"
@@ -273,7 +279,7 @@ function Wallet() {
         />
       </div>
 
-      <div className="absolute left-[24%] top-[20%]">
+      <div className="absolute left-[24%] top-[30%]">
         <motion.div
           className="absolute border-gradient mx-auto left-[5%] w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4"
           animate={secondDivControls}
@@ -300,7 +306,7 @@ function Wallet() {
           className="relative z-10 w-[80%]"
         />
       </div>
-      <div className="absolute left-[24%] top-[30%] z-30">
+      <div className="absolute left-[24%] top-[40%] z-30">
         <motion.div
           className="absolute border-gradient mx-auto left-[5%] w-[70%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg"
           animate={firstDivControls}
