@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <div className="w-full flex flex-row justify-center items-center relative">
-      <div id="radial_overlay"></div>
+    <div className="w-full flex flex-row justify-center items-center relative overflow-hidden">
+      <div id="radial_overlay" className="hidden md:block"></div>
       <img
         src="/footer-top-blend.svg"
         alt="footer-blend"
@@ -18,7 +18,14 @@ function Footer() {
         width={100}
         height={140}
         alt="Stello"
-        className="absolute my-14 h-16 w-16 object-contain lg:my-36 lg:w-80 lg:h-40 mr-8 z-10"
+        className="absolute mt-8 md:my-14 h-40 w-40 object-contain lg:my-36 lg:w-80 lg:h-40 md:mr-8 z-10"
+      />
+      <motion.img
+        alt="footer-net-phone"
+        src="footer-net-mobile.svg"
+        className="w-full -z-10 md:hidden object-fill"
+        animate={{ opacity: [1.2, 0.6, 1.2] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       />
       <FooterSVG />
     </div>
@@ -31,7 +38,7 @@ const FooterSVG = () => {
   return (
     <motion.svg
       viewBox="0 0 1434 600"
-      className="h-60 lg:h-auto -z-10"
+      className="hidden md:block h-60 lg:h-auto -z-10"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       animate={{ opacity: [1.2, 0.6, 1.2] }}
