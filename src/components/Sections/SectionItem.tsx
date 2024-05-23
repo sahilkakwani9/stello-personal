@@ -4,33 +4,35 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function SectionItem() {
+  return (
+    <>
+      <Section1 />
+      <Section2 />
+      <Section3 />
+    </>
+  );
+}
+
+export default SectionItem;
+
+const Section1 = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.3,
+    threshold: 0.2,
   });
   if (inView) {
     controls.start("visible");
   }
   return (
-    <>
     <motion.div
       ref={ref}
       initial="hidden"
       animate={controls}
       variants={{
         hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.5 } },
+        visible: { opacity: 1, transition: { duration: 1, delay: 0.1 } },
       }}
-      // style={{
-      //   display: "flex",
-      //   justifyContent: "center",
-      //   alignItems: "center",
-      //   gap: "6rem",
-      //   marginLeft: "auto",
-      //   marginRight: "auto",
-      //   flexDirection: index % 2 === 1 ? "row-reverse" : "row",
-      // }}
       className="flex flex-col md:flex-row justify-center items-center gap-24 mx-auto"
     >
       <main
@@ -53,7 +55,7 @@ function SectionItem() {
           className="absolute bottom-0 left-0"
         />
 
-        <img src={"/sections_img_1.png"} alt="phone-1" className="w-[50%]" />
+        <img src={"/sections_img_1.png"} alt="phone-1" className="w-[60%]" />
       </main>
       <div className="w-[50%] flex flex-col justify-center gap-3">
         <h1
@@ -66,22 +68,41 @@ function SectionItem() {
           className="font-secondary-regular text-[14px] text-white opacity-70 text-justify"
           style={{ opacity: "70%", fontSize: "16px" }}
         >
-          Earn orbs effortlessly and watch your cashback soar! The more orbs you hold, the higher your cashback percentage. It's that simple, that exciting!
+          Earn orbs effortlessly and watch your cashback soar! The more orbs you
+          hold, the higher your cashback percentage. Its that simple, that
+          exciting!
         </p>
         <div className="flex items-center gap-2">
           <img src={"/sections_universal.png"} alt="" style={{ width: "6%" }} />
           <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
-          Universal Cashback
+            Universal Cashback
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <img src={"/sections_universal_link.png"} alt="" style={{ width: "6%" }} />
+          <img
+            src={"/sections_universal_link.png"}
+            alt=""
+            style={{ width: "6%" }}
+          />
           <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
-          Cross-Chain Benefits
+            Cross-Chain Benefits
           </span>
         </div>
       </div>
     </motion.div>
+  );
+};
+
+const Section2 = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  if (inView) {
+    controls.start("visible");
+  }
+  return (
     <motion.div
       ref={ref}
       initial="hidden"
@@ -112,7 +133,7 @@ function SectionItem() {
           className="absolute bottom-0 left-0"
         />
 
-        <img src={"/sections_img_2.png"} alt="phone-1" className="w-[50%]" />
+        <img src={"/sections_img_2.png"} alt="phone-1" className="w-[60%]" />
       </main>
       <div className="w-[50%] flex flex-col justify-center gap-3">
         <h1
@@ -125,22 +146,46 @@ function SectionItem() {
           className="font-secondary-regular text-[14px] text-white opacity-70 text-justify"
           style={{ opacity: "70%", fontSize: "16px" }}
         >
-          Discover the power of privacy and authority with our platform. Take control of your data and decisions, navigating the digital world with confidence. With us, your privacy is protected, your authority respected. Embrace empowerment in the digital age.
+          Discover the power of privacy and authority with our platform. Take
+          control of your data and decisions, navigating the digital world with
+          confidence. With us, your privacy is protected, your authority
+          respected. Embrace empowerment in the digital age.
         </p>
         <div className="flex items-center gap-2">
-          <img src={"/sections_empowers_lock.png"} alt="" style={{ width: "6%" }} />
+          <img
+            src={"/sections_empowers_lock.png"}
+            alt=""
+            style={{ width: "6%" }}
+          />
           <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
-          Privacy Empowerment
+            Privacy Empowerment
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <img src={"/sections_empowers_privacy.png"} alt="" style={{ width: "6%" }} />
+          <img
+            src={"/sections_empowers_privacy.png"}
+            alt=""
+            style={{ width: "6%" }}
+          />
           <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
-          Authority Assurance
+            Authority Assurance
           </span>
         </div>
       </div>
     </motion.div>
+  );
+};
+
+const Section3 = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  if (inView) {
+    controls.start("visible");
+  }
+  return (
     <motion.div
       ref={ref}
       initial="hidden"
@@ -171,7 +216,7 @@ function SectionItem() {
           className="absolute bottom-0 left-0"
         />
 
-        <img src={"/sections_img_3.png"} alt="phone-1" className="w-[50%]" />
+        <img src={"/sections_img_3.png"} alt="phone-1" className="w-[60%]" />
       </main>
       <div className="w-[50%] flex flex-col justify-center gap-3">
         <h1
@@ -184,24 +229,31 @@ function SectionItem() {
           className="font-secondary-regular text-[14px] text-white opacity-70 text-justify"
           style={{ opacity: "70%", fontSize: "16px" }}
         >
-          Swap cryptocurrencies effortlessly, without any fees. Enjoy seamless transactions and maximize your assets without worrying about extra charges. Experience the freedom of fee-free crypto swapping today!
+          Swap cryptocurrencies effortlessly, without any fees. Enjoy seamless
+          transactions and maximize your assets without worrying about extra
+          charges. Experience the freedom of fee-free crypto swapping today!
         </p>
         <div className="flex items-center gap-2">
-          <img src={"/sections_crypto_swap.png"} alt="" style={{ width: "6%" }} />
+          <img
+            src={"/sections_crypto_swap.png"}
+            alt=""
+            style={{ width: "6%" }}
+          />
           <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
-          Fee-Free Swapping
+            Fee-Free Swapping
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <img src={"/sections_crypto_wallet.png"} alt="" style={{ width: "6%" }} />
+          <img
+            src={"/sections_crypto_wallet.png"}
+            alt=""
+            style={{ width: "6%" }}
+          />
           <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
-          Maximize Your Assets
+            Maximize Your Assets
           </span>
         </div>
       </div>
     </motion.div>
-    </>
   );
-}
-
-export default SectionItem;
+};
