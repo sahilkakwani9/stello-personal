@@ -1,14 +1,12 @@
+import React from "react";
+
 type Props = {
   question: string;
   answer: string;
-  index: number;
   isOpen: boolean;
-  onToggle: (number: number) => void;
 };
 
-const Item = ({ question, answer, index, isOpen, onToggle }: Props) => {
-  const expand = () => onToggle(index);
-
+const Item = ({ question, answer, isOpen }: Props) => {
   const itemHeight = isOpen ? "auto" : "70px";
 
   return (
@@ -19,7 +17,7 @@ const Item = ({ question, answer, index, isOpen, onToggle }: Props) => {
       <div className="flex flex-col gap-y-2  bg-black px-5 pt-[24px] pb-[32px] rounded-[14px]  ">
         <div className="flex flex-row justify-between">
           <FaqCardTitle title={question} />
-          <ToggleExpand isOpen={isOpen} onToggle={expand} />
+          <ToggleExpand isOpen={isOpen} />
         </div>
         <FaqCardAnswer content={answer} isOpen={isOpen} />
       </div>
@@ -28,17 +26,15 @@ const Item = ({ question, answer, index, isOpen, onToggle }: Props) => {
 };
 export default Item;
 
-const ToggleExpand = ({ isOpen, onToggle }: { isOpen: boolean; onToggle: () => void }) => {
-  return <div onClick={onToggle}>{isOpen ? <MinusIcon /> : <PlusIcon />}</div>;
+const ToggleExpand = ({ isOpen }: { isOpen: boolean }) => {
+  return <div>{isOpen ? <MinusIcon /> : <PlusIcon />}</div>;
 };
 
-const FaqCardTitle = ({ title }: { title: string }) => {
-  return (
-    <div className="font-primary-regular font-semibold text-sm lg:text-[18px] leading-6 text-left text-white">
+const FaqCardTitle = ({title}:{title:string})=>{
+  return <div className="font-primary-regular font-semibold text-sm lg:text-[18px] leading-6 text-left text-white">
       {title}
     </div>
-  );
-};
+}
 
 const FaqCardAnswer = ({ content, isOpen }: { content: string; isOpen: boolean }) => {
   return (
