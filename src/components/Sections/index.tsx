@@ -28,7 +28,7 @@ const sectionData = [
     description:
       "Swap cryptocurrencies effortlessly, without any fees. Enjoy seamless transactions and maximize your assets without worrying about extra charges. Experience the freedom of fee-free crypto swapping today!",
     universalCashbackText: "Fee-Free Swapping",
-    crossChainBenefitsText: "Authority Assurance",
+    crossChainBenefitsText: "Maximize Your Assets",
     mainImageSrc: "/sections_img_3.png",
 
     pointsOneImageSrc: "/sections_crypto_swap.png",
