@@ -62,13 +62,13 @@ function Wallet() {
         });
 
         leftCoinControls.start({
-          top: "-30%",
+          top: "0%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
         rightCoinControls.start({
-          top: "-70%",
+          top: "-10%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -106,7 +106,7 @@ function Wallet() {
         });
 
         rightCoinControls.start({
-          top: "-30%",
+          top: "0%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -122,13 +122,13 @@ function Wallet() {
           },
         });
         leftCoinControls.start({
-          top: "-30%",
+          top: "0%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
         rightCoinControls.start({
-          top: "-70%",
+          top: "-10%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -152,13 +152,13 @@ function Wallet() {
           },
         });
         leftCoinControls.start({
-          top: "10%",
+          top: "20%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
         rightCoinControls.start({
-          top: "-30%",
+          top: "0%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -175,13 +175,13 @@ function Wallet() {
           },
         });
         leftCoinControls.start({
-          top: "-30%",
+          top: "0%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
         rightCoinControls.start({
-          top: "-70%",
+          top: "-10%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -203,13 +203,13 @@ function Wallet() {
           },
         });
         leftCoinControls.start({
-          top: "10%",
+          top: "20%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
         rightCoinControls.start({
-          top: "-30%",
+          top: "0%",
           transition: {
             top: { duration: 0.5, ease: "easeOut" },
           },
@@ -226,27 +226,28 @@ function Wallet() {
   ]);
 
   return (
-    <div className="w-[100%] min-h-[350px] relative my-40" ref={walletRef}>
+    <div className="w-[100%] relative  min-h-screen" ref={walletRef}>
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
-        className="hidden md:block absolute -left-[5%] top-[10%] h-[150px] w-[146px]"
+        className="hidden md:block absolute -left-[5%] top-[20%] h-[150px] w-[146px]"
         animate={leftCoinControls}
       />
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
-        className="absolute -right-0 -top-[30%] h-[150px] w-[146px] -rotate-90"
+        className="absolute right-0 top-[20%] h-[150px] w-[146px] -rotate-90"
         animate={rightCoinControls}
       />
-      <img
-        alt="wallet-bg"
-        src="/wallet-bg.webp"
-        className=" w-[480px] absolute -top-16 left-[26%]"
-      />
-      <div className="absolute left-[26%] bottom-20 z-0">
+
+      <div className="absolute left-[24%] top-[10%] z-0">
+        <img
+          alt="wallet-bg"
+          src="/wallet-bg.webp"
+          className="w-[80%] absolute -top-[16%]  -z-10"
+        />
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4 -z-10"
+          className="absolute border-gradient mx-auto left-[5%] w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4 -z-10"
           animate={thirdDivControls}
           initial={{
             maxHeight: "60px",
@@ -262,19 +263,19 @@ function Wallet() {
           <img
             alt="top-card-banner"
             src="/top-card-banner.webp"
-            className=" mx-auto"
+            className="mx-auto"
           />
         </motion.div>
         <img
           src="/top_pocket.svg"
           alt="top-pocket-image"
-          className="w-[480px] z-0"
+          className="w-[80%]  z-0"
         />
       </div>
 
-      <div className="absolute left-[26%] bottom-20">
+      <div className="absolute left-[24%] top-[20%]">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4"
+          className="absolute border-gradient mx-auto left-[5%] w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4"
           animate={secondDivControls}
           initial={{
             maxHeight: "60px",
@@ -296,12 +297,12 @@ function Wallet() {
         <img
           src="/middle_pocket.svg"
           alt="middle-pocket-image"
-          className="relative z-10 w-[480px]"
+          className="relative z-10 w-[80%]"
         />
       </div>
-      <div className="absolute left-[26%] bottom-10 z-30">
+      <div className="absolute left-[24%] top-[30%] z-30">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[90%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg"
+          className="absolute border-gradient mx-auto left-[5%] w-[70%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg"
           animate={firstDivControls}
           initial={{
             maxHeight: "50px",
@@ -336,12 +337,12 @@ function Wallet() {
           <img
             src="/logo-text.png"
             alt="logo"
-            className="h-[61px] w-[150px] absolute bottom-12 left-[38%] z-30"
+            className="h-[30%] w-[20%] absolute bottom-8 left-[30%] z-30"
           />
           <img
             src="/end_pocket.svg"
             alt="end-pocket-image"
-            className="z-40 w-[480px]"
+            className="z-40 w-[80%]"
           />
         </div>
       </div>
