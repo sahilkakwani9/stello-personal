@@ -20,15 +20,15 @@ function Wallet() {
     if (walletRef.current) {
       const scrollY = window.scrollY;
 
-      if (scrollY > 2 * vh && scrollY < 3 * vh) {
+      if (scrollY > 2 * vh && scrollY < 2.5 * vh) {
         setInView(1);
-      } else if (scrollY >= 3 * vh && scrollY < 4 * vh) {
+      } else if (scrollY >= 2.5 * vh && scrollY < 3 * vh) {
         setInView(2);
-      } else if (scrollY >= 4 * vh && scrollY < 5 * vh) {
+      } else if (scrollY >= 3 * vh && scrollY < 3.5 * vh) {
         setInView(3);
-      } else if (scrollY >= 5 * vh && scrollY < 6 * vh) {
+      } else if (scrollY >= 3.5 * vh && scrollY < 4 * vh) {
         setInView(4);
-      } else if (scrollY >= 6 * vh && scrollY < 7 * vh) {
+      } else if (scrollY >= 4 * vh && scrollY < 4.5 * vh) {
         setInView(5);
       } else {
         setInView(0);
@@ -281,21 +281,21 @@ function Wallet() {
         className="absolute md:hidden right-0 md:right-0 top-0 h-[100px] w-[100px] -rotate-90"
       />
 
-      <div className="absolute left-[10%] md:left-[24%] top-[20%] z-0">
+      <div className="absolute left-[5%] md:left-[24%] top-[25%] z-0">
         <img
           alt="wallet-bg"
           src="/wallet-bg.webp"
-          className="w-[90%] md:w-[80%] absolute -top-[16%]  -z-10"
+          className="w-[95%] md:w-[80%] absolute -top-[16%]  -z-10"
         />
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[80%] md:w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4 -z-10"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-3 md:p-4 -z-10"
           animate={thirdDivControls}
           initial={{
             maxHeight: "60px",
             top: 0,
           }}
         >
-          <p className="font-primary-bold text-white text-center  text-[20px] md:text-[36px] leading-tight">
+          <p className="font-primary-bold text-white text-center  text-[24px] md:text-[36px] leading-tight">
             {WalletText.topCard.heading}
           </p>
           <p className="font-primary-regular text-[12px] mt-2 md:mt-0 md:text-[18px] text-white text-center">
@@ -314,16 +314,16 @@ function Wallet() {
         />
       </div>
 
-      <div className="absolute left-[10%] md:left-[24%] top-[25%] md:top-[30%]">
+      <div className="absolute left-[5%] md:left-[24%] top-[30%] md:top-[30%]">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[80%] md:w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-4"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg p-3 md:p-4"
           animate={secondDivControls}
           initial={{
             maxHeight: "60px",
             top: 0,
           }}
         >
-          <p className="font-primary-bold text-white text-center text-[20px] md:text-[36px] leading-tight">
+          <p className="font-primary-bold text-white text-center text-[24px] md:text-[36px] leading-tight">
             {WalletText.middleCard.heading}
           </p>
           <p className="font-primary-regular text-[12px] md:text-[18px] text-white px-10 text-center">
@@ -342,19 +342,19 @@ function Wallet() {
         <img
           src="/middle_pocket.svg"
           alt="middle-pocket-image"
-          className="relative z-10 w-[90%] md:w-[80%]"
+          className="relative z-10 w-[95%] md:w-[80%]"
         />
       </div>
-      <div className="absolute left-[10%] md:left-[24%] top-[30%] md:top-[40%] z-30">
+      <div className="absolute left-[5%] md:left-[24%] top-[35%] md:top-[40%] z-30">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[80%] md:w-[70%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[70%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-lg"
           animate={firstDivControls}
           initial={{
             maxHeight: "50px",
             top: 0,
           }}
         >
-          <div className="h-full flex-col justify-center items-center p-4">
+          <div className="h-full flex-col justify-center items-center p-3 md:p-4">
             <img src="/star.svg" alt="star-image" className="mx-auto w-[12%]" />
             <motion.img
               src="/coins/stellocoin.svg"
@@ -366,7 +366,7 @@ function Wallet() {
               }}
             />
             <motion.p
-              className="font-primary-semibold  text-[20px] md:text-[34px] mt-2 text-center leading-snug"
+              className="font-primary-semibold  text-[24px] md:text-[34px] mt-2 text-center leading-snug"
               animate={pControls}
               initial={{
                 opacity: 0,
@@ -382,12 +382,12 @@ function Wallet() {
           <img
             src="/logo-text.png"
             alt="logo"
-            className="h-[30%] w-[20%] absolute bottom-8 left-[30%] z-30"
+            className="md:h-[30%] w-[20%] absolute bottom-8 left-[38%] md:left-[30%] z-30"
           />
           <img
             src="/end_pocket.svg"
             alt="end-pocket-image"
-            className="z-40 w-[90%] md:w-[80%]"
+            className="z-40 w-[95%] md:w-[80%]"
           />
         </div>
       </div>

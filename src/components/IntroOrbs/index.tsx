@@ -10,7 +10,7 @@ function IntroToOrbs() {
   const handleScroll = () => {
     console.log(window.scrollY, "her it is");
     const vh = window.innerHeight;
-    if (window.scrollY > 0.9 * vh && window.scrollY < 6.9 * vh) {
+    if (window.scrollY > 0.9 * vh && window.scrollY < 4.4 * vh) {
       console.log("making postion fixed");
       setIsSticky(true);
     } else {
@@ -30,7 +30,7 @@ function IntroToOrbs() {
   }, []);
   return (
     <div
-      className={`md:w-[70%] mx-auto min-h-[650vh]  self-center relative ${
+      className={`md:w-[70%] mx-auto min-h-[400vh]  self-center relative ${
         isSticky ? "sticky top-0" : "bottom-0"
       }`}
     >
