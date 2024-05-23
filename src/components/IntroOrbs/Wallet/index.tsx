@@ -105,7 +105,6 @@ function Wallet() {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
-        
 
         rightCoinControls.start({
           top: "0%",
@@ -250,11 +249,14 @@ function Wallet() {
     thirdDivControls,
     leftCoinControls,
     rightCoinControls,
-    secondBannerControls
+    secondBannerControls,
   ]);
 
   return (
-    <div className="w-[100%] relative min-h-[90vh] md:min-h-screen" ref={walletRef}>
+    <div
+      className="w-[100%] relative min-h-[90vh] md:min-h-screen"
+      ref={walletRef}
+    >
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
@@ -267,11 +269,16 @@ function Wallet() {
       <motion.img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
-        className="absolute -right-6 md:right-0 top-[20%] h-[100px] w-[100px] md:h-[150px] md:w-[146px] -rotate-90"
+        className="hidden absolute -right-6 md:right-0 top-[20%] h-[100px] w-[100px] md:h-[150px] md:w-[146px] -rotate-90"
         animate={rightCoinControls}
         initial={{
           top: "0%",
         }}
+      />
+      <motion.img
+        alt="stello-coin"
+        src="/coins/stellocoin.svg"
+        className="absolute md:hidden right-0 md:right-0 top-[20%] h-[100px] w-[100px] -rotate-90"
       />
 
       <div className="absolute left-[10%] md:left-[24%] top-[20%] z-0">
