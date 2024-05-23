@@ -36,7 +36,7 @@ const Section1 = () => {
       className="flex flex-col md:flex-row justify-center items-center gap-24 mx-auto"
     >
       <main
-        className="border-gradient-light bg-[#141417] w-[45%] h-[10vh] rounded-xl flex justify-center relative"
+        className="border-gradient-light bg-[#141417] w-full md:w-[45%] h-[10vh] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px", height: "68vh" }}
       >
         <img
@@ -114,7 +114,7 @@ const Section2 = () => {
       className="flex flex-col md:flex-row-reverse justify-center items-center gap-24 mx-auto"
     >
       <main
-        className="border-gradient-light bg-[#141417] w-[45%] h-[10vh] rounded-xl flex justify-center relative"
+        className="border-gradient-light bg-[#141417] w-full md:w-[45%] h-[10vh] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px", height: "68vh" }}
       >
         <img
@@ -197,7 +197,7 @@ const Section3 = () => {
       className="flex flex-col md:flex-row justify-center items-center gap-24 mx-auto"
     >
       <main
-        className="border-gradient-light bg-[#141417] w-[45%] h-[10vh] rounded-xl flex justify-center relative"
+        className="border-gradient-light bg-[#141417] w-full md:w-[45%] h-[10vh] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px", height: "68vh" }}
       >
         <img
