@@ -8,6 +8,7 @@ import DownloadSection from "@/components/Download";
 import GridSection from "@/components/GridView";
 import SectionContainer from "@/components/Sections";
 import Txns from "@/components/Txns";
+import Tutorials from "@/components/Tutorials/Index";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <SectionContainer />
       <GridSection />
       <FAQs />
+      <Tutorials/>
       <DownloadSection />
       <Footer />
     </div>
