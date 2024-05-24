@@ -36,7 +36,7 @@ function FourthGrid() {
         <h1 className="font-primary-medium md:self-start self-center text-center text-[32px]  md:text-2xl leading-snug md:text-start md:w-[55%] px-6 pt-6">
           {FOURTH_GRID_HEADLINE}
         </h1>
-        <section className="md:w-[75%] w-[90%] h-[65%]">
+        <section className="md:w-[75%] w-[90%]">
           <img
             src={"/fourth_grid_card.png"}
             className="h-full object-fill object-center"

@@ -53,7 +53,7 @@ function SixthGrid() {
               className="absolute top-[60%] left-[50px] h-[25%]  w-full z-20"
               alt="pancake"
             />
-            <div className="h-[90%] absolute top-[0] right-0 w-[20%] blur-xl bg-[#141417] z-30" />
+            <div className="h-[90%] absolute top-[0] right-0 w-[20%] blur-3xl bg-[#141417] z-30" />
           </div>
 
           <img

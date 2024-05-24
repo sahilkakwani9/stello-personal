@@ -20,12 +20,12 @@ function Txns() {
           { x: -60, y: 130 },
           { x: -30, y: 80 },
           { x: 30, y: 40 },
-          { x: 110, y: 8 },
-          { x: 190, y: 0 },
+          { x: 100, y: 8 },
+          { x: 180, y: 0 },
           { x: 260, y: 8 },
-          { x: 320, y: 40 },
+          { x: 330, y: 40 },
           { x: 390, y: 80 },
-          { x: 420, y: 130 },
+          { x: 430, y: 130 },
         ]);
       } else {
         setCoinPositions([
@@ -56,14 +56,14 @@ function Txns() {
   });
 
   const [ref, inView] = useInView({
-    triggerOnce: true, // Ensures animation is triggered only once
-    threshold: 0.5, // Determines how much of the component should be visible before triggering
+    triggerOnce: true,
+    threshold: 0.2,
   });
 
   return (
     <main
       ref={ref}
-      className="relative md:w-[70%] bg-introToOrbs mx-auto self-center bg-cover overflow-hidden"
+      className="relative md:w-[70%] bg-introToOrbs mx-auto self-center md:bg-cover overflow-hidden"
     >
       {coinPositions.map((pos, index) => (
         <motion.img

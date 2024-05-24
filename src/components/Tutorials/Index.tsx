@@ -51,12 +51,12 @@ type TutorialCardProps = {
 };
 function TutorialCard({ description, image, title }: TutorialCardProps) {
   return (
-    <div className="flex w-[90%] flex-col gap-y-4">
+    <div className="flex w-[90%] flex-col gap-y-2 md:gap-y-4">
       <img src={image} alt="" height={"100%"} width={"100%"} />
       <h2 className="font-secondary-regular text-[18px] lg:text-3xl">
         {title}
       </h2>
-      <p className="font-secondary-light text-xs lg:text-lg text-secondary-text">
+      <p className="font-secondary-light text-xs lg:text-lg text-secondary-text ">
         {description}
       </p>
     </div>
