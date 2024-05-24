@@ -162,6 +162,21 @@ body {
     transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
   }
 
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animated-gradient-text {
+    background: linear-gradient(to right, #fe756c, #dd1d63);
+    background-size: 200% 100%;
+    -webkit-text-fill-color: transparent;
+  }
+
   @media (max-width: 768px) {
     .gradient-lines-hidden {
       display: none;

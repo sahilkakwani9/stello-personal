@@ -36,13 +36,36 @@ function FourthGrid() {
         <h1 className="font-primary-medium md:self-start self-center text-center text-[32px]  md:text-2xl leading-snug md:text-start md:w-[55%] px-6 pt-6">
           {FOURTH_GRID_HEADLINE}
         </h1>
-        <section className="md:w-[75%] w-[90%]">
+        {/* <section className="md:w-[75%] w-[90%]">
           <img
             src={"/fourth_grid_card.png"}
             className="h-full object-fill object-center"
             alt="grid-card"
           />
-        </section>
+        </section> */}
+        <div className="border-gradient-light w-[90%] md:w-[80%] bg-cardBg">
+          <div className="p-4">
+            <p className="text-[16px] font-secondary-regular text-white opacity-70">
+              This Month
+            </p>
+            <p className="text-[30px] font-secondary-medium text-white">
+              $82.80 saved
+            </p>
+            <motion.p
+              className="text-[18px] font-secondary-medium text-transparent bg-clip-text animated-gradient-text"
+              initial={{ backgroundPosition: "0% 50%" }}
+              animate={{ backgroundPosition: "100% 50%" }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              28 free transactions
+            </motion.p>
+            <img src="/grid-card-footer.webp" alt="card-footer" className="mt-4" />
+          </div>
+        </div>
       </div>
     </motion.div>
   );

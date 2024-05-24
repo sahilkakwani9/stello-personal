@@ -15,6 +15,8 @@ const config: Config = {
         introToOrbs: 'url("/IntroToOrbsBg.svg")',
         gridBg:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
+        cardBg:
+          "linear-gradient(156.22deg, rgba(70, 70, 70, 0.37) -5.32%, rgba(8, 8, 8, 0) 93.17%)",
       },
       fontFamily: {
         "primary-light": ["var(--font-degular-display-light)", "sans-serif"],
