@@ -24,8 +24,12 @@ function SecondGrid() {
       initial="hidden"
       animate={controls}
       variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: { duration: 1, delay: 0.2 },
+        },
       }}
     >
       <div className="flex flex-col justify-between gap-8 md:gap-4 h-full w-full z-20 overflow-hidden">

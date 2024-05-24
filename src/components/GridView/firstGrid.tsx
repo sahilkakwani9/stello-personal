@@ -24,8 +24,12 @@ function FirstGrid() {
       initial="hidden"
       animate={controls}
       variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: { duration: 1, delay: 0.2 },
+        },
       }}
     >
       <section className="relative flex flex-col-reverse md:flex-row justify-between h-full w-full gap-32 md:gap-16">

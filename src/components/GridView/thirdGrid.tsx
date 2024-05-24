@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-"use client"
+"use client";
 import { useAnimation, motion } from "framer-motion";
 import { THIRD_GRID_HEADLINE } from "../constatnts";
 import { useInView } from "react-intersection-observer";
@@ -24,8 +24,12 @@ function ThirdGrid() {
       initial="hidden"
       animate={controls}
       variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: { duration: 1, delay: 0.2 },
+        },
       }}
     >
       <div className="pt-8 flex flex-col justify-between gap-8 md:gap-4 text-2xl ">

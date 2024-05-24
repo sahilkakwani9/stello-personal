@@ -25,8 +25,12 @@ function DownloadSection() {
       initial="hidden"
       animate={controls}
       variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: { duration: 1, delay: 0.2 },
+        },
       }}
     >
       <div className="md:flex justify-between items-center bg-gradient-to-b from-[#D2D2D214] to-[#08080800] rounded-[32px] md:max-h-[350px] border-gradient-light">

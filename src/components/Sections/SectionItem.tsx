@@ -15,6 +15,11 @@ function SectionItem() {
 
 export default SectionItem;
 
+const sectionVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 1, delay: 0.2 } },
+};
+
 const Section1 = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
@@ -25,19 +30,14 @@ const Section1 = () => {
     controls.start("visible");
   }
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
-      }}
-      className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto"
-    >
-      <main
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto">
+      <motion.main
         className="border-gradient-light bg-[#141417] w-full md:w-[45%] md:h-[68vh] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px" }}
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={sectionVariants}
       >
         <img
           src={"/gradient-ellipse.svg"}
@@ -56,7 +56,7 @@ const Section1 = () => {
         />
 
         <img src={"/sections_img_1.png"} alt="phone-1" className="w-[60%]" />
-      </main>
+      </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
         <h1 className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
           Seamless Cashback Across Multiple Chains!
@@ -87,7 +87,7 @@ const Section1 = () => {
           </span>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -101,19 +101,16 @@ const Section2 = () => {
     controls.start("visible");
   }
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
-      }}
       className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-24 mx-auto"
     >
-      <main
+      <motion.main
         className="border-gradient-light bg-[#141417] w-full md:w-[45%] h-10vh md:h-[68vh] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px" }}
+        initial="hidden"
+        animate={controls}
+        variants={sectionVariants}
       >
         <img
           src={"/gradient-ellipse.svg"}
@@ -132,7 +129,7 @@ const Section2 = () => {
         />
 
         <img src={"/sections_img_2.png"} alt="phone-1" className="w-[60%]" />
-      </main>
+      </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
         <h1 className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
           Empowers Privacy, Ensures Authority
@@ -164,7 +161,7 @@ const Section2 = () => {
           </span>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -178,19 +175,14 @@ const Section3 = () => {
     controls.start("visible");
   }
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
-      }}
-      className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto"
-    >
-      <main
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto">
+      <motion.main
         className="border-gradient-light bg-[#141417] w-full md:w-[45%]  h-10vh md:h-[68vh] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px" }}
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={sectionVariants}
       >
         <img
           src={"/gradient-ellipse.svg"}
@@ -209,7 +201,7 @@ const Section3 = () => {
         />
 
         <img src={"/sections_img_3.png"} alt="phone-1" className="w-[60%]" />
-      </main>
+      </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
         <h1 className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
           Swap Crypto With Zero Fees
@@ -240,6 +232,6 @@ const Section3 = () => {
           </span>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
