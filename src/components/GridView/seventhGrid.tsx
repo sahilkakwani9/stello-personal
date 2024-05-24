@@ -1,21 +1,47 @@
 /* eslint-disable @next/next/no-img-element */
-import { FIFTH_GRID_HEADLINE, SEVENTH_GRID_HEADLINE } from "../constatnts";
+"use client";
+import { useAnimation, motion } from "framer-motion";
+import { SEVENTH_GRID_HEADLINE } from "../constatnts";
+import { useInView } from "react-intersection-observer";
 
 function SeventhGrid() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  if (inView) {
+    controls.start("visible");
+  }
   return (
-    <div className="pt-2 flex flex-col justify-between h-full w-full text-2xl items-center gap-12">
-      <h1 className="font-primary-medium text-2xl text-start flex w-full self-start px-8">
-        {SEVENTH_GRID_HEADLINE}
-      </h1>
-      <section className="w-full h-[80%] relative">
-        <img src={"/seventh_grid.png"} className="w-[95%]" alt="timeline" />
-        <img
-          src={"/seventh_grid_button.png"}
-          className="absolute md:top-[-25px] top-[-35px] md:w-[30%] w-[48%] md:right-10 right-10"
-          alt="timeline-btn"
-        />
-      </section>
-    </div>
+    <motion.div
+      className="flex col-span-1 md:col-span-2 row-span-2 justify-center bg-[#141417] text-white text-xl pt-2 pb-12 bg-gradient-to-t from-[#5110107A] grid-border-gradient"
+      style={{
+        background:
+          "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
+      }}
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+      }}
+    >
+      <div className="pt-2 flex flex-col justify-between h-full w-full text-2xl items-center gap-12">
+        <h1 className="font-primary-medium text-2xl text-start flex w-full self-start px-8">
+          {SEVENTH_GRID_HEADLINE}
+        </h1>
+        <section className="w-full h-[80%] relative">
+          <img src={"/seventh_grid.png"} className="w-[95%]" alt="timeline" />
+          <img
+            src={"/seventh_grid_button.png"}
+            className="absolute md:top-[-25px] top-[-35px] md:w-[30%] w-[48%] md:right-10 right-10"
+            alt="timeline-btn"
+          />
+        </section>
+      </div>
+    </motion.div>
   );
 }
 

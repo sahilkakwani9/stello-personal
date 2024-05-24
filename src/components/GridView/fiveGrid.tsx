@@ -1,21 +1,51 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
+import { useAnimation, motion } from "framer-motion";
 import { FIFTH_GRID_HEADLINE } from "../constatnts";
+import { useInView } from "react-intersection-observer";
 
 function FiveGrid() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  if (inView) {
+    controls.start("visible");
+  }
   return (
-    <div className="pt-2 flex flex-col justify-between h-full w-full text-2xl items-center">
-      <img
-        src={"/fifth_grid_earn.png"}
-        alt="earn-coins"
-        className="w-[35%] object-contain rounded-16px"
-      />
-      <h1 className="font-primary-medium text-center px-2 mb-8 w-[80%]">
-        {FIFTH_GRID_HEADLINE}
-      </h1>
-      <section className="w-full h-full">
-        <img src={"/fifth_grid_spin.png"} alt="spin" className="object-cover rounded-[16px]" />
-      </section>
-    </div>
+    <motion.div
+      className="flex col-span-1 row-span-5 justify-center bg-[#141417] text-white text-xl grid-border-gradient"
+      style={{
+        background:
+          "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
+      }}
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+      }}
+    >
+      <div className="pt-2 flex flex-col justify-between h-full w-full text-2xl items-center">
+        <img
+          src={"/fifth_grid_earn.png"}
+          alt="earn-coins"
+          className="w-[35%] object-contain rounded-16px"
+        />
+        <h1 className="font-primary-medium text-center px-2 mb-8 w-[80%]">
+          {FIFTH_GRID_HEADLINE}
+        </h1>
+        <section className="w-full h-full">
+          <img
+            src={"/fifth_grid_spin.png"}
+            alt="spin"
+            className="object-cover rounded-[16px]"
+          />
+        </section>
+      </div>
+    </motion.div>
   );
 }
 

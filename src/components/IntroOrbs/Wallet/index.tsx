@@ -20,15 +20,15 @@ function Wallet() {
     if (walletRef.current) {
       const scrollY = window.scrollY;
 
-      if (scrollY > 2 * vh && scrollY < 2.25 * vh) {
+      if (scrollY > 1.5 * vh && scrollY < 1.75 * vh) {
         setInView(1);
-      } else if (scrollY >= 2.25 * vh && scrollY < 2.5 * vh) {
+      } else if (scrollY >= 1.75 * vh && scrollY < 2 * vh) {
         setInView(2);
-      } else if (scrollY >= 2.5 * vh && scrollY < 2.75 * vh) {
+      } else if (scrollY >= 2 * vh && scrollY < 2.25 * vh) {
         setInView(3);
-      } else if (scrollY >= 2.75 * vh && scrollY < 3 * vh) {
+      } else if (scrollY >= 2.25 * vh && scrollY < 2.5 * vh) {
         setInView(4);
-      } else if (scrollY >= 3 * vh && scrollY < 3.25 * vh) {
+      } else if (scrollY >= 2.5 * vh && scrollY < 2.75 * vh) {
         setInView(5);
       } else {
         setInView(0);
@@ -222,18 +222,7 @@ function Wallet() {
             opacity: { duration: 0.3, ease: "easeOut", delay: 0 },
           },
         });
-        leftCoinControls.start({
-          top: "20%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
-        rightCoinControls.start({
-          top: "0%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
+
         secondBannerControls.start({
           opacity: 0,
           transition: {

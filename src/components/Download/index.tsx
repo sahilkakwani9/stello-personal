@@ -1,14 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import Image from "next/image";
 import {
   DOWNLOAD_BUTTON,
   DOWNLOAD_HEADLINE_FIRST,
   DOWNLOAD_HEADLINE_SECOND,
 } from "../constatnts";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function DownloadSection() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  if (inView) {
+    controls.start("visible");
+  }
   return (
-    <section className="w-[90%] mx-auto">
+    <motion.section
+      className="w-[90%] mx-auto"
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+      }}
+    >
       <div className="md:flex justify-between items-center bg-gradient-to-b from-[#D2D2D214] to-[#08080800] rounded-[32px] md:max-h-[350px] border-gradient-light">
         <section className="flex flex-col items-start justify-center gap-4 md:pl-20 p-4 md:p-0">
           <div className="">
@@ -51,7 +71,7 @@ function DownloadSection() {
           />
         </section>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
