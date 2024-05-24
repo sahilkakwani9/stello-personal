@@ -80,7 +80,7 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
   },
 ];
 
-export const INTRO_ORBS_HEADLINE = "Introducing Orbs";
+export const INTRO_ORBS_HEADLINE = "Introducing \nOrbs";
 
 export const DOWNLOAD_HEADLINE_FIRST = "Hold Orbs, Get your Gas refunded –";
 export const DOWNLOAD_HEADLINE_SECOND = "Your Loyalty Rewarded!";
