@@ -14,7 +14,7 @@ function Footer() {
         className="absolute top-0 left-0"
       />
       <Image
-        src="/footer-logo.png"
+        src="/footer-logo.webp"
         width={100}
         height={140}
         alt="Stello"

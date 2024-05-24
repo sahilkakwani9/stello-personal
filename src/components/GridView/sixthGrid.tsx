@@ -39,17 +39,17 @@ function SixthGrid() {
         <section className="w-full h-full relative overflow-hidden py-4">
           <div className="h-full w-full">
             <img
-              src={"/sixth_grid_coin.png"}
+              src={"/sixth_grid_coin.webp"}
               className="absolute top-[0] left-[30px] h-[25%] w-full"
               alt="coinbase"
             />
             <img
-              src={"/sixth_grid_moonpay.png"}
+              src={"/sixth_grid_moonpay.webp"}
               className="absolute top-[30%] left-[40px] h-[25%] w-full"
               alt="moonpay"
             />
             <img
-              src={"/sixth_grid_pancake.png"}
+              src={"/sixth_grid_pancake.webp"}
               className="absolute top-[60%] left-[50px] h-[25%]  w-full z-20"
               alt="pancake"
             />
@@ -57,7 +57,7 @@ function SixthGrid() {
           </div>
 
           <img
-            src={"/sixth_grid_dollar_sign.png"}
+            src={"/sixth_grid_dollar_sign.webp"}
             className="absolute top-[-30px] left-[54px] bottom-0 h-[30vh] w-full object-center object-scale-down -scale-75 z-10"
             alt="dollar-sign"
           />

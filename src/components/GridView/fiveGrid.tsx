@@ -34,7 +34,7 @@ function FiveGrid() {
     >
       <div className="pt-8 flex flex-col justify-between h-full w-full  items-center">
         <img
-          src={"/fifth_grid_earn.png"}
+          src={"/fifth_grid_earn.webp"}
           alt="earn-coins"
           className="hidden md:block w-[35%] object-contain rounded-16px"
         />
@@ -43,7 +43,7 @@ function FiveGrid() {
         </h1>
         <section className="w-full h-full">
           <img
-            src={"/fifth_grid_spin.png"}
+            src={"/fifth_grid_spin.webp"}
             alt="spin"
             className="hidden md:block object-cover rounded-[16px]"
           />

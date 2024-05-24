@@ -56,7 +56,7 @@ function Hero() {
           </div>
           <img
             alt="iphone-mockup"
-            src="/mockup.png"
+            src="/mockup.webp"
             className="h-[80%] hidden md:block md:h-[70%] w-[60%] md:w-[24%] absolute top-0 md:top-52 left-[20%] md:left-[38.5%]"
           />
           <img
@@ -76,13 +76,13 @@ function Hero() {
           />
 
           <div className="h-[80%] md:h-[10%] w-[50%] md:w-[24%] absolute bottom-20 md:bottom-80 hidden  md:left-[15%] md:flex left-0 bg-cover bg-no-repeat">
-            <img alt="gas-refund" src="/header_gas_refund.png" className="" />
+            <img alt="gas-refund" src="/header_gas_refund.webp" className="" />
           </div>
 
           <div className="hidden md:block h-[10%] md:h-[10%] w-[40%] md:w-[24%] absolute top-24 right-2 md:top-[23rem] md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
             <img
               alt="congrats_text"
-              src="/header_congratulations.png"
+              src="/header_congratulations.webp"
               className=""
             />
           </div>

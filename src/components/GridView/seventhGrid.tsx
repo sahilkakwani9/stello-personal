@@ -37,9 +37,9 @@ function SeventhGrid() {
           {SEVENTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-[80%] relative">
-          <img src={"/seventh_grid.png"} className="md:w-[95%]" alt="timeline" />
+          <img src={"/seventh_grid.webp"} className="md:w-[95%]" alt="timeline" />
           <img
-            src={"/seventh_grid_button.png"}
+            src={"/seventh_grid_button.webp"}
             className="absolute md:top-[-25px] top-[-35px] md:w-[30%] w-[48%] md:right-10 right-0"
             alt="timeline-btn"
           />

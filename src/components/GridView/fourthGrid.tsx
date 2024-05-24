@@ -38,7 +38,7 @@ function FourthGrid() {
         </h1>
         {/* <section className="md:w-[75%] w-[90%]">
           <img
-            src={"/fourth_grid_card.png"}
+            src={"/fourth_grid_card.webp"}
             className="h-full object-fill object-center"
             alt="grid-card"
           />

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { WalletText } from "@/components/constatnts";
+import { WalletText } from "@/constants";
 
 function Wallet() {
   const walletRef = useRef<HTMLDivElement>(null);
@@ -369,7 +369,7 @@ function Wallet() {
         </motion.div>
         <div className="relative z-40">
           <img
-            src="/logo-text.png"
+            src="/logo-text.webp"
             alt="logo"
             className="md:h-[30%] w-[20%] absolute bottom-8 left-[38%] md:left-[30%] z-30"
           />
