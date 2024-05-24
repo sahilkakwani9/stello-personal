@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { WalletText } from "@/components/constatnts";
+import { WalletText } from "@/constants";
 
 function Wallet() {
   const walletRef = useRef<HTMLDivElement>(null);

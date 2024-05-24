@@ -63,9 +63,28 @@ function FourthGrid() {
             >
               28 free transactions
             </motion.p>
-            <img src="/grid-card-footer.webp" alt="card-footer" className="mt-4" />
+            <img
+              src="/grid-card-footer.webp"
+              alt="card-footer"
+              className="mt-4"
+            />
           </div>
         </div>
+        <motion.img
+          src="/grid/animated-gradient-bg.svg"
+          alt="bg-gradient"
+          className="absolute bottom-0 right-0  rounded-xl"
+          // initial={{ right: 0 }}
+          // animate={{
+          //   right: [0,160,0]
+          // }}
+          // transition={{
+          //   duration: 8,
+          //   ease: "linear",
+          //   repeat: Infinity,
+          // }}
+          
+        />
       </div>
     </motion.div>
   );
