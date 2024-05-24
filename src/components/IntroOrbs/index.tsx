@@ -31,7 +31,7 @@ function IntroToOrbs() {
     <div className={`md:w-[70%] mx-auto min-h-[400vh] self-center relative`}>
       <div
         className={`${
-          isSticky ? "sticky top-0" : "absolute bottom-0 left-0 w-full"
+          isSticky ? "sticky top-20" : "absolute bottom-0 left-0 w-full"
         }`}
       >
         {/* <img
