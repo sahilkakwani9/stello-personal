@@ -31,7 +31,7 @@ const Section1 = () => {
       animate={controls}
       variants={{
         hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.1 } },
+        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
       }}
       className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto"
     >
@@ -107,7 +107,7 @@ const Section2 = () => {
       animate={controls}
       variants={{
         hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.5 } },
+        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
       }}
       className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-24 mx-auto"
     >
@@ -184,7 +184,7 @@ const Section3 = () => {
       animate={controls}
       variants={{
         hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 1, delay: 0.5 } },
+        visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
       }}
       className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto"
     >

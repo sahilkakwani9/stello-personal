@@ -20,15 +20,15 @@ function Wallet() {
     if (walletRef.current) {
       const scrollY = window.scrollY;
 
-      if (scrollY > 2 * vh && scrollY < 2.5 * vh) {
+      if (scrollY > 2 * vh && scrollY < 2.25 * vh) {
         setInView(1);
-      } else if (scrollY >= 2.5 * vh && scrollY < 3 * vh) {
+      } else if (scrollY >= 2.25 * vh && scrollY < 2.5 * vh) {
         setInView(2);
-      } else if (scrollY >= 3 * vh && scrollY < 3.5 * vh) {
+      } else if (scrollY >= 2.5 * vh && scrollY < 2.75 * vh) {
         setInView(3);
-      } else if (scrollY >= 3.5 * vh && scrollY < 4 * vh) {
+      } else if (scrollY >= 2.75 * vh && scrollY < 3 * vh) {
         setInView(4);
-      } else if (scrollY >= 4 * vh && scrollY < 4.5 * vh) {
+      } else if (scrollY >= 3 * vh && scrollY < 3.25 * vh) {
         setInView(5);
       } else {
         setInView(0);
