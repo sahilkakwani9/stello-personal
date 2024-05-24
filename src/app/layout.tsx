@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import local from "next/font/local";
+import { SiteMetadata } from "@/constants/metadata";
 
-export const metadata: Metadata = {
-  title: "Stello",
-  description: "The Only Wallet That Pays Back Your Gas",
-};
+export const metadata: Metadata = SiteMetadata
 const fontDegularBlack = local({
   src: "./fonts/Degular-Black.otf",
   weight: "900", 

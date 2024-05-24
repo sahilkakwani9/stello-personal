@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FAQ_HEADER, FAQ_ITEMS } from "../constatnts";
+import { FAQ_HEADER, FAQ_ITEMS } from "../../constants";
 import Item from "./Item";
 
 function FAQs() {

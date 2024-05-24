@@ -28,7 +28,8 @@ export const WalletText = {
   },
   middleCard: {
     heading: "Claim refund via Orbs",
-    subHeading: "Oops, spent a lot on gas fees? No worries! Receive fee rebates via Orbs.",
+    subHeading:
+      "Oops, spent a lot on gas fees? No worries! Receive fee rebates via Orbs.",
   },
   bottomCard: {
     heading: `Orbs are exclusive \nrewards created for \nStello users.`,
@@ -66,7 +67,8 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
   },
   {
     question: "Can I use Stello for interacting with dApps?",
-    answer: "Yes, Stello has inbuilt DApp Browser,which you can use to interact witch dApps.",
+    answer:
+      "Yes, Stello has inbuilt DApp Browser,which you can use to interact witch dApps.",
   },
   {
     question: "Do you have access to my private keys?",
@@ -84,7 +86,8 @@ export const DOWNLOAD_HEADLINE_FIRST = "Hold Orbs, Get your Gas refunded –";
 export const DOWNLOAD_HEADLINE_SECOND = "Your Loyalty Rewarded!";
 export const DOWNLOAD_BUTTON = "Download App";
 export const ENCRYPTION = "Zero personal tracking with added encryption.";
-export const SECOND_GRID_HEADLINE = "One wallet for assets across 100+ blockchains";
+export const SECOND_GRID_HEADLINE =
+  "One wallet for assets across 100+ blockchains";
 export const THIRD_GRID_HEADLINE = "Access to multiple chains";
 export const FOURTH_GRID_HEADLINE = "Get 100% of your gas fee refunded";
 export const FIFTH_GRID_HEADLINE = "Spin and win rewards, every day";
@@ -93,13 +96,13 @@ export const SEVENTH_GRID_HEADLINE = "Daily Bonus!";
 
 export const TUTORIALS_DATA = [
   {
-    image:"/tutorials/t1.webp",
+    image: "/tutorials/t1.webp",
     title: "How to import your wallet into Stello",
     description:
       "Seamless wallet integration! Learn to import your wallet into Stello for easy access to your crypto assets.",
   },
   {
-    image:"/tutorials/t2.webp",
+    image: "/tutorials/t2.webp",
     title: "How to connect to a dApp or website",
     description:
       "Unlock decentralized apps! Connect effortlessly to dApps and websites for endless possibilities.",

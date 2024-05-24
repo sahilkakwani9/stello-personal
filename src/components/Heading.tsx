@@ -1,5 +1,5 @@
 import React from "react";
-import { fontFamily } from "./constatnts";
+import { fontFamily } from "../constants";
 
 const fontWeightMap: { [key: number]: string } = {
   300: fontFamily.primaryLight,
