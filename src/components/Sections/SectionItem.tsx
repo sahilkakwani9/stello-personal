@@ -55,7 +55,7 @@ const Section1 = () => {
           className="absolute bottom-0 left-0"
         />
 
-        <img src={"/sections_img_1.png"} alt="phone-1" className="w-[60%]" />
+        <img src={"/sections_img_1.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
         <h1 className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
@@ -68,7 +68,7 @@ const Section1 = () => {
         </p>
         <div className="flex items-center gap-2">
           <img
-            src={"/sections_universal.png"}
+            src={"/sections_universal.webp"}
             alt=""
             className="w-[10%] md:w-[6%]"
           />
@@ -78,7 +78,7 @@ const Section1 = () => {
         </div>
         <div className="flex items-center gap-2">
           <img
-            src={"/sections_universal_link.png"}
+            src={"/sections_universal_link.webp"}
             alt=""
             className="w-[10%] md:w-[6%]"
           />
@@ -128,7 +128,7 @@ const Section2 = () => {
           className="absolute bottom-0 left-0"
         />
 
-        <img src={"/sections_img_2.png"} alt="phone-1" className="w-[60%]" />
+        <img src={"/sections_img_2.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
         <h1 className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
@@ -142,7 +142,7 @@ const Section2 = () => {
         </p>
         <div className="flex items-center gap-2">
           <img
-            src={"/sections_empowers_lock.png"}
+            src={"/sections_empowers_lock.webp"}
             alt=""
             className="w-[10%] md:w-[6%]"
           />
@@ -152,7 +152,7 @@ const Section2 = () => {
         </div>
         <div className="flex items-center gap-2">
           <img
-            src={"/sections_empowers_privacy.png"}
+            src={"/sections_empowers_privacy.webp"}
             alt=""
             className="w-[10%] md:w-[6%]"
           />
@@ -200,7 +200,7 @@ const Section3 = () => {
           className="absolute bottom-0 left-0"
         />
 
-        <img src={"/sections_img_3.png"} alt="phone-1" className="w-[60%]" />
+        <img src={"/sections_img_3.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
         <h1 className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
@@ -213,7 +213,7 @@ const Section3 = () => {
         </p>
         <div className="flex items-center gap-2">
           <img
-            src={"/sections_crypto_swap.png"}
+            src={"/sections_crypto_swap.webp"}
             alt=""
             className="w-[10%] md:w-[6%]"
           />
@@ -223,7 +223,7 @@ const Section3 = () => {
         </div>
         <div className="flex items-center gap-2">
           <img
-            src={"/sections_crypto_wallet.png"}
+            src={"/sections_crypto_wallet.webp"}
             alt=""
             className="w-[10%] md:w-[6%]"
           />

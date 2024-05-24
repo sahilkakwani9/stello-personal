@@ -15,7 +15,7 @@ function SecondGrid() {
   }
   return (
     <motion.div
-      className="flex col-span-1 row-span-4 justify-center grid-border-gradient items-center bg-[#141417] text-white"
+      className="flex col-span-1 row-span-2 justify-center grid-border-gradient items-center bg-[#141417] text-white"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
