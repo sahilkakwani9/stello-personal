@@ -40,19 +40,20 @@ function SixthGrid() {
           <div className="h-full w-full">
             <img
               src={"/sixth_grid_coin.png"}
-              className="absolute top-[10px] left-[30px] h-[6vh] w-full"
+              className="absolute top-[0] left-[30px] h-[25%] w-full"
               alt="coinbase"
             />
             <img
               src={"/sixth_grid_moonpay.png"}
-              className="absolute top-[80px] left-[40px] h-[6vh] w-full"
+              className="absolute top-[30%] left-[40px] h-[25%] w-full"
               alt="moonpay"
             />
             <img
               src={"/sixth_grid_pancake.png"}
-              className="absolute top-[150px] left-[50px] h-[6vh]  w-full z-20"
+              className="absolute top-[60%] left-[50px] h-[25%]  w-full z-20"
               alt="pancake"
             />
+            <div className="h-[90%] absolute top-[0] right-0 w-[20%] blur-xl bg-[#141417] z-30" />
           </div>
 
           <img

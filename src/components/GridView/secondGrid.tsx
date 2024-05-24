@@ -59,6 +59,7 @@ function SecondGrid() {
             alt="grid-card"
             className="absolute z-20 right-0 bottom-0"
           />
+          <div className="h-[90%] absolute top-[0] right-0 w-[20%] blur-xl bg-[#141417] z-10" />
         </section>
       </div>
     </motion.div>
