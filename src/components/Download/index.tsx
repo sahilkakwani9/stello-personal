@@ -44,7 +44,13 @@ function DownloadSection() {
             </h1>
           </div>
           <div className="flex gap-1 items-center">
-            <p className="py-3 w-[70vw] md:w-full md:px-20 cursor-pointer text-sm text-center rounded-[33px] bg-white text-black leading-5 font-secondary-medium">
+            <p
+              className="py-3 w-[70vw] md:w-full md:px-20 cursor-pointer text-sm text-center rounded-[33px] bg-white text-black leading-5 font-secondary-medium"
+              onClick={() =>
+                (window.location.href =
+                  "https://drive.google.com/drive/u/2/folders/1ZZTj-ZkiE4RH1zJQgMONOkYpIzd4TH5q")
+              }
+            >
               {DOWNLOAD_BUTTON}
             </p>
             <a
