@@ -15,7 +15,7 @@ import SeventhGrid from "./seventhGrid";
 function GridSection() {
   return (
     <section className="w-[90%] mx-auto min-h-screen">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4">
         <div
           className="flex col-span-1 md:col-span-3 row-span-1 justify-center items-center text-white text-xl p-8 relative grid-bg overflow-hidden grid-border-gradient"
           style={{
