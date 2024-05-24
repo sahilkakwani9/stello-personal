@@ -32,20 +32,25 @@ function FiveGrid() {
         },
       }}
     >
-      <div className="pt-2 flex flex-col justify-between h-full w-full text-2xl items-center">
+      <div className="pt-8 flex flex-col justify-between h-full w-full  items-center">
         <img
           src={"/fifth_grid_earn.png"}
           alt="earn-coins"
-          className="w-[35%] object-contain rounded-16px"
+          className="hidden md:block w-[35%] object-contain rounded-16px"
         />
-        <h1 className="font-primary-medium text-center px-2 mb-8 w-[80%]">
+        <h1 className="font-primary-medium text-[32px] md:text-2xl text-center px-2 mb-8 w-[80%]">
           {FIFTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-full">
           <img
             src={"/fifth_grid_spin.png"}
             alt="spin"
-            className="object-cover rounded-[16px]"
+            className="hidden md:block object-cover rounded-[16px]"
+          />
+            <img
+            src={"/fifth_grid_spin_phone.webp"}
+            alt="spin-mobile"
+            className="md:hidden object-cover rounded-[16px]"
           />
         </section>
       </div>

@@ -25,7 +25,7 @@ function Tutorials() {
           transition: { duration: 1, delay: 0.2 },
         },
       }}
-      className="w-[90%] min-h-min my-28 mx-auto "
+      className="md:w-[90%] min-h-min my-4 md:my-28 mx-auto "
     >
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
         {TUTORIALS_DATA.map((tutorial, index) => {
