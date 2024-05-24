@@ -93,8 +93,8 @@ function Hero() {
           />
           <motion.img
             alt="bitcoin"
-            src="/coins/bitcoin.svg"
-            className="hidden md:block absolute top-48 left-20"
+            src="/coins/bitcoin.png"
+            className="hidden md:block absolute top-48  h-40 w-40left-20"
             animate={{
               y: [0, -20, 0],
             }}
@@ -106,8 +106,8 @@ function Hero() {
           />
           <motion.img
             alt="stellarcoin"
-            src="/coins/stellarcoin.svg"
-            className="hidden md:block absolute bottom-10 left-44"
+            src="/coins/stellarcoin.png"
+            className="hidden md:block absolute bottom-10 h-40 w-40 left-44"
             animate={{
               y: [0, -20, 0],
             }}
@@ -119,8 +119,8 @@ function Hero() {
           />
           <motion.img
             alt="ethereumcoin"
-            src="/coins/ethereumcoin.svg"
-            className="hidden md:block absolute top-36 right-16"
+            src="/coins/ethereumcoin.png"
+            className="hidden md:block absolute top-36 h-40 w-40 right-16"
             animate={{
               y: [0, -20, 0],
             }}
@@ -132,8 +132,8 @@ function Hero() {
           />
           <motion.img
             alt="litecoin"
-            src="/coins/litecoin.svg"
-            className="hidden md:block absolute bottom-16 right-32"
+            src="/coins/litecoin.png"
+            className="hidden md:block absolute bottom-16 h-40 w-40 right-32"
             animate={{
               y: [0, -20, 0],
             }}
