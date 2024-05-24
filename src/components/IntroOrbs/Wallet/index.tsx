@@ -299,7 +299,7 @@ function Wallet() {
         <img
           src="/top_pocket.svg"
           alt="top-pocket-image"
-          className="w-[95%] md:w-[80%]  z-0"
+          className="w-[95%] md:w-[80%] z-0"
         />
       </div>
 
@@ -334,7 +334,7 @@ function Wallet() {
           className="relative z-10 w-[95%] md:w-[80%]"
         />
       </div>
-      <div className="absolute left-[5%] md:left-[24%] top-[35%] md:top-[40%] z-30">
+      <div className="absolute left-[5%] md:left-[24%] top-[39%] md:top-[40%] z-30">
         <motion.div
           className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[70%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom"
           animate={firstDivControls}
