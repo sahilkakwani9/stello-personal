@@ -6,7 +6,7 @@ import {
   HERO_HEADLINE_BOTTOM,
   HERO_HEADLINE_TOP,
   HERO_SECONDARY_HEADLINE,
-} from "./constatnts";
+} from "../constants";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import GradientLines from "../../public/gradient-lines";

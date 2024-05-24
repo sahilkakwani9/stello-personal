@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useInView } from "react-intersection-observer";
-import { TUTORIALS_DATA } from "../constatnts";
+import { TUTORIALS_DATA } from "../../constants";
 import { motion, useAnimation } from "framer-motion";
 function Tutorials() {
   const controls = useAnimation();

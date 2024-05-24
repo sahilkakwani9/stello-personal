@@ -5,7 +5,7 @@ import {
   DOWNLOAD_BUTTON,
   DOWNLOAD_HEADLINE_FIRST,
   DOWNLOAD_HEADLINE_SECOND,
-} from "../constatnts";
+} from "../../constants";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

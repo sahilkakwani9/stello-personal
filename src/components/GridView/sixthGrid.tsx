@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useAnimation, motion } from "framer-motion";
-import { SIXTH_GRID_HEADLINE } from "../constatnts";
+import { SIXTH_GRID_HEADLINE } from "../../constants";
 import { useInView } from "react-intersection-observer";
 
 function SixthGrid() {

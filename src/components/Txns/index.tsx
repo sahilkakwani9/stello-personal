@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { INTRO_ORBS_HEADLINE, TxnText } from "../constatnts";
+import { INTRO_ORBS_HEADLINE, TxnText } from "../../constants";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";

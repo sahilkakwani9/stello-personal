@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useState } from "react";
-import { INTRO_ORBS_HEADLINE } from "../constatnts";
+import { INTRO_ORBS_HEADLINE } from "../../constants";
 import Wallet from "./Wallet";
 
 function IntroToOrbs() {
