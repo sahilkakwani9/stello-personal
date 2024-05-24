@@ -15,7 +15,7 @@ function FourthGrid() {
   }
   return (
     <motion.div
-      className="col-span-1 md:col-span-2 row-span-6 bg-[#141417] text-white text-xl grid-border-gradient"
+      className="col-span-1 md:col-span-2 row-span-4 bg-[#141417] text-white text-xl grid-border-gradient"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
