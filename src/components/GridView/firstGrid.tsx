@@ -22,7 +22,7 @@ function FirstGrid() {
         />
       </div>
       <div className="md:w-1/2 z-10">
-        <p className="font-primary-regular text-[32px] md:text-[28px] w-full text-center leading-snug">
+        <p className="font-primary-regular text-[30px] md:text-[28px] w-full text-center leading-snug">
           {ENCRYPTION}
         </p>
       </div>
