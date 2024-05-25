@@ -58,7 +58,7 @@ const Section1 = () => {
         <img src={"/sections_img_1.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <h1 className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
+        <h1 className="font-primary-semibold text-[24px] md:text-[40px] md:leading-[3rem]">
           Seamless Cashback Across Multiple Chains!
         </h1>
         <p className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 text-justify">
@@ -146,7 +146,7 @@ const Section2 = () => {
             alt=""
             className="w-[10%] md:w-[6%]"
           />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
+          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-regular">
             Privacy Empowerment
           </span>
         </div>

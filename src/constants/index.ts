@@ -82,8 +82,8 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
 
 export const INTRO_ORBS_HEADLINE = "Introducing \nOrbs";
 
-export const DOWNLOAD_HEADLINE_FIRST = "Hold Orbs, Get your Gas refunded –";
-export const DOWNLOAD_HEADLINE_SECOND = "Your Loyalty Rewarded!";
+export const DOWNLOAD_HEADLINE_FIRST =
+  "Hold Orbs, Get your Gas refunded – Your Loyalty Rewarded!";
 export const DOWNLOAD_BUTTON = "Download App";
 export const ENCRYPTION = "Zero personal tracking with added encryption.";
 export const SECOND_GRID_HEADLINE =

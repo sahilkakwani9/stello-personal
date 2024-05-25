@@ -15,7 +15,7 @@ import GradientLinesPhone from "../../public/gradient-lines-phone";
 function Hero() {
   return (
     <>
-      <div className="mt-[140px]">
+      <div className="pt-[140px] min-h-screen">
         <div className="w-[90%] lg:w-[50%] self-center m-auto overflow-hidden">
           <div>
             <p className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-start-gradient-secondary to-end-gradient-secondary leading-tight">
