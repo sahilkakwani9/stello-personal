@@ -1,11 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
-import {
-  DOWNLOAD_BUTTON,
-  DOWNLOAD_HEADLINE_FIRST,
-  DOWNLOAD_HEADLINE_SECOND,
-} from "../../constants";
+import { DOWNLOAD_BUTTON, DOWNLOAD_HEADLINE_FIRST } from "../../constants";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
