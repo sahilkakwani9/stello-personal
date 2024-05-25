@@ -274,7 +274,7 @@ function Wallet() {
         <img
           alt="wallet-bg"
           src="/wallet-bg.webp"
-          className="w-[95%] md:w-[80%] absolute -top-[16%]  -z-10"
+          className="w-[95%] md:w-[80%] absolute -top-[18%]  -z-10"
         />
         <motion.div
           className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom p-3 md:p-4 -z-10"
@@ -355,7 +355,7 @@ function Wallet() {
               }}
             />
             <motion.p
-              className="font-primary-semibold  text-[24px] md:text-[34px] mt-2 text-center leading-snug"
+              className="font-primary-semibold text-white  text-[24px] md:text-[34px] mt-2 text-center leading-snug"
               animate={pControls}
               initial={{
                 opacity: 0,

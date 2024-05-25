@@ -32,7 +32,7 @@ function DownloadSection() {
       <div className="md:flex justify-between items-center bg-gradient-to-b from-[#D2D2D214] to-[#08080800] rounded-[32px] md:max-h-[350px] border-gradient-light">
         <section className="flex flex-col items-start justify-center gap-4 md:pl-20 p-4 md:p-0">
           <div className="">
-            <h1 className="font-secondary-medium text-[34px] md:text-4xl leading-none md:w-[70%]">
+            <h1 className="font-secondary-medium text-white text-[34px] md:text-4xl leading-none md:w-[70%]">
               {DOWNLOAD_HEADLINE_FIRST}
             </h1>
           </div>
