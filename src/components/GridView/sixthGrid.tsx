@@ -33,32 +33,32 @@ function SixthGrid() {
       }}
     >
       <div className="pt-6 flex flex-col justify-between gap-8 md:gap-4 h-full w-full items-center z-10">
-        <h1 className="font-primary-regular text-[24px] md:text-2xl text-center px-4">
+        <h1 className="font-primary-regular text-[32px] md:text-2xl text-center px-4">
           {SIXTH_GRID_HEADLINE}
         </h1>
-        <section className="w-full h-full relative overflow-hidden py-4">
+        <section className="w-full h-full relative py-4">
           <div className="h-full w-full">
             <img
               src={"/sixth_grid_coin.webp"}
-              className="absolute top-[0] left-[30px] h-[25%] w-full"
+              className="absolute bottom-[70%] md:bottom-[55%] left-[30px] h-[22%] w-full"
               alt="coinbase"
             />
             <img
               src={"/sixth_grid_moonpay.webp"}
-              className="absolute top-[30%] left-[40px] h-[25%] w-full"
+              className="absolute bottom-[40%] md:bottom-[30%] left-[40px] h-[22%] w-full"
               alt="moonpay"
             />
             <img
               src={"/sixth_grid_pancake.webp"}
-              className="absolute top-[60%] left-[50px] h-[25%]  w-full z-20"
+              className="absolute bottom-[10%] md:bottom-[5%] left-[50px] h-[22%]  w-full z-20"
               alt="pancake"
             />
             <div className="h-[90%] absolute top-[0] right-0 w-[20%] blur-3xl bg-[#141417] z-30" />
           </div>
 
           <img
-            src={"/sixth_grid_dollar_sign.webp"}
-            className="absolute top-[-30px] left-[54px] bottom-0 h-[30vh] w-full object-center object-scale-down -scale-75 z-10"
+            src={"/sixth_grid_dollar_sign.png"}
+            className="absolute bottom-8 right-10 h-[80%] w-[35%] object-center z-10"
             alt="dollar-sign"
           />
         </section>

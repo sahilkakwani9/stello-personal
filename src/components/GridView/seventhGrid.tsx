@@ -37,15 +37,20 @@ function SeventhGrid() {
           {SEVENTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-[80%] relative">
-          <img src={"/seventh_grid.webp"} className="md:w-[95%]" alt="timeline" />
           <img
-            src={"/seventh_grid_button.webp"}
+            src={"/seventh_grid.webp"}
+            className="md:w-[95%]"
+            alt="timeline"
+          />
+          <img
+            src={"/seventh_grid_button.png"}
             className="absolute md:top-[-25px] top-[-35px] md:w-[30%] w-[48%] md:right-10 right-0"
             alt="timeline-btn"
           />
         </section>
+
         <img
-          src={"/grid/orange-grid-blend.svg"}
+          src={"/seventh_grid_blend.png"}
           className="w-full absolute left-0 bottom-0 rounded-xl"
           alt="muliti-chain-asset"
         />
