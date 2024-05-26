@@ -12,8 +12,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        introToOrbs: 'url("/IntroToOrbsBg.svg")',
-        introToOrbsMobile: 'url("/IntroToOrbsBgMobile.svg")',
+        introToOrbs: 'url("/IntroToOrbs/IntroToOrbsBg.svg")',
+        introToOrbsMobile: 'url("/IntroToOrbs/IntroToOrbsBgMobile.svg")',
         gridBg:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
         cardBg:

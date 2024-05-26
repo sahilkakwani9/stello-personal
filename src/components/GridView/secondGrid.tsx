@@ -40,22 +40,22 @@ function SecondGrid() {
         </section>
         <section className="relative flex h-[20vh] mr-4 md:mr-0">
           <img
-            src={"/gradient-ellipse.webp"}
+            src={"grid/grid2/gradient-ellipse.webp"}
             alt="grid-ellipse"
             className="object-cover object-center absolute z-10 -bottom-16 md:bottom-0 left-16 md:left-0 -rotate-[20deg] md:rotate-0"
           />
           <img
-            src={"/second_grid_card.svg"}
+            src={"/grid/grid2/card1.svg"}
             alt="grid-card"
             className="absolute z-20 right-0 bottom-0"
           />
           <img
-            src={"/second_grid_card_2.svg"}
+            src={"/grid/grid2/card2.svg"}
             alt="grid-card"
             className="absolute z-20 right-0 bottom-0"
           />
           <img
-            src={"/second_grid_card_3.svg"}
+            src={"/grid/grid2/card3.svg"}
             alt="grid-card"
             className="absolute z-20 right-0 bottom-0"
           />
