@@ -9,7 +9,7 @@ import SeventhGrid from "./seventhGrid";
 function GridSection() {
   return (
     <section className="w-[90%] mx-auto min-h-screen">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 overflow-hidden">
         <FirstGrid />
 
         <SecondGrid />

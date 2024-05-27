@@ -1,18 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useAnimation, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ENCRYPTION } from "../../constants";
-import { useInView } from "react-intersection-observer";
+import { useMobileAnimation } from "@/hooks/useMobileAnimation";
+import { slideInWithAngleLeft } from "@/constants/variants";
 
 function FirstGrid() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-  if (inView) {
-    controls.start("visible");
-  }
+  const { ref, controls, isMobile } = useMobileAnimation();
   return (
     <motion.div
       className="flex col-span-1 md:col-span-3 row-span-1 justify-center items-center text-white text-xl p-8 relative grid-bg overflow-hidden grid-border-gradient"
@@ -21,16 +15,9 @@ function FirstGrid() {
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
       }}
       ref={ref}
-      initial="hidden"
+      initial={isMobile ? "hidden" : "desktop"}
       animate={controls}
-      variants={{
-        hidden: { opacity: 0, scale: 0.8 },
-        visible: {
-          opacity: 1,
-          scale: 1,
-          transition: { duration: 1, delay: 0.2 },
-        },
-      }}
+      variants={slideInWithAngleLeft}
     >
       <section className="relative flex flex-col-reverse md:flex-row justify-between h-full w-full gap-32 md:gap-16">
         <div className="w-full md:w-1/2 h-full flex relative">
