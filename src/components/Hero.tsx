@@ -101,25 +101,25 @@ function Hero() {
           />
           <motion.img
             alt="bitcoin"
-            src="/coins/bitcoin.png"
+            src="/coins/bitcoin.webp"
             className="hidden md:block absolute top-48 h-40 w-40 left-20"
             style={{ y: yBitcoin }}
           />
           <motion.img
             alt="stellarcoin"
-            src="/coins/stellarcoin.png"
+            src="/coins/stellarcoin.webp"
             className="hidden md:block absolute bottom-10 h-40 w-40 left-44"
             style={{ y: yStellar }}
           />
           <motion.img
             alt="ethereumcoin"
-            src="/coins/ethereumcoin.png"
+            src="/coins/ethereumcoin.webp"
             className="hidden md:block absolute top-36 h-40 w-40 right-16"
             style={{ y: yEthereum }}
           />
           <motion.img
             alt="litecoin"
-            src="/coins/litecoin.png"
+            src="/coins/litecoin.webp"
             className="hidden md:block absolute bottom-16 h-40 w-40 right-32"
             style={{ y: yLitecoin }}
           />

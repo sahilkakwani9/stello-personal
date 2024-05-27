@@ -16,7 +16,7 @@ const MetaData: Metadata = {
     type: "website",
     description: "The Only Wallet That Pays Back Your Gas",
     title: "Stello",
-    images:new URL("https://stello-web-private.vercel.app/og.png")
+    images:new URL("https://stello-web-private.vercel.app/og.webp")
   },
 };
 
