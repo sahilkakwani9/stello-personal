@@ -8,22 +8,33 @@ export function useMobileAnimation() {
     triggerOnce: true,
     threshold: 0.1,
   });
-  //   const [isMobile, setIsMobile] = useState(false);
 
-  //   useEffect(() => {
-  //     const handleResize = () => {
-  //       setIsMobile(window.innerWidth <= 768); // Adjust the threshold as needed
-  //     };
-  //     handleResize(); // Check initial width
-  //     window.addEventListener("resize", handleResize);
-  //     return () => {
-  //       window.removeEventListener("resize", handleResize);
-  //     };
-  //   }, []);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const isMobile = window.matchMedia("(max-width: 992px)").matches;
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.matchMedia("(max-width: 992px)").matches) {
+        setIsMobile(true);
+        controls.start("hidden");
+      } else {
+        setIsMobile(true);
+        controls.start("desktop");
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     if (inView && isMobile) {
+      console.log("now I am in view");
+
       controls.start("visible");
     }
   }, [inView, controls, isMobile]);
