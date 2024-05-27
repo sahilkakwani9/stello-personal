@@ -8,27 +8,35 @@ import {
   HERO_SECONDARY_HEADLINE,
 } from "../constants";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import GradientLines from "../../public/gradient-lines";
 import GradientLinesPhone from "../../public/gradient-lines-phone";
+import AnimatedText from "./Text/Animated";
 
 function Hero() {
+  const { scrollY } = useScroll();
+
+  const yBitcoin = useTransform(scrollY, [0, 1000], [0, -200]);
+  const yStellar = useTransform(scrollY, [0, 1000], [0, -200]);
+  const yEthereum = useTransform(scrollY, [0, 1000], [0, -200]);
+  const yLitecoin = useTransform(scrollY, [0, 1000], [0, -200]);
   return (
     <>
       <div className="pt-[140px] min-h-screen">
-        <div className="w-[90%] lg:w-[50%] self-center m-auto overflow-hidden">
-          <div>
-            <p className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-start-gradient-secondary to-end-gradient-secondary leading-tight">
+        <div className="w-[90%] lg:w-[50%] self-center m-auto">
+          <div className="overflow-hidden">
+            <AnimatedText className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-start-gradient-secondary to-end-gradient-secondary leading-none">
               {HERO_HEADLINE_TOP}
-            </p>
-            <p className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient leading-tight mt-[-16px]">
+            </AnimatedText>
+            <AnimatedText className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient leading-none">
               {HERO_HEADLINE_BOTTOM}
-            </p>
+            </AnimatedText>
           </div>
           <div className="flex flex-col gap-[24px] mt-4">
-            <p className="font-secondary-medium text-[16px] text-center text-secondary-text">
+            <AnimatedText className="font-secondary-medium text-[16px] text-center text-secondary-text">
               {HERO_SECONDARY_HEADLINE}
-            </p>
+            </AnimatedText>
+
             <div className="flex flex-row justify-center items-center gap-[15px]">
               <img
                 src={"/googleplay-cta.webp"}
@@ -44,7 +52,7 @@ function Hero() {
           </div>
           <div className="w-max mt-4 mx-auto rounded-[32px] border border-[#FFFFFF1D] px-4 py-[10px] flex gap-2 justify-center items-center bg-[#141417]">
             <Image src={"/gift.svg"} height={24} width={24} alt="gift-svg" />
-            <p className="text-[#FFFFFFDE] font-primary-regular">
+            <p className="text-[#FFFFFFDE] font-primary-regular text-[16px]">
               {HERO_GIFT_HEADLINE}
             </p>
           </div>
@@ -94,56 +102,29 @@ function Hero() {
           <motion.img
             alt="bitcoin"
             src="/coins/bitcoin.png"
-            className="hidden md:block absolute top-48  h-40 w-40left-20"
-            animate={{
-              y: [0, -20, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            className="hidden md:block absolute top-48 h-40 w-40 left-20"
+            style={{ y: yBitcoin }}
           />
           <motion.img
             alt="stellarcoin"
             src="/coins/stellarcoin.png"
             className="hidden md:block absolute bottom-10 h-40 w-40 left-44"
-            animate={{
-              y: [0, -20, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            style={{ y: yStellar }}
           />
           <motion.img
             alt="ethereumcoin"
             src="/coins/ethereumcoin.png"
             className="hidden md:block absolute top-36 h-40 w-40 right-16"
-            animate={{
-              y: [0, -20, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            style={{ y: yEthereum }}
           />
           <motion.img
             alt="litecoin"
             src="/coins/litecoin.png"
             className="hidden md:block absolute bottom-16 h-40 w-40 right-32"
-            animate={{
-              y: [0, -20, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            style={{ y: yLitecoin }}
           />
         </div>
+       
       </div>
     </>
   );

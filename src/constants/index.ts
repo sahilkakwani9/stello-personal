@@ -18,7 +18,7 @@ export const HERO_HEADLINE_BOTTOM = "Pays Back Your Gas";
 export const HERO_SECONDARY_HEADLINE =
   "With Stello, when you transact → we refund your gas. We’re cool like that.";
 
-export const HERO_GIFT_HEADLINE = "20 free orb awaits you when you sign up!";
+export const HERO_GIFT_HEADLINE = "20  free  orb  awaits  you  when  you  sign  up!";
 
 export const WalletText = {
   topCard: {
@@ -108,3 +108,18 @@ export const TUTORIALS_DATA = [
       "Unlock decentralized apps! Connect effortlessly to dApps and websites for endless possibilities.",
   },
 ];
+
+export const textVariant = {
+  hidden: {
+    opacity: 0,
+    transform: "translate3d(0px, 50%, 0px)",
+  },
+  visible: {
+    opacity: 1,
+    transform: "translate3d(0px, 0%, 0px)",
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};

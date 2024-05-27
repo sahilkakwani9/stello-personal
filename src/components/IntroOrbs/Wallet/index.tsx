@@ -8,8 +8,7 @@ function Wallet() {
   const firstDivControls = useAnimation();
   const secondDivControls = useAnimation();
   const thirdDivControls = useAnimation();
-  const leftCoinControls = useAnimation();
-  const rightCoinControls = useAnimation();
+
   const pControls = useAnimation();
   const secondBannerControls = useAnimation();
   const [inView, setInView] = useState(0);
@@ -62,19 +61,6 @@ function Wallet() {
           },
         });
 
-        leftCoinControls.start({
-          top: "10%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
-        rightCoinControls.start({
-          top: "-10%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
-
         break;
       case 2:
         firstDivControls.start({
@@ -85,12 +71,7 @@ function Wallet() {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
-        leftCoinControls.start({
-          top: "20%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
+
         pControls.start({
           opacity: 0,
           transition: {
@@ -106,12 +87,6 @@ function Wallet() {
           },
         });
 
-        rightCoinControls.start({
-          top: "0%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
         secondBannerControls.start({
           opacity: 0,
           transition: {
@@ -129,18 +104,7 @@ function Wallet() {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
-        leftCoinControls.start({
-          top: "10%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
-        rightCoinControls.start({
-          top: "-10%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
+
         secondBannerControls.start({
           opacity: 1,
           transition: {
@@ -165,18 +129,7 @@ function Wallet() {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
-        leftCoinControls.start({
-          top: "20%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
-        rightCoinControls.start({
-          top: "0%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
+
         secondBannerControls.start({
           opacity: 0,
           transition: {
@@ -194,18 +147,7 @@ function Wallet() {
             top: { duration: 0.5, ease: "easeOut" },
           },
         });
-        leftCoinControls.start({
-          top: "10%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
-        rightCoinControls.start({
-          top: "-10%",
-          transition: {
-            top: { duration: 0.5, ease: "easeOut" },
-          },
-        });
+
         break;
       default:
         firstDivControls.start({
@@ -236,8 +178,6 @@ function Wallet() {
     secondDivControls,
     pControls,
     thirdDivControls,
-    leftCoinControls,
-    rightCoinControls,
     secondBannerControls,
   ]);
 
@@ -246,23 +186,15 @@ function Wallet() {
       className="w-[100%] relative min-h-[90vh] md:min-h-screen"
       ref={walletRef}
     >
-      <motion.img
+      <img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
-        className="hidden md:block absolute -left-[5%] top-[10%] h-[150px] w-[146px]"
-        animate={leftCoinControls}
-        initial={{
-          top: "20%",
-        }}
+        className="hidden md:block absolute -left-[5%] top-[20%] h-[150px] w-[146px]"
       />
-      <motion.img
+      <img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
-        className="hidden md:block absolute -right-6 md:right-0 top-[30%] h-[100px] w-[100px] md:h-[150px] md:w-[146px] -rotate-90"
-        animate={rightCoinControls}
-        initial={{
-          top: "0%",
-        }}
+        className="hidden md:block absolute -right-6 md:right-0 top-0 h-[100px] w-[100px] md:h-[150px] md:w-[146px] -rotate-90"
       />
       <img
         alt="stello-coin"

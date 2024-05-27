@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { INTRO_ORBS_HEADLINE } from "../../constants";
 import Wallet from "./Wallet";
+import AnimatedText from "../Text/Animated";
 
 function IntroToOrbs() {
   const [isSticky, setIsSticky] = useState(false);
@@ -43,12 +44,13 @@ function IntroToOrbs() {
         />
         <section className="bg-introToOrbsMobile md:bg-introToOrbs relative w-full bg-contain md:bg-cover  bg-opacity-20 h-[100vh] md:min-h-screen">
           <div className="relative" id="dark_overlay">
-            <h1 className="pt-12 pb-8 font-primary-semibold text-[50px] w-[70%] mx-auto md:w-full md:px-0 md:text-[52px] text-center text-transparent bg-gradient-to-r bg-clip-text from-start-gradient to-end-gradient leading-tight">
+            <AnimatedText className="pt-12 pb-8 font-primary-semibold text-[50px] w-[70%] mx-auto md:w-full md:px-0 md:text-[52px] text-center text-transparent bg-gradient-to-r bg-clip-text from-start-gradient to-end-gradient leading-tight">
               {INTRO_ORBS_HEADLINE}
-            </h1>
+            </AnimatedText>
           </div>
 
           <Wallet />
+
           <img
             alt="middle-blend-bg"
             src="/middle-blend-blur.svg"
@@ -56,6 +58,11 @@ function IntroToOrbs() {
           />
         </section>
       </div>
+      <img
+        alt="middle-blend-bg"
+        src="/middle-blend-blur.svg"
+        className="hidden md:block absolute -top-[6%] -z-10"
+      />
     </div>
   );
 }

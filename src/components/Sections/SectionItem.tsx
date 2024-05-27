@@ -2,6 +2,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import AnimatedText from "../Text/Animated";
 
 function SectionItem() {
   return (
@@ -58,14 +59,14 @@ const Section1 = () => {
         <img src={"/sections_img_1.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <h1 className="font-primary-semibold text-[24px] md:text-[40px] md:leading-[3rem]">
+        <AnimatedText className="font-primary-semibold text-[24px] md:text-[40px] md:leading-[3rem]">
           Seamless Cashback Across Multiple Chains!
-        </h1>
-        <p className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 text-justify">
+        </AnimatedText>
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 text-justify">
           Earn orbs effortlessly and watch your cashback soar! The more orbs you
           hold, the higher your cashback percentage. Its that simple, that
           exciting!
-        </p>
+        </AnimatedText>
         <div className="flex items-center gap-2">
           <img
             src={"/sections_universal.webp"}
@@ -131,15 +132,15 @@ const Section2 = () => {
         <img src={"/sections_img_2.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <h1 className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
           Empowers Privacy, Ensures Authority
-        </h1>
-        <p className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 text-justify">
+        </AnimatedText>
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 text-justify">
           Discover the power of privacy and authority with our platform. Take
           control of your data and decisions, navigating the digital world with
           confidence. With us, your privacy is protected, your authority
           respected. Embrace empowerment in the digital age.
-        </p>
+        </AnimatedText>
         <div className="flex items-center gap-2">
           <img
             src={"/sections_empowers_lock.webp"}
@@ -203,14 +204,14 @@ const Section3 = () => {
         <img src={"/sections_img_3.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <h1 className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
           Swap Crypto With Zero Fees
-        </h1>
-        <p className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 md:text-justify">
+        </AnimatedText>
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 md:text-justify">
           Swap cryptocurrencies effortlessly, without any fees. Enjoy seamless
           transactions and maximize your assets without worrying about extra
           charges. Experience the freedom of fee-free crypto swapping today!
-        </p>
+        </AnimatedText>
         <div className="flex items-center gap-2">
           <img
             src={"/sections_crypto_swap.webp"}
