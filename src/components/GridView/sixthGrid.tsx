@@ -57,7 +57,7 @@ function SixthGrid() {
           </div>
 
           <img
-            src={"/sixth_grid_dollar_sign.png"}
+            src={"/sixth_grid_dollar_sign.webp"}
             className="absolute bottom-8 right-10 h-[80%] w-[35%] object-center z-10"
             alt="dollar-sign"
           />

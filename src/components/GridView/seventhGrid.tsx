@@ -43,14 +43,14 @@ function SeventhGrid() {
             alt="timeline"
           />
           <img
-            src={"/seventh_grid_button.png"}
+            src={"/seventh_grid_button.webp"}
             className="absolute md:top-[-25px] top-[-35px] md:w-[30%] w-[48%] md:right-10 right-0"
             alt="timeline-btn"
           />
         </section>
 
         <img
-          src={"/seventh_grid_blend.png"}
+          src={"/seventh_grid_blend.webp"}
           className="w-full absolute left-0 bottom-0 rounded-xl"
           alt="muliti-chain-asset"
         />
