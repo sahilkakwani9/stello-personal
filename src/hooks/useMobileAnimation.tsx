@@ -14,10 +14,13 @@ export function useMobileAnimation() {
   useEffect(() => {
     const handleResize = () => {
       if (window.matchMedia("(max-width: 992px)").matches) {
+        console.log("inside mobile width");
+
         setIsMobile(true);
         controls.start("hidden");
       } else {
-        setIsMobile(true);
+        console.log("inside desktop width");
+        setIsMobile(false);
         controls.start("desktop");
       }
     };

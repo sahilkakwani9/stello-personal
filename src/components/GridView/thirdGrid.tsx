@@ -16,7 +16,7 @@ function ThirdGrid() {
       }}
       ref={ref}
       animate={controls}
-      initial={isMobile ? "hidden" : "desktop"}
+      initial={"hidden"}
       variants={slideInWithAngleLeft}
     >
       <div className="pt-8 flex flex-col justify-between gap-8 md:gap-4 text-2xl ">

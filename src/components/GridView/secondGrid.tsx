@@ -16,7 +16,7 @@ function SecondGrid() {
       }}
       ref={ref}
       animate={controls}
-      initial={isMobile ? "hidden" : "desktop"}
+      initial={"hidden"}
       variants={slideInWithAngleRight}
     >
       <div className="flex flex-col justify-between gap-8 md:gap-4 h-full w-full z-20 overflow-hidden">

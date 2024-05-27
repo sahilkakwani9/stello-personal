@@ -15,7 +15,7 @@ function SixthGrid() {
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
       }}
       ref={ref}
-      initial={isMobile ? "hidden" : "desktop"}
+      initial={"hidden"}
       animate={controls}
       variants={slideInWithAngleRight}
     >

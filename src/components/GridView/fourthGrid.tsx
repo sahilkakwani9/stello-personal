@@ -17,7 +17,7 @@ function FourthGrid() {
       }}
       ref={ref}
       animate={controls}
-      initial={isMobile ? "hidden" : "desktop"}
+      initial={"hidden"}
       variants={slideInWithAngleRight}
     >
       <div className="flex flex-col justify-between gap-12 md:gap-0 h-full w-full items-center">

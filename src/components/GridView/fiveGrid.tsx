@@ -17,7 +17,7 @@ function FiveGrid() {
       }}
       ref={ref}
       animate={controls}
-      initial={isMobile ? "hidden" : "desktop"}
+      initial={"hidden"}
       variants={slideInWithAngleLeft}
     >
       <div className="pt-4 flex flex-col justify-between h-full w-full items-center">
