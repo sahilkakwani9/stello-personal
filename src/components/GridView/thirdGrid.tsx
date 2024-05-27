@@ -1,12 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { motion } from "framer-motion";
+import { useAnimation, motion } from "framer-motion";
 import { THIRD_GRID_HEADLINE } from "../../constants";
-import { useMobileAnimation } from "@/hooks/useMobileAnimation";
-import { slideInWithAngleLeft } from "@/constants/variants";
+import { useInView } from "react-intersection-observer";
 
 function ThirdGrid() {
-  const { ref, controls, isMobile } = useMobileAnimation();
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  if (inView) {
+    controls.start("visible");
+  }
   return (
     <motion.div
       className="flex col-span-1 row-span-3 justify-center bg-gradient-to-b from-[#141417] from-80% to-[#5110107A] text-white text-xl grid-border-gradient"
@@ -15,9 +21,16 @@ function ThirdGrid() {
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
       }}
       ref={ref}
+      initial="hidden"
       animate={controls}
-      initial={"hidden"}
-      variants={slideInWithAngleLeft}
+      variants={{
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: { duration: 1, delay: 0.2 },
+        },
+      }}
     >
       <div className="pt-8 flex flex-col justify-between gap-8 md:gap-4 text-2xl ">
         <h1 className="font-primary-regular text-[34px] w-[70%] mx-auto md:w-full md:text-2xl text-center leading-snug">

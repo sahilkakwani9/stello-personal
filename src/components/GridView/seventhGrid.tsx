@@ -1,12 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { motion } from "framer-motion";
+import { useAnimation, motion } from "framer-motion";
 import { SEVENTH_GRID_HEADLINE } from "../../constants";
-import { useMobileAnimation } from "@/hooks/useMobileAnimation";
-import { slideInWithAngleLeft } from "@/constants/variants";
+import { useInView } from "react-intersection-observer";
 
 function SeventhGrid() {
-  const { ref, controls, isMobile } = useMobileAnimation();
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  if (inView) {
+    controls.start("visible");
+  }
   return (
     <motion.div
       className="flex col-span-1 md:col-span-2 row-span-1 justify-center bg-[#141417] text-white text-xl pt-2 bg-gradient-to-t from-[#5110107A] grid-border-gradient"
@@ -15,9 +21,16 @@ function SeventhGrid() {
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
       }}
       ref={ref}
-      initial={"hidden"}
+      initial="hidden"
       animate={controls}
-      variants={slideInWithAngleLeft}
+      variants={{
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: { duration: 1, delay: 0.2 },
+        },
+      }}
     >
       <div className="py-6 flex flex-col justify-between h-full w-full  items-center gap-16 md:gap-12">
         <h1 className="font-primary-regular text-[32px] md:text-2xl md:text-start flex md:self-start md:px-8">
