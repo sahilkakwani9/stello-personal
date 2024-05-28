@@ -52,7 +52,32 @@ type TutorialCardProps = {
 function TutorialCard({ description, image, title }: TutorialCardProps) {
   return (
     <div className="flex w-[90%] flex-col gap-y-2 md:gap-y-4">
-      <img src={image} alt="" height={"100%"} width={"100%"} />
+      {/* <img src={image} alt="" height={"100%"} width={"100%"} /> */}
+      {/* <video
+        src="/tutorials/tutorial1.mp4"
+        preload="auto"
+        loop
+        playsInline
+        webkit-playsinline
+        x5-playsinline
+        autoPlay
+        controls
+      ></video> */}
+
+      <video
+        poster=""
+        width="100%"
+        id="showReelVid"
+        muted
+        autoPlay
+        loop
+        preload=""
+        className="rounded-3xl"
+      >
+        <source src="/tutorials/tutorial1.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+
       <h2 className="font-secondary-regular text-white text-[18px] lg:text-3xl">
         {title}
       </h2>
