@@ -116,12 +116,12 @@ const Section2 = () => {
         <img
           src={"/gradient-ellipse.svg"}
           alt="gradient-ellipse"
-          className="absolute bottom-20 left-0"
+          className="absolute bottom-60 right-0 rotate-180"
         />
         <img
           src={"/gradient-ellipse-vertical.svg"}
           alt="gradient-ellipse-vertical"
-          className="absolute top-0 right-16 "
+          className="absolute top-0 left-16 "
         />
         <img
           src={"/section-bottom-blend.svg"}
@@ -188,7 +188,7 @@ const Section3 = () => {
         <img
           src={"/gradient-ellipse.svg"}
           alt="gradient-ellipse"
-          className="absolute bottom-20 left-0"
+          className="absolute top-20 left-0"
         />
         <img
           src={"/gradient-ellipse-vertical.svg"}

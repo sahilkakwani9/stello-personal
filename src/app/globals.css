@@ -127,6 +127,13 @@ body {
     border-radius: 16px;
   }
 
+  .grid-border-gradient-secondary {
+    position: relative;
+    padding: 0.1rem;
+    border-radius: 16px;
+  }
+
+
   .grid-border-gradient::before {
     content: "";
     position: absolute;
@@ -140,6 +147,26 @@ body {
       142.78deg,
       rgba(255, 255, 255, 0.32) 0%,
       #000000 50.4%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+  }
+  .grid-border-gradient-secondary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit; /* Ensures the border radius matches the parent */
+    padding: 2px; /* Adjust padding to control border thickness */
+    background: linear-gradient(
+      320.86deg,
+      rgba(239, 239, 239, 0.15) 7.05%,
+      rgba(217, 216, 216, 0.018) 52.95%
     );
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);

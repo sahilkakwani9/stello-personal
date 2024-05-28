@@ -15,7 +15,7 @@ function FourthGrid() {
   }
   return (
     <motion.div
-      className="col-span-1 md:col-span-2 row-span-4 bg-[#141417] text-white text-xl grid-border-gradient"
+      className="col-span-1 md:col-span-2 row-span-2 bg-[#141417] text-white text-xl grid-border-gradient-secondary md:h-[380px]"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -32,8 +32,8 @@ function FourthGrid() {
         },
       }}
     >
-      <div className="flex flex-col justify-between gap-12 md:gap-0 h-full w-full items-center">
-        <h1 className="font-primary-medium md:self-start self-center text-center text-[32px]  md:text-2xl leading-snug md:text-start md:w-[55%] px-6 pt-6">
+      <div className="flex flex-col justify-between md:gap-0 h-full w-full items-center">
+        <h1 className="font-primary-medium md:self-start self-center text-center text-[32px] md:text-2xl leading-snug md:text-start md:w-[55%] px-6 pt-6">
           {FOURTH_GRID_HEADLINE}
         </h1>
         {/* <section className="md:w-[75%] w-[90%]">

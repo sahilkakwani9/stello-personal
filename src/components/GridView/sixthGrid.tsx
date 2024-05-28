@@ -15,7 +15,7 @@ function SixthGrid() {
   }
   return (
     <motion.div
-      className="flex col-span-1 row-span-2 justify-center bg-[#141417] text-white text-xl relative h-[40vh] grid-border-gradient"
+      className="flex col-span-1 row-span-2 justify-center bg-[#141417] text-white text-xl relative h-[40vh] grid-border-gradient-secondary md:h-[286px] md:-mt-14"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -33,7 +33,7 @@ function SixthGrid() {
       }}
     >
       <div className="pt-6 flex flex-col justify-between gap-8 md:gap-4 h-full w-full items-center z-10 overflow-hidden">
-        <h1 className="font-primary-regular text-[32px] md:text-2xl text-center px-4">
+        <h1 className="font-primary-regular text-[32px] md:text-[24px] text-center px-10">
           {SIXTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-full relative py-4">
