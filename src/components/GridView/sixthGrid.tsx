@@ -33,7 +33,7 @@ function SixthGrid() {
       }}
     >
       <div className="pt-6 flex flex-col justify-between md:gap-4 h-full w-full items-center z-10 overflow-hidden">
-        <h1 className="font-primary-regular text-[32px] md:text-[24px] text-center px-10">
+        <h1 className="font-primary-regular text-[32px] md:text-[24px] text-center px-6 md:px-10">
           {SIXTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-full relative md:py-4">
