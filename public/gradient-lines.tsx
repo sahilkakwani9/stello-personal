@@ -9,7 +9,7 @@ function GradientLines() {
       viewBox="0 0 1440 700"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={"hidden md:block w-[100vw] -z-20"}
+      className={"hidden md:block w-full -z-20"}
     >
       <motion.path
         animate={{ opacity: [1, 0.4, 1] }}

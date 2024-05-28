@@ -43,7 +43,7 @@ function FourthGrid() {
             alt="grid-card"
           />
         </section> */}
-        <div className="border-gradient-light w-[90%] md:w-[80%] bg-cardBg">
+        <div className="border-gradient-light w-[90%] md:w-[80%] bg-cardBg mt-8 md:mt-0">
           <div className="p-4">
             <p className="text-[16px] font-secondary-regular text-white opacity-70">
               This Month

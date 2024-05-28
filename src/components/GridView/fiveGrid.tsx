@@ -32,7 +32,7 @@ function FiveGrid() {
         },
       }}
     >
-      <div className="pt-4 flex flex-col justify-between h-full w-full items-center">
+      <div className="pt-8 md:pt-4 flex flex-col justify-between h-full w-full items-center">
         <img
           src={"/fifth_grid_earn.webp"}
           alt="earn-coins"

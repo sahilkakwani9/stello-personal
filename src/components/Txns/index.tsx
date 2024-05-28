@@ -89,7 +89,7 @@ function Txns() {
             duration: 1,
             ease: "backInOut",
           }}
-          className="absolute w-[60px] h-[60px] md:w-[70px] md:h-[80px]"
+          className="absolute w-[60px] h-[60px] md:w-[10%] md:h-[10%]"
         />
       ))}
       <img

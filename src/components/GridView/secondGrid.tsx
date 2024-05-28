@@ -33,7 +33,7 @@ function SecondGrid() {
       }}
     >
       <div className="flex flex-col justify-between gap-8 md:gap-4 h-full w-full z-20 overflow-hidden">
-        <section className="p-4 py-4 md:pb-2">
+        <section className="p-4 pt-8 py-4 md:pb-2 md:pt-4">
           <h1 className="font-secondary-regular text-center md:text-start md:w-[80%] text-[30px] md:text-[30px] leading-tight">
             {SECOND_GRID_HEADLINE}
           </h1>

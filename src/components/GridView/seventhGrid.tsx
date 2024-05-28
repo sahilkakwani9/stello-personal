@@ -32,8 +32,8 @@ function SeventhGrid() {
         },
       }}
     >
-      <div className="py-6 flex flex-col justify-between h-full w-full  items-center gap-16 md:gap-12">
-        <h1 className="font-primary-regular text-[32px] md:text-[34px] md:text-start flex md:self-start md:px-8">
+      <div className="py-6 flex flex-col justify-between h-full w-full  items-center gap-16 md:gap-12 pb-20" >
+        <h1 className="font-primary-regular text-[34px] md:text-[34px] md:text-start flex md:self-start md:px-8">
           {SEVENTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-[80%] relative">

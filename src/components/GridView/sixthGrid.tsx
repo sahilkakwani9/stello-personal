@@ -32,25 +32,25 @@ function SixthGrid() {
         },
       }}
     >
-      <div className="pt-6 flex flex-col justify-between gap-8 md:gap-4 h-full w-full items-center z-10 overflow-hidden">
+      <div className="pt-6 flex flex-col justify-between md:gap-4 h-full w-full items-center z-10 overflow-hidden">
         <h1 className="font-primary-regular text-[32px] md:text-[24px] text-center px-10">
           {SIXTH_GRID_HEADLINE}
         </h1>
-        <section className="w-full h-full relative py-4">
+        <section className="w-full h-full relative md:py-4">
           <div className="h-full w-full">
             <img
               src={"/sixth_grid_coin.webp"}
-              className="absolute bottom-[70%] md:bottom-[55%] left-[30px] h-[22%] w-full"
+              className="absolute bottom-[60%] md:bottom-[55%] left-[30px] h-[20%] w-[80%] md:h-[22%] md:w-full"
               alt="coinbase"
             />
             <img
               src={"/sixth_grid_moonpay.webp"}
-              className="absolute bottom-[40%] md:bottom-[30%] left-[40px] h-[22%] w-full"
+              className="absolute bottom-[35%] md:bottom-[30%] md:left-[40px] left-[20%]  h-[20%] w-[80%] md:h-[22%] md:w-full"
               alt="moonpay"
             />
             <img
               src={"/sixth_grid_pancake.webp"}
-              className="absolute bottom-[10%] md:bottom-[5%] left-[50px] h-[22%]  w-full z-20"
+              className="absolute bottom-[10%] md:bottom-[5%] md:left-[50px] left-[20%] h-[20%] w-[80%]  md:h-[22%]  md:w-full z-20"
               alt="pancake"
             />
             <div className="h-[90%] absolute top-[0] right-0 w-[20%] blur-3xl bg-[#141417] z-30" />
@@ -58,7 +58,7 @@ function SixthGrid() {
 
           <img
             src={"/sixth_grid_dollar_sign.webp"}
-            className="absolute bottom-8 right-10 h-[80%] w-[35%] object-center z-10"
+            className="absolute bottom-8 right-10 h-[68%] md:h-[80%] w-[30%] md:w-[35%] object-center z-10 left-[50%]"
             alt="dollar-sign"
           />
         </section>
