@@ -62,7 +62,7 @@ const Section1 = () => {
         <AnimatedText className="font-primary-semibold text-[24px] md:text-[40px] md:leading-[3rem]">
           Seamless Cashback Across Multiple Chains!
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 text-justify">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70">
           Earn orbs effortlessly and watch your cashback soar! The more orbs you
           hold, the higher your cashback percentage. Its that simple, that
           exciting!
@@ -135,7 +135,7 @@ const Section2 = () => {
         <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
           Empowers Privacy, Ensures Authority
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 text-justify">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70">
           Discover the power of privacy and authority with our platform. Take
           control of your data and decisions, navigating the digital world with
           confidence. With us, your privacy is protected, your authority

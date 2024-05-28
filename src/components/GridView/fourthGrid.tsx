@@ -32,8 +32,8 @@ function FourthGrid() {
         },
       }}
     >
-      <div className="flex flex-col justify-between md:gap-0 h-full w-full items-center">
-        <h1 className="font-primary-medium md:self-start self-center text-center text-[32px] md:text-2xl leading-snug md:text-start md:w-[55%] px-6 pt-6">
+      <div className="flex flex-col justify-between gap-12 md:gap-0 h-full w-full items-center">
+        <h1 className="font-primary-regular md:self-start self-center text-center text-[32px]  md:text-2xl leading-8 tracking-wide md:text-start md:w-[55%] px-6 pt-6">
           {FOURTH_GRID_HEADLINE}
         </h1>
         {/* <section className="md:w-[75%] w-[90%]">

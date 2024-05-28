@@ -33,32 +33,35 @@ function SixthGrid() {
       }}
     >
       <div className="pt-6 flex flex-col justify-between md:gap-4 h-full w-full items-center z-10 overflow-hidden">
-        <h1 className="font-primary-regular text-[32px] md:text-[24px] text-center px-6 md:px-10">
+        <h1 className="font-primary-regular text-[32px] md:text-[24px] text-center mb-8">
           {SIXTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-full relative md:py-4">
-          <div className="h-full w-full">
-            <img
+          <div className="h-full w-full flex gap-4">
+            {/* <img
               src={"/sixth_grid_coin.webp"}
               className="absolute bottom-[60%] md:bottom-[55%] left-[30px] h-[20%] w-[80%] md:h-[22%] md:w-full"
               alt="coinbase"
-            />
-            <img
+            /> */}
+            {/* <img
               src={"/sixth_grid_moonpay.webp"}
               className="absolute bottom-[35%] md:bottom-[30%] md:left-[40px] left-[20%]  h-[20%] w-[80%] md:h-[22%] md:w-full"
               alt="moonpay"
-            />
-            <img
+            /> */}
+            {/* <img
               src={"/sixth_grid_pancake.webp"}
               className="absolute bottom-[10%] md:bottom-[5%] md:left-[50px] left-[20%] h-[20%] w-[80%]  md:h-[22%]  md:w-full z-20"
               alt="pancake"
-            />
+            /> */}
+            <img src="/sixth_grid_coin.webp" className="absolute bottom-[65%] md:bottom-[54%] left-[21px] h-[30%] w-[80%] md:h-[54%] md:w-full object-contain object-top" alt="coinbase"></img>
+            <img src="/sixth_grid_moonpay.webp" className="absolute bottom-[33%] md:bottom-[30%] md:left-[30px] left-[45px] h-[30%] w-[80%] md:h-[54%] md:w-full object-contain" alt="moonpay"></img>
+            <img src="/sixth_grid_pancake.webp" className="absolute bottom-[1%] md:bottom-[-4%] md:left-[40px] left-[58px] h-[30%] w-[80%] md:h-[54%]  md:w-full z-20 object-contain object-center" alt="pancake"></img>
             <div className="h-[90%] absolute top-[0] right-0 w-[20%] blur-3xl bg-[#141417] z-30" />
           </div>
 
           <img
             src={"/sixth_grid_dollar_sign.webp"}
-            className="absolute bottom-8 right-10 h-[68%] md:h-[80%] w-[30%] md:w-[35%] object-center z-10 left-[50%]"
+            className="absolute md:bottom-8 bottom-[1.5rem] md:right-[8%] right-[15%] h-[90%] md:h-[87%] w-[62%] md:w-[40%] object-contain object-center z-10"
             alt="dollar-sign"
           />
         </section>

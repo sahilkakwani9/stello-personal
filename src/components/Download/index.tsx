@@ -16,7 +16,7 @@ function DownloadSection() {
   }
   return (
     <motion.section
-      className="w-[90%] mt-16 md:mt-0 mx-auto"
+      className="w-[90%] my-16 md:mt-0 mx-auto"
       ref={ref}
       initial="hidden"
       animate={controls}
