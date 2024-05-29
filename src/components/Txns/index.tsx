@@ -1,16 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { INTRO_ORBS_HEADLINE, TxnText } from "../../constants";
+import { TxnText } from "../../constants";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 
 function Txns() {
   const [coinPositions, setCoinPositions] = useState<
-    {
-      x: number;
-      y: number;
-    }[]
+    { x: number; y: number }[]
   >([]);
 
   useEffect(() => {
@@ -48,16 +45,40 @@ function Txns() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const getMobileAnimation = (index: number) => {
+    const positions = [
+      ...coinPositions.slice(index),
+      ...coinPositions.slice(0, index + 1),
+    ];
+
+    const keyframesX = positions.map((pos) => pos.x);
+    const keyframesY = positions.map((pos) => pos.y);
+    const keyframesOpacity = keyframesX.map((x) =>
+      x === coinPositions[0].x || x === coinPositions[8].x ? 0 : 1
+    );
+
+    return {
+      x: keyframesX,
+      y: keyframesY,
+      opacity: keyframesOpacity,
+      transition: {
+        duration: positions.length * 1, // Adjust the speed of the animation
+        ease: "linear",
+        repeat: Infinity,
+      },
+    };
+  };
+
   const startPositions = coinPositions.map((pos, index) => {
     if (index === 0) {
       return { x: coinPositions[0]?.x || 0, y: coinPositions[0]?.y || 0 }; // Starting position for the first coin
     }
     return coinPositions[index - 1]; // Previous coin's final position
-  });
-
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
   });
 
   return (
@@ -70,20 +91,26 @@ function Txns() {
           key={index}
           src={`/dapps/dapp${index + 1}.svg`}
           alt={`coin${index + 1}`}
-          initial={{
-            x: startPositions[index]?.x,
-            y: startPositions[index]?.y,
-            opacity: 0,
-          }} // Set initial opacity to 0
-          animate={
-            inView
-              ? { x: pos.x, y: pos.y, opacity: 1 }
+          initial={
+            window.innerWidth < 768
+              ? {
+                  x: pos.x,
+                  y: pos.y,
+                  opacity: 1,
+                }
               : {
                   x: startPositions[index]?.x,
                   y: startPositions[index]?.y,
                   opacity: 0,
                 }
-          } // Animate only when inView is true
+          }
+          animate={
+            window.innerWidth < 768 && inView
+              ? getMobileAnimation(index)
+              : inView
+              ? { x: pos.x, y: pos.y, opacity: 1 }
+              : undefined
+          }
           transition={{
             delay: index * 0.3,
             duration: 1,
@@ -115,3 +142,4 @@ function Txns() {
 }
 
 export default Txns;
+``;
