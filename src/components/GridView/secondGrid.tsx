@@ -15,7 +15,7 @@ function SecondGrid() {
   }
   return (
     <motion.div
-      className="flex col-span-1 row-span-2 md:h-[350px] justify-center grid-border-gradient-secondary items-center bg-[#141417] text-white"
+      className="flex col-span-1 row-span-2 h-[320px] md:h-[350px] justify-center grid-border-gradient-secondary items-center bg-[#141417] text-white"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -33,12 +33,12 @@ function SecondGrid() {
       }}
     >
       <div className="flex flex-col justify-between gap-4 h-full w-full z-20 overflow-hidden">
-        <section className="p-4 pt-8 py-4 md:pb-2 md:pt-4">
-          <h1 className="font-secondary-regular text-center md:text-start md:w-[80%] text-[30px] md:text-[30px] leading-tight">
+        <section className="md:px-4 pt-8 py-4 md:pb-2 md:pt-4">
+          <h1 className="font-secondary-regular text-center md:text-start md:w-[80%] text-[30px] leading-tight">
             {SECOND_GRID_HEADLINE}
           </h1>
         </section>
-        <section className="relative flex h-[20vh] mr-4 md:mr-0">
+        <section className="">
           <img
             src={"grid/grid2/gradient-ellipse.webp"}
             alt="grid-ellipse"
@@ -47,27 +47,27 @@ function SecondGrid() {
           <img
             src={"grid/grid2/gradient-ellipse-mobile.png"}
             alt="grid-ellipse"
-            className="md:hidden object-center absolute z-10 bottom-0 md:bottom-0 left-16 md:left-0"
+            className="md:hidden absolute z-10 bottom-0 md:bottom-0 left-[15%] md:left-0"
           />
           <img
             src={"/grid/grid2/card1-mobile.png"}
             alt="grid-card"
-            className="md:hidden absolute z-20 -right-6  bottom-0 h-full"
+            className="md:hidden absolute z-20 bottom-0 -right-4 h-[60%]"
           />
           <img
             src={"/grid/grid2/card1.png"}
             alt="grid-card"
-            className="hidden md:block absolute z-20 right-0 bottom-0 h-[120%] w-[45%]"
+            className="hidden md:block absolute z-20 right-0 bottom-0 h-[60%] w-[45%]"
           />
           <img
             src={"/grid/grid2/card2.svg"}
             alt="grid-card"
-            className="absolute z-20 right-0 bottom-0"
+            className="absolute z-20 right-10 md:right-0 bottom-0"
           />
           <img
             src={"/grid/grid2/card3.svg"}
             alt="grid-card"
-            className="absolute z-20 right-0 bottom-0"
+            className="absolute z-20 right-10 md:right-0 bottom-0 "
           />
         </section>
       </div>
