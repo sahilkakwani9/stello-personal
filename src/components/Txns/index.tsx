@@ -99,8 +99,8 @@ function Txns() {
       />
       <img
         alt="middle-blend-bg"
-        src="/middle-blend-blur.svg"
-        className="absolute bottom-10 md:-bottom-10 left-0 z-1"
+        src="/txns/footer-blend.png"
+        className="absolute -bottom-10 md:-bottom-[50%] left-0 z-1"
       />
       <div className="absolute z-20 bottom-0 left-0 md:left-[27.5%] md:w-[45%]">
         <p className="font-primary-bold text-[32px] md:text-[36px] text-white relative text-center md:ml-8">
