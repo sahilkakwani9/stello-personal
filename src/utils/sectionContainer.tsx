@@ -7,10 +7,7 @@ import SectionItem from "@/components/Sections/SectionItem";
 
 const SectionContainer = ({ data }: any) => {
   return (
-    <div
-      className="flex flex-col min-h-screen justify-center items-center w-[90%] md:w-[80%] gap-12 mx-auto "
-      style={{ marginBlock: "100px" }}
-    >
+    <div className="flex flex-col min-h-screen justify-center items-center w-[90%] md:w-[80%] mx-auto">
       {/* {data.map((section: any, index: number) => {
         return <SectionItem index={index} key={index} />;
       })} */}

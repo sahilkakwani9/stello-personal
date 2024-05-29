@@ -31,7 +31,7 @@ const Section1 = () => {
     controls.start("visible");
   }
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-28">
       <motion.main
         className="border-gradient-light bg-[#141417] w-full md:w-[45%] md:h-[68%] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px" }}
@@ -104,7 +104,7 @@ const Section2 = () => {
   return (
     <div
       ref={ref}
-      className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-24 mx-auto"
+      className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-24 mx-auto mt-12"
     >
       <motion.main
         className="border-gradient-light bg-[#141417] w-full md:w-[45%] h-10vh md:h-[68%] rounded-xl flex justify-center relative"
@@ -176,7 +176,7 @@ const Section3 = () => {
     controls.start("visible");
   }
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-12">
       <motion.main
         className="border-gradient-light bg-[#141417] w-full md:w-[45%]  h-10vh md:h-[68%] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px" }}
