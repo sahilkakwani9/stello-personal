@@ -32,9 +32,10 @@ function ThirdGrid() {
         },
       }}
     >
-      <div className="pt-8 flex flex-col justify-between gap-8 md:gap-4 text-2xl ">
+      <div className="pt-4 flex flex-col justify-between gap-8 md:gap-4 text-2xl ">
         <h1 className="font-primary-regular text-[34px] w-[70%] mx-auto md:w-full md:text-2xl text-center leading-snug">
-          {THIRD_GRID_HEADLINE}
+          Access to
+          <br /> multiple chains
         </h1>
         <section className="h-full px-12 max-h-56 md:max-h-full overflow-hidden">
           <img

@@ -42,7 +42,7 @@ function FirstGrid() {
           <img
             src={"/grid/grid1/encryption.webp"}
           alt="encryption"
-            className="absolute -top-20 md:top-10 left-0 w-[30%] md:w-[20%] z-[15] md:left-28"
+            className="absolute -top-24 md:top-10 left-0 w-[40%] md:w-[20%] z-[15] md:left-28"
           />
           <img
             src={"grid/grid1/vectorLinesRight.png"}

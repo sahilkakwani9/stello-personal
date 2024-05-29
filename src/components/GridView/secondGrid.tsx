@@ -32,7 +32,7 @@ function SecondGrid() {
         },
       }}
     >
-      <div className="flex flex-col justify-between gap-8 md:gap-4 h-full w-full z-20 overflow-hidden">
+      <div className="flex flex-col justify-between gap-4 h-full w-full z-20 overflow-hidden">
         <section className="p-4 pt-8 py-4 md:pb-2 md:pt-4">
           <h1 className="font-secondary-regular text-center md:text-start md:w-[80%] text-[30px] md:text-[30px] leading-tight">
             {SECOND_GRID_HEADLINE}
@@ -42,12 +42,22 @@ function SecondGrid() {
           <img
             src={"grid/grid2/gradient-ellipse.webp"}
             alt="grid-ellipse"
-            className="object-cover object-center absolute z-10 -bottom-16 md:bottom-0 left-16 md:left-0 -rotate-[20deg] md:rotate-0"
+            className="hidden md:block object-cover object-center absolute z-10 -bottom-16 md:bottom-0 left-16 md:left-0"
           />
           <img
-            src={"/grid/grid2/card1.svg"}
+            src={"grid/grid2/gradient-ellipse-mobile.png"}
+            alt="grid-ellipse"
+            className="md:hidden object-center absolute z-10 bottom-0 md:bottom-0 left-16 md:left-0"
+          />
+          <img
+            src={"/grid/grid2/card1-mobile.png"}
             alt="grid-card"
-            className="absolute z-20 right-0 bottom-0"
+            className="md:hidden absolute z-20 -right-6  bottom-0 h-full"
+          />
+          <img
+            src={"/grid/grid2/card1.png"}
+            alt="grid-card"
+            className="hidden md:block absolute z-20 right-0 bottom-0 h-[120%] w-[45%]"
           />
           <img
             src={"/grid/grid2/card2.svg"}
@@ -59,7 +69,6 @@ function SecondGrid() {
             alt="grid-card"
             className="absolute z-20 right-0 bottom-0"
           />
-          <div className="h-[90%] absolute top-[0] right-0 w-[30%] blur-3xl bg-[#141417] z-10" />
         </section>
       </div>
     </motion.div>

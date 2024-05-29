@@ -39,7 +39,8 @@ function FiveGrid() {
           className="hidden md:block w-[35%] object-contain rounded-16px"
         />
         <h1 className="font-primary-medium text-[32px] md:text-[32px] text-center px-2 mb-8 w-[80%]">
-          {FIFTH_GRID_HEADLINE}
+          Spin and win
+          <br /> rewards, every day
         </h1>
         <section className="">
           <img
