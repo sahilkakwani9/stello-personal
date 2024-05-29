@@ -126,7 +126,7 @@ function Txns() {
       />
       <img
         alt="middle-blend-bg"
-        src="/txns/footer-blend.png"
+        src="/txns/footer-blend.webp"
         className="absolute -bottom-10 md:-bottom-[50%] left-0 z-1"
       />
       <div className="absolute z-20 bottom-0 left-0 md:left-[27.5%] md:w-[45%]">
