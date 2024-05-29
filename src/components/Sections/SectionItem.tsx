@@ -33,14 +33,14 @@ const Section1 = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-28">
       <motion.main
-        className="border-gradient-light bg-[#141417] w-full md:w-[45%] md:h-[68%] rounded-xl flex justify-center relative"
-        style={{ paddingTop: "60px" }}
+        className="border-gradient-light bg-[#141417] w-full md:w-[45%]  h-[70vh] md:h-[80vh] rounded-xl flex justify-center relative"
+        // style={{ paddingTop: "60px" }}
         ref={ref}
         initial="hidden"
         animate={controls}
         variants={sectionVariants}
       >
-        <img
+        {/* <img
           src={"/gradient-ellipse.svg"}
           alt="gradient-ellipse"
           className="absolute bottom-20 left-0"
@@ -49,6 +49,11 @@ const Section1 = () => {
           src={"/gradient-ellipse-vertical.svg"}
           alt="gradient-ellipse-vertical"
           className="absolute top-0 right-16 "
+        /> */}
+        <img
+          src={"/section-bottom-blend.svg"}
+          alt="section-bottom-blend"
+          className="absolute bottom-0 left-0"
         />
         <img
           src={"/section-bottom-blend.svg"}
@@ -56,7 +61,26 @@ const Section1 = () => {
           className="absolute bottom-0 left-0"
         />
 
-        <img src={"/sections_img_1.webp"} alt="phone-1" className="w-[60%]" />
+        <video
+          poster=""
+          width="100%"
+          height="100%"
+          id="showReelVid"
+          muted
+          autoPlay
+          loop
+          preload=""
+          className="h-full w-full object-cover"
+        >
+          <source
+            src="/section/section1.mp4"
+            type="video/mp4"
+            className="h-full w-full"
+          />
+          Your browser does not support HTML5 video.
+        </video>
+
+        {/* <img src={"/sections_img_1.webp"} alt="phone-1" className="w-[60%]" /> */}
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
         <AnimatedText className="font-primary-semibold text-[24px] md:text-[40px] md:leading-[3rem]">
@@ -107,13 +131,13 @@ const Section2 = () => {
       className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-24 mx-auto mt-12"
     >
       <motion.main
-        className="border-gradient-light bg-[#141417] w-full md:w-[45%] h-10vh md:h-[68%] rounded-xl flex justify-center relative"
-        style={{ paddingTop: "60px" }}
+        className="border-gradient-light bg-[#141417] w-full md:w-[45%]  h-[70vh] md:h-[80vh] rounded-xl flex justify-center relative"
+        // style={{ paddingTop: "60px" }}
         initial="hidden"
         animate={controls}
         variants={sectionVariants}
       >
-        <img
+        {/* <img
           src={"/gradient-ellipse.svg"}
           alt="gradient-ellipse"
           className="absolute bottom-60 right-0 rotate-180"
@@ -123,13 +147,38 @@ const Section2 = () => {
           alt="gradient-ellipse-vertical"
           className="absolute top-0 left-16 "
         />
+       */}
+
+        {/* <img src={"/sections_img_2.webp"} alt="phone-1" className="w-[60%]" /> */}
+        <img
+          src={"/section-bottom-blend.svg"}
+          alt="section-bottom-blend"
+          className="absolute bottom-0 left-0"
+        />
         <img
           src={"/section-bottom-blend.svg"}
           alt="section-bottom-blend"
           className="absolute bottom-0 left-0"
         />
 
-        <img src={"/sections_img_2.webp"} alt="phone-1" className="w-[60%]" />
+        <video
+          poster=""
+          width="100%"
+          height="100%"
+          id="showReelVid"
+          muted
+          autoPlay
+          loop
+          preload=""
+          className="h-full w-full object-cover"
+        >
+          <source
+            src="/section/section2.mp4"
+            type="video/mp4"
+            className="h-full w-full"
+          />
+          Your browser does not support HTML5 video.
+        </video>
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
         <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
