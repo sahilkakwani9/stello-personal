@@ -31,9 +31,9 @@ const Section1 = () => {
     controls.start("visible");
   }
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-28">
       <motion.main
-        className="border-gradient-light bg-[#141417] w-full md:w-[45%] md:h-[68vh] rounded-xl flex justify-center relative"
+        className="border-gradient-light bg-[#141417] w-full md:w-[45%] md:h-[68%] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px" }}
         ref={ref}
         initial="hidden"
@@ -62,7 +62,7 @@ const Section1 = () => {
         <AnimatedText className="font-primary-semibold text-[24px] md:text-[40px] md:leading-[3rem]">
           Seamless Cashback Across Multiple Chains!
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 text-justify">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70">
           Earn orbs effortlessly and watch your cashback soar! The more orbs you
           hold, the higher your cashback percentage. Its that simple, that
           exciting!
@@ -104,10 +104,10 @@ const Section2 = () => {
   return (
     <div
       ref={ref}
-      className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-24 mx-auto"
+      className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-24 mx-auto mt-12"
     >
       <motion.main
-        className="border-gradient-light bg-[#141417] w-full md:w-[45%] h-10vh md:h-[68vh] rounded-xl flex justify-center relative"
+        className="border-gradient-light bg-[#141417] w-full md:w-[45%] h-10vh md:h-[68%] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px" }}
         initial="hidden"
         animate={controls}
@@ -116,12 +116,12 @@ const Section2 = () => {
         <img
           src={"/gradient-ellipse.svg"}
           alt="gradient-ellipse"
-          className="absolute bottom-20 left-0"
+          className="absolute bottom-60 right-0 rotate-180"
         />
         <img
           src={"/gradient-ellipse-vertical.svg"}
           alt="gradient-ellipse-vertical"
-          className="absolute top-0 right-16 "
+          className="absolute top-0 left-16 "
         />
         <img
           src={"/section-bottom-blend.svg"}
@@ -135,7 +135,7 @@ const Section2 = () => {
         <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
           Empowers Privacy, Ensures Authority
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 text-justify">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70">
           Discover the power of privacy and authority with our platform. Take
           control of your data and decisions, navigating the digital world with
           confidence. With us, your privacy is protected, your authority
@@ -176,9 +176,9 @@ const Section3 = () => {
     controls.start("visible");
   }
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-12">
       <motion.main
-        className="border-gradient-light bg-[#141417] w-full md:w-[45%]  h-10vh md:h-[68vh] rounded-xl flex justify-center relative"
+        className="border-gradient-light bg-[#141417] w-full md:w-[45%]  h-10vh md:h-[68%] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px" }}
         ref={ref}
         initial="hidden"
@@ -188,7 +188,7 @@ const Section3 = () => {
         <img
           src={"/gradient-ellipse.svg"}
           alt="gradient-ellipse"
-          className="absolute bottom-20 left-0"
+          className="absolute top-20 left-0"
         />
         <img
           src={"/gradient-ellipse-vertical.svg"}

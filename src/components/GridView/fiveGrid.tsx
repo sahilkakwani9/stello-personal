@@ -15,7 +15,7 @@ function FiveGrid() {
   }
   return (
     <motion.div
-      className="flex col-span-1 row-span-4 justify-between items-center bg-[#141417] text-white text-xl grid-border-gradient"
+      className="flex col-span-1 row-span-3 justify-between items-center bg-[#141417] text-white text-xl grid-border-gradient md:h-[500px] md:-mt-16"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -32,14 +32,15 @@ function FiveGrid() {
         },
       }}
     >
-      <div className="pt-4 flex flex-col justify-between h-full w-full items-center">
+      <div className="pt-8 md:pt-4 flex flex-col justify-between h-full w-full items-center">
         <img
           src={"/fifth_grid_earn.webp"}
           alt="earn-coins"
           className="hidden md:block w-[35%] object-contain rounded-16px"
         />
-        <h1 className="font-primary-medium text-[32px] md:text-2xl text-center px-2 mb-8 w-[80%]">
-          {FIFTH_GRID_HEADLINE}
+        <h1 className="font-primary-medium text-[32px] md:text-[32px] text-center px-2 mb-8 w-[80%]">
+          Spin and win
+          <br /> rewards, every day
         </h1>
         <section className="">
           <img

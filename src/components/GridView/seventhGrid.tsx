@@ -15,7 +15,7 @@ function SeventhGrid() {
   }
   return (
     <motion.div
-      className="flex col-span-1 md:col-span-2 row-span-1 justify-center bg-[#141417] text-white text-xl pt-2 bg-gradient-to-t from-[#5110107A] grid-border-gradient"
+      className="flex col-span-1 md:col-span-2 row-span-1 justify-center bg-[#141417] text-white text-xl pt-2 bg-gradient-to-t from-[#5110107A] grid-border-gradient-secondary md:h-[235px]"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -32,19 +32,19 @@ function SeventhGrid() {
         },
       }}
     >
-      <div className="py-6 flex flex-col justify-between h-full w-full  items-center gap-16 md:gap-12">
-        <h1 className="font-primary-regular text-[32px] md:text-2xl md:text-start flex md:self-start md:px-8">
+      <div className="py-6 flex flex-col justify-between h-full w-full  items-center gap-16 md:gap-12 pb-20" >
+        <h1 className="font-primary-regular text-[34px] md:text-[34px] md:text-start flex md:self-start md:px-8">
           {SEVENTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-[80%] relative">
           <img
             src={"/seventh_grid.webp"}
-            className="md:w-[95%]"
+            className="md:absolute md:top-6"
             alt="timeline"
           />
           <img
             src={"/seventh_grid_button.webp"}
-            className="absolute md:top-[-25px] top-[-35px] md:w-[30%] w-[48%] md:right-10 right-0"
+            className="absolute md:top-0 top-[-35px] md:w-[30%] w-[48%] md:right-10 right-0"
             alt="timeline-btn"
           />
         </section>

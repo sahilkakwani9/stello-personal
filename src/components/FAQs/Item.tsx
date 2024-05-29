@@ -43,7 +43,7 @@ const FaqCardAnswer = ({ content, isOpen }: { content: string; isOpen: boolean }
       style={{
         maxHeight: isOpen ? "108px" : "0",
         opacity: isOpen ? 1 : 0,
-        transition: "max-height 0.3s ease-in-out, opacity 0.3s ease-out",
+        transition: "max-height 0.3s ease-in-out, opacity 0.1s ease-out",
       }}
     >
       {content}
