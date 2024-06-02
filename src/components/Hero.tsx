@@ -65,7 +65,7 @@ function Hero() {
           <img
             alt="iphone-mockup"
             src="/mockup.webp"
-            className="h-[80%] hidden md:block md:h-[70%] lg:w-[330px] w-[60%] md:w-[24%] absolute top-0 md:top-52 left-[20%] md:left-[38.5%]"
+            className="h-[80%] hidden md:block md:h-[70%] 2xl:w-[330px] w-[60%] md:w-[24%] absolute top-0 md:top-52 left-[20%] md:left-[38.5%] 2xl:left-[42%]"
           />
           <img
             alt="mockup-mobile"
