@@ -65,7 +65,7 @@ function Hero() {
           <img
             alt="iphone-mockup"
             src="/mockup.webp"
-            className="h-[80%] hidden md:block md:h-[70%] 2xl:w-[330px] w-[60%] md:w-[24%] absolute top-0 md:top-52 left-[20%] md:left-[38.5%] 2xl:left-[42%]"
+            className="h-[80%] hidden md:block md:h-[70%] 2xl:w-[330px] w-[60%] md:w-[24%] absolute top-0 md:top-52 left-[20%] md:left-[38.5%] 2xl:left-[41%]"
           />
           <img
             alt="mockup-mobile"
@@ -82,7 +82,6 @@ function Hero() {
             src="/secondary-mockup-phone.webp"
             className="md:hidden absolute left-0 bottom-20 w-[30%]"
           />
-
           <div className="h-[80%] md:h-[10%] w-[50%] md:w-[24%] absolute bottom-20 md:bottom-80 hidden  md:left-[15%] md:flex left-0 bg-cover bg-no-repeat">
             <img alt="gas-refund" src="/header_gas_refund.webp" className="" />
           </div>

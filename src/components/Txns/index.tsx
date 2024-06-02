@@ -24,7 +24,20 @@ function Txns() {
           { x: 390, y: 80 },
           { x: 430, y: 130 },
         ]);
-      } else {
+      } else if (window.innerWidth > 1536) {
+        setCoinPositions([
+          { x: 220, y: 260 },
+          { x: 280, y: 160 },
+          { x: 360, y: 80 },
+          { x: 460, y: 16 },
+          { x: 560, y: 0 },
+          { x: 660, y: 16 },
+          { x: 760, y: 80 },
+          { x: 830, y: 160 },
+          { x: 920, y: 260 },
+        ]);
+      }
+      else {
         setCoinPositions([
           { x: 150, y: 260 },
           { x: 210, y: 160 },

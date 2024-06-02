@@ -28,7 +28,7 @@ function FAQs() {
 }
 
 const FaqHeader = () => {
-  return <div className="font-secondary-light font-semibold text-2xl lg:text-5xl leading-5xl text-center flex-1 min-w-fit">
+  return <div className="font-secondary-light font-semibold text-2xl lg:text-5xl leading-5xl text-center flex-1 min-w-fit text-white">
     {FAQ_HEADER}
   </div>;
 };

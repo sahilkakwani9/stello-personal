@@ -59,7 +59,7 @@ const Section1 = () => {
         <img src={"/sections_img_1.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <AnimatedText className="font-primary-semibold text-[24px] md:text-[40px] md:leading-[3rem]">
+        <AnimatedText className="font-primary-semibold text-[24px] md:text-[40px] md:leading-[3rem] text-white">
           Seamless Cashback Across Multiple Chains!
         </AnimatedText>
         <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70">
@@ -132,7 +132,7 @@ const Section2 = () => {
         <img src={"/sections_img_2.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem] text-white">
           Empowers Privacy, Ensures Authority
         </AnimatedText>
         <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70">
@@ -204,7 +204,7 @@ const Section3 = () => {
         <img src={"/sections_img_3.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem]">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem] text-white">
           Swap Crypto With Zero Fees
         </AnimatedText>
         <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 md:text-justify">
