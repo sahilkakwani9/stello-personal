@@ -45,7 +45,7 @@ function FirstGrid() {
             className="absolute -top-24 md:top-10 left-0 w-[40%] md:w-[20%] z-[15] md:left-28"
           />
           <img
-            src={"grid/grid1/vectorLinesRight.png"}
+            src={"grid/grid1/vectorLinesRight.webp"}
             alt="lines-right"
             className="absolute -top-24 md:top-0 w-full  md:w-full z-[10] -right-10 md:-right-48 md:scale-[1.3]"
           />

@@ -45,17 +45,17 @@ function SecondGrid() {
             className="hidden md:block object-cover object-center absolute z-10 -bottom-16 md:bottom-0 left-16 md:left-0"
           />
           <img
-            src={"grid/grid2/gradient-ellipse-mobile.png"}
+            src={"grid/grid2/gradient-ellipse-mobile.webp"}
             alt="grid-ellipse"
             className="md:hidden absolute z-10 bottom-0 md:bottom-0 left-[15%] md:left-0"
           />
           <img
-            src={"/grid/grid2/card1-mobile.png"}
+            src={"/grid/grid2/card1-mobile.webp"}
             alt="grid-card"
             className="md:hidden absolute z-20 bottom-0 -right-4 h-[60%]"
           />
           <img
-            src={"/grid/grid2/card1.png"}
+            src={"/grid/grid2/card1.webp"}
             alt="grid-card"
             className="hidden md:block absolute z-20 right-0 bottom-0 h-[60%] w-[45%]"
           />
