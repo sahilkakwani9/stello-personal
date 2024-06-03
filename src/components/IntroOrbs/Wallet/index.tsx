@@ -18,19 +18,34 @@ function Wallet() {
 
     if (walletRef.current) {
       const scrollY = window.scrollY;
-
-      if (scrollY > 1.5 * vh && scrollY < 2 * vh) {
-        setInView(1);
-      } else if (scrollY >= 2 * vh && scrollY < 2.5 * vh) {
-        setInView(2);
-      } else if (scrollY >= 2.5 * vh && scrollY < 3 * vh) {
-        setInView(3);
-      } else if (scrollY >= 3 * vh && scrollY < 3.5 * vh) {
-        setInView(4);
-      } else if (scrollY >= 3.5 * vh && scrollY < 4 * vh) {
-        setInView(5);
+      if (window.innerWidth < 768) {
+        if (scrollY > 1.5 * vh && scrollY < 2 * vh) {
+          setInView(1);
+        } else if (scrollY >= 2 * vh && scrollY < 2.5 * vh) {
+          setInView(2);
+        } else if (scrollY >= 2.5 * vh && scrollY < 3 * vh) {
+          setInView(3);
+        } else if (scrollY >= 3 * vh && scrollY < 3.5 * vh) {
+          setInView(4);
+        } else if (scrollY >= 3.5 * vh && scrollY < 4 * vh) {
+          setInView(5);
+        } else {
+          setInView(0);
+        }
       } else {
-        setInView(0);
+        if (scrollY > 1.5 * vh && scrollY < 2.5 * vh) {
+          setInView(1);
+        } else if (scrollY >= 2.5 * vh && scrollY < 3 * vh) {
+          setInView(2);
+        } else if (scrollY >= 3 * vh && scrollY < 4 * vh) {
+          setInView(3);
+        } else if (scrollY >= 4 * vh && scrollY < 4.5 * vh) {
+          setInView(4);
+        } else if (scrollY >= 4.5 * vh && scrollY < 5 * vh) {
+          setInView(5);
+        } else {
+          setInView(0);
+        }
       }
     }
   };

@@ -10,11 +10,20 @@ function IntroToOrbs() {
 
   const handleScroll = () => {
     const vh = window.innerHeight;
-    if (window.scrollY < 4.2 * vh) {
-      console.log("making postion fixed");
-      setIsSticky(true);
+    if (window.innerWidth < 768) {
+      if (window.scrollY < 4.2 * vh) {
+        console.log("making postion fixed");
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
     } else {
-      setIsSticky(false);
+      if (window.scrollY < 5.2 * vh) {
+        console.log("making postion fixed");
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
     }
   };
   useEffect(() => {
@@ -29,7 +38,9 @@ function IntroToOrbs() {
     };
   }, []);
   return (
-    <div className={`md:w-[70%] mx-auto min-h-[400vh] self-center relative`}>
+    <div
+      className={`md:w-[70%] mx-auto min-h-[400vh] md:min-h-[500vh] self-center relative`}
+    >
       <div
         className={`${
           isSticky
