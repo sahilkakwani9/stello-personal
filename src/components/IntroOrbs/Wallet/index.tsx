@@ -318,7 +318,7 @@ function Wallet() {
           <img
             src="/logo-text.webp"
             alt="logo"
-            className="md:h-[30%] w-[20%] absolute bottom-8 left-[38%] md:left-[30%] z-30"
+            className="md:h-[30%] w-[20%] md:w-[25%] absolute bottom-8 left-[38%] md:left-[38%] z-30"
           />
           <img
             src="/end_pocket.svg"
