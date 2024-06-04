@@ -57,51 +57,58 @@ function Hero() {
             </p>
           </div>
         </div>
-        <div className="md:-mt-40 relative">
+        <div className="relative z-30 mt-8">
           <GradientLines />
           <div className="block md:hidden">
             <GradientLinesPhone />
           </div>
-          <img
-            alt="iphone-mockup"
-            src="/mockup.webp"
-            className="h-[80%] hidden md:block md:h-[70%] 2xl:w-[330px] w-[60%] md:w-[24%] absolute top-0 md:top-52 left-[20%] md:left-[38.5%] 2xl:left-[41%]"
-          />
-          <img
-            alt="mockup-mobile"
-            src="/mockup-mobile.webp"
-            className="md:hidden top-10 left-0 absolute"
-          />
-          <img
-            alt="secondary-mockup"
-            src="/mockup_secondary.svg"
-            className="h-[30%] sm:h-[30%] hidden md:block md:w-fit absolute bottom-20 md:bottom-[0px] left-0 sm:left-[26.5%] z-[10] bg-[#141417] rounded-2xl"
-          />
-          <img
-            alt="secondary-mockup-svg"
-            src="/secondary-mockup-phone.webp"
-            className="md:hidden absolute left-0 bottom-20 w-[30%]"
-          />
-          <div className="h-[80%] md:h-[10%] w-[50%] md:w-[24%] absolute bottom-20 md:bottom-80 hidden  md:left-[15%] md:flex left-0 bg-cover bg-no-repeat">
-            <img alt="gas-refund" src="/header_gas_refund.webp" className="" />
-          </div>
-
-          <div className="hidden md:block h-[10%] md:h-[10%] w-[40%] md:w-[24%] absolute top-24 right-2 md:top-[23rem] md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
+          <div className="relative">
             <img
-              alt="congrats_text"
-              src="/header_congratulations.webp"
-              className=""
+              alt="iphone-mockup"
+              src="/mockup.webp"
+              className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] w-[60%] top-0 md:top-52 left-[20%] md:left-[38.5%] 2xl:left-[41%] mx-auto z-40"
             />
-          </div>
-          <img
+            <img
+              alt="mockup-mobile"
+              src="/mockup-mobile.webp"
+              className="md:hidden"
+            />
+            <img
+              alt="secondary-mockup"
+              src="/mockup_secondary.svg"
+              className="h-[230px] hidden md:block md:w-[192px] absolute bottom-20 md:bottom-[0px] left-0 sm:left-[26.5%] z-[10] bg-[#141417] rounded-2xl"
+            />
+            <img
+              alt="secondary-mockup-svg"
+              src="/secondary-mockup-phone.webp"
+              className="md:hidden absolute left-0 bottom-10 w-[30%]"
+            />
+            <div className="h-[80%] md:h-[58px] w-[50%] md:w-[292px] absolute bottom-20 md:bottom-80 hidden  md:left-[19%] md:flex left-0 bg-cover bg-no-repeat">
+              <img
+                alt="gas-refund"
+                src="/header_gas_refund.webp"
+                className=""
+              />
+            </div>
+
+            <div className="hidden md:block h-[10%] md:h-[73px] w-[40%] md:w-[314px] absolute top-24 right-2 md:top-40 md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
+              <img
+                alt="congrats_text"
+                src="/header_congratulations.webp"
+                className=""
+              />
+            </div>
+            <img
             alt="middle-blend-bg"
             src="/middle-blend-blur.svg"
-            className="absolute bottom-0 md:hidden left-0 z-10"
+            className="absolute -bottom-10 md:hidden left-0 z-10"
           />
+          </div>
+         
           <motion.img
             alt="bitcoin"
             src="/coins/bitcoin.webp"
-            className="hidden md:block absolute top-48 h-40 w-40 left-20"
+            className="hidden md:block absolute top-0 h-40 w-40 left-20"
             style={{ y: yBitcoin }}
           />
           <motion.img
@@ -113,7 +120,7 @@ function Hero() {
           <motion.img
             alt="ethereumcoin"
             src="/coins/ethereumcoin.webp"
-            className="hidden md:block absolute top-36 h-40 w-40 right-16"
+            className="hidden md:block absolute -top-20 h-40 w-40 right-16"
             style={{ y: yEthereum }}
           />
           <motion.img
