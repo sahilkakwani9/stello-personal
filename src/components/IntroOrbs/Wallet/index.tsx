@@ -63,7 +63,7 @@ function Wallet() {
       case 1:
         firstDivControls.start({
           maxHeight: "250px",
-          top: "-100%",
+          top: window.innerWidth > 1536 ? "-80%" : "-100%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -113,7 +113,7 @@ function Wallet() {
       case 3:
         secondDivControls.start({
           maxHeight: "250px",
-          top: "-75%",
+          top: window.innerWidth > 1536 ? "-60%" : "-75%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -156,7 +156,7 @@ function Wallet() {
       case 5:
         thirdDivControls.start({
           maxHeight: "250px",
-          top: "-55%",
+          top: window.innerWidth > 1536 ? "-40%" : "-55%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -217,7 +217,7 @@ function Wallet() {
         className="absolute md:hidden -right-6 -top-10 h-[100px] w-[100px] -rotate-90 scale-110"
       />
 
-      <div className="absolute left-[5%] md:left-[18vw] 2xl:left-[30%] top-[15%] md:top-[18%] z-0">
+      <div className="absolute left-[5%] md:left-[18vw]  top-[15%] md:top-[18%] z-0">
         <img
           alt="wallet-bg"
           src="/wallet-bg.webp"
