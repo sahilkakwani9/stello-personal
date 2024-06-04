@@ -63,48 +63,52 @@ function Hero() {
             <GradientLinesPhone />
           </div>
           <div className="relative">
-            <img
-              alt="iphone-mockup"
-              src="/mockup.webp"
-              className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] w-[60%] top-0 md:top-52 left-[20%] md:left-[38.5%] 2xl:left-[41%] mx-auto z-40"
-            />
+            <div className="relative w-fit mx-auto">
+              <img
+                alt="iphone-mockup"
+                src="/mockup.webp"
+                className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] w-[60%]  mx-auto z-40"
+              />
+              <img
+                alt="secondary-mockup"
+                src="/mockup_secondary.svg"
+                className="h-[230px] hidden md:block md:w-[192px] absolute bottom-20 md:bottom-[0px] -left-44 z-[10] bg-[#141417] rounded-2xl"
+              />
+              <div className="h-[80%] md:h-[58px] w-[50%] md:w-[292px] absolute bottom-20 md:bottom-80 hidden  -left-[17rem] md:flex bg-cover bg-no-repeat">
+                <img
+                  alt="gas-refund"
+                  src="/header_gas_refund.webp"
+                  className=""
+                />
+              </div>
+
+              <div className="hidden md:block h-[10%] md:h-[73px] w-[40%] md:w-[314px] absolute top-24 -right-60 md:top-40 z-[20] bg-cover bg-no-repeat">
+                <img
+                  alt="congrats_text"
+                  src="/header_congratulations.webp"
+                  className=""
+                />
+              </div>
+            </div>
             <img
               alt="mockup-mobile"
               src="/mockup-mobile.webp"
               className="md:hidden"
             />
-            <img
-              alt="secondary-mockup"
-              src="/mockup_secondary.svg"
-              className="h-[230px] hidden md:block md:w-[192px] absolute bottom-20 md:bottom-[0px] left-0 sm:left-[26.5%] z-[10] bg-[#141417] rounded-2xl"
-            />
+
             <img
               alt="secondary-mockup-svg"
               src="/secondary-mockup-phone.webp"
               className="md:hidden absolute left-0 bottom-10 w-[30%]"
             />
-            <div className="h-[80%] md:h-[58px] w-[50%] md:w-[292px] absolute bottom-20 md:bottom-80 hidden  md:left-[19%] md:flex left-0 bg-cover bg-no-repeat">
-              <img
-                alt="gas-refund"
-                src="/header_gas_refund.webp"
-                className=""
-              />
-            </div>
 
-            <div className="hidden md:block h-[10%] md:h-[73px] w-[40%] md:w-[314px] absolute top-24 right-2 md:top-40 md:left-[56.75%] z-[20] bg-cover bg-no-repeat">
-              <img
-                alt="congrats_text"
-                src="/header_congratulations.webp"
-                className=""
-              />
-            </div>
             <img
-            alt="middle-blend-bg"
-            src="/middle-blend-blur.svg"
-            className="absolute -bottom-10 md:hidden left-0 z-10"
-          />
+              alt="middle-blend-bg"
+              src="/middle-blend-blur.svg"
+              className="absolute -bottom-10 md:hidden left-0 z-10"
+            />
           </div>
-         
+
           <motion.img
             alt="bitcoin"
             src="/coins/bitcoin.webp"
