@@ -42,18 +42,17 @@ function FiveGrid() {
           Spin and win
           <br /> rewards, every day
         </h1>
-        <section className="">
-          <img
-            src={"/fifth_grid_spin.webp"}
-            alt="spin"
-            className="hidden md:block object-cover rounded-[16px]"
-          />
-          <img
-            src={"/fifth_grid_spin_phone.webp"}
-            alt="spin-mobile"
-            className="md:hidden object-cover rounded-[16px]"
-          />
-        </section>
+
+        <img
+          src={"/fifth_grid_spin.webp"}
+          alt="spin"
+          className="hidden md:block object-cover rounded-[16px]"
+        />
+        <img
+          src={"/fifth_grid_spin_phone.webp"}
+          alt="spin-mobile"
+          className="md:hidden object-cover rounded-[16px]"
+        />
       </div>
     </motion.div>
   );

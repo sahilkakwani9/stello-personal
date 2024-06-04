@@ -36,8 +36,7 @@ function Txns() {
           { x: 830, y: 160 },
           { x: 920, y: 260 },
         ]);
-      }
-      else {
+      } else {
         setCoinPositions([
           { x: 150, y: 260 },
           { x: 210, y: 160 },
@@ -135,7 +134,7 @@ function Txns() {
       <img
         alt="mockup-with-chains"
         src="/mockup-with-chains.webp"
-        className="h-[30%] w-[90%] md:w-[40%] md:mx-auto pt-40 mr-8"
+        className="h-[30%] w-[90%] md:h-[700px] md:w-[420px] md:mx-auto pt-40 mr-8"
       />
       <img
         alt="middle-blend-bg"
