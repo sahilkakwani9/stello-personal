@@ -102,11 +102,11 @@ function Hero() {
               className="md:hidden absolute left-0 bottom-10 w-[30%]"
             />
 
-            <img
+            {/* <img
               alt="middle-blend-bg"
               src="/middle-blend-blur.svg"
               className="absolute -bottom-10 md:hidden left-0 z-10"
-            />
+            /> */}
           </div>
 
           <motion.img

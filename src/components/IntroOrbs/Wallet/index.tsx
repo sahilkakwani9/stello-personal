@@ -217,14 +217,14 @@ function Wallet() {
         className="absolute md:hidden -right-6 -top-10 h-[100px] w-[100px] -rotate-90 scale-110"
       />
 
-      <div className="absolute left-[5%] md:left-[24%] 2xl:left-[30%] top-[15%] md:top-[18%] z-0">
+      <div className="absolute left-[5%] md:left-[18vw] 2xl:left-[30%] top-[15%] md:top-[18%] z-0">
         <img
           alt="wallet-bg"
           src="/wallet-bg.webp"
-          className="w-[95%] md:w-[80%] absolute -top-[18%]  -z-10"
+          className="w-[95%] md:w-[34vw] absolute -top-[18%]  -z-10"
         />
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom p-3 md:p-4 -z-10"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom p-3 md:p-4 -z-10"
           animate={thirdDivControls}
           initial={{
             maxHeight: "60px",
@@ -246,13 +246,13 @@ function Wallet() {
         <img
           src="/top_pocket.svg"
           alt="top-pocket-image"
-          className="w-[95%] md:w-[80%] z-0"
+          className="w-[95%] md:w-[34vw] z-0"
         />
       </div>
 
-      <div className="absolute left-[5%] md:left-[24%] 2xl:left-[30%] top-[20%] md:top-[25%]">
+      <div className="absolute left-[5%] md:left-[18vw] top-[20%] md:top-[25%]">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[70%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom p-3 md:p-4"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom p-3 md:p-4"
           animate={secondDivControls}
           initial={{
             maxHeight: "60px",
@@ -278,12 +278,12 @@ function Wallet() {
         <img
           src="/middle_pocket.svg"
           alt="middle-pocket-image"
-          className="relative z-10 w-[95%] md:w-[80%]"
+          className="relative z-10 w-[95%] md:w-[34vw]"
         />
       </div>
-      <div className="absolute left-[5%] md:left-[24%] 2xl:left-[30%] top-[27%] md:top-[33%] z-30">
+      <div className="absolute left-[5%] md:left-[18vw] top-[27%] md:top-[33%] z-30">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[70%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom"
           animate={firstDivControls}
           initial={{
             maxHeight: "50px",
@@ -323,7 +323,7 @@ function Wallet() {
           <img
             src="/end_pocket.svg"
             alt="end-pocket-image"
-            className="z-40 w-[95%] md:w-[80%]"
+            className="z-40 w-[95%] md:w-[34vw]"
           />
         </div>
       </div>

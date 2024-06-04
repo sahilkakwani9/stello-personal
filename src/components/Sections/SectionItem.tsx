@@ -73,7 +73,7 @@ const Section1 = () => {
             alt=""
             className="w-[10%] md:w-[6%]"
           />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
+          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
             Universal Cashback
           </span>
         </div>
@@ -83,7 +83,7 @@ const Section1 = () => {
             alt=""
             className="w-[10%] md:w-[6%]"
           />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
+          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
             Cross-Chain Benefits
           </span>
         </div>
@@ -147,7 +147,7 @@ const Section2 = () => {
             alt=""
             className="w-[10%] md:w-[6%]"
           />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-regular">
+          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-regular 2xl:text-[20px]">
             Privacy Empowerment
           </span>
         </div>
@@ -157,7 +157,7 @@ const Section2 = () => {
             alt=""
             className="w-[10%] md:w-[6%]"
           />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
+          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
             Authority Assurance
           </span>
         </div>
@@ -218,7 +218,7 @@ const Section3 = () => {
             alt=""
             className="w-[10%] md:w-[6%]"
           />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
+          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
             Fee-Free Swapping
           </span>
         </div>
@@ -228,7 +228,7 @@ const Section3 = () => {
             alt=""
             className="w-[10%] md:w-[6%]"
           />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light">
+          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
             Maximize Your Assets
           </span>
         </div>

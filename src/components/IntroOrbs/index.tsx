@@ -39,7 +39,7 @@ function IntroToOrbs() {
   }, []);
   return (
     <div
-      className={`md:w-[70%] mx-auto min-h-[400vh] md:min-h-[500vh] self-center relative`}
+      className={`md:w-[70%] mx-auto min-h-[400vh] md:min-h-[500vh] self-center relative bg-[#080808]`}
     >
       <div
         className={`${
