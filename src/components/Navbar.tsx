@@ -2,16 +2,37 @@
 import PrimaryCTA from "./PrimaryCTA";
 import { SVGProps } from "react";
 export const Navbar = () => {
+  const handleClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
   return (
     <div
       className="fixed top-0 px-4 md:px-[140px] flex flex-row items-center justify-between
     z-50 w-screen backdrop-blur-custom py-4
     "
     >
-      <StelloLogo height={32} width={84} />
+      <StelloLogo height={32} width={84} onClick={refreshPage} />
       <div className="md:flex flex-row items-center justify-center gap-[48px] hidden">
-        <p className="font-primary-semibold text-[16px] text-white">Features</p>
-        <p className="font-primary-semibold text-[16px] text-white">FAQs</p>
+        <p
+          className="font-primary-semibold text-[16px] text-white cursor-pointer"
+          onClick={() => handleClick("features")}
+        >
+          Features
+        </p>
+        <p
+          className="font-primary-semibold text-[16px] text-white cursor-pointer"
+          onClick={() => handleClick("faq")}
+        >
+          FAQs
+        </p>
       </div>
       <PrimaryCTA>Download App</PrimaryCTA>
     </div>
