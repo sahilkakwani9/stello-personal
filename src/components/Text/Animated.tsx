@@ -13,7 +13,8 @@ function AnimatedText({
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true, // Ensures animation is triggered only once
-    threshold: 0.1, // Triggers when 10% of the element is in view
+    threshold: 0.1,
+    delay: 500
   });
   if (inView) {
     controls.start("visible");

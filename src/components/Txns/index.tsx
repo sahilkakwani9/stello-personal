@@ -96,7 +96,7 @@ function Txns() {
   return (
     <main
       ref={ref}
-      className="relative md:w-[70%] bg-introToOrbsMobile md:bg-introToOrbs mx-auto self-center md:bg-cover overflow-hidden"
+      className="relative md:w-[70%] bg-introToOrbsMobile md:bg-introToOrbs mx-auto self-center md:bg-cover overflow-hidden md:mt-4"
     >
       {coinPositions.map((pos, index) => (
         <motion.img
@@ -133,19 +133,19 @@ function Txns() {
       ))}
       <img
         alt="mockup-with-chains"
-        src="/mockup-with-chains.webp"
+        src="/txns/mockup-with-chains.png"
         className="h-[30%] w-[90%] md:h-[700px] md:w-[420px] md:mx-auto pt-40 mr-8"
       />
       <img
         alt="middle-blend-bg"
-        src="/txns/footer-blend.webp"
-        className="absolute -bottom-10 md:-bottom-[50%] left-0 z-1"
+        src="/txn-bg-blend.png"
+        className="absolute -bottom-10 md:-bottom-0 left-0 z-1"
       />
       <div className="absolute z-20 bottom-0 left-0 md:left-[27.5%] md:w-[45%]">
-        <p className="font-primary-bold text-[32px] md:text-[36px] text-white relative text-center md:ml-8">
+        <p className="font-primary-bold text-[32px] md:text-[44px] text-white relative text-center md:ml-8 tracking-wide">
           {TxnText.heading}
         </p>
-        <p className="font-primary-regular text-[18px] md:text-[18px] text-white text-center md:ml-8 px-12 md:mx-auto ">
+        <p className="font-primary-regular text-[18px] md:text-[22px] text-white text-center md:ml-8 px-4 md:mx-auto ">
           {TxnText.subHeading}
         </p>
       </div>

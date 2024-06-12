@@ -62,8 +62,8 @@ function Wallet() {
     switch (inView) {
       case 1:
         firstDivControls.start({
-          maxHeight: "250px",
-          top: window.innerWidth > 1536 ? "-80%" : "-100%",
+          maxHeight: "280px",
+          top: window.innerWidth > 1536 ? "-80%" : "-105%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -112,8 +112,8 @@ function Wallet() {
         break;
       case 3:
         secondDivControls.start({
-          maxHeight: "250px",
-          top: window.innerWidth > 1536 ? "-60%" : "-75%",
+          maxHeight: "280px",
+          top: window.innerWidth > 1536 ? "-60%" : "-80%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -155,8 +155,8 @@ function Wallet() {
         break;
       case 5:
         thirdDivControls.start({
-          maxHeight: "250px",
-          top: window.innerWidth > 1536 ? "-40%" : "-55%",
+          maxHeight: "280px",
+          top: window.innerWidth > 1536 ? "-40%" : "-60%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },

@@ -67,31 +67,47 @@ function Hero() {
           </div>
           <div className="relative">
             <div className="relative w-fit mx-auto">
-              <img
+              <motion.img
                 alt="iphone-mockup"
                 src="/mockup.webp"
-                className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] w-[60%]  mx-auto z-40"
+                className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] w-[60%] mx-auto z-40"
+                initial={{ opacity: 0.3, y: 200 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
               />
-              <img
+              <motion.img
                 alt="secondary-mockup"
                 src="/mockup_secondary.svg"
                 className="h-[230px] hidden md:block md:w-[192px] absolute bottom-20 md:bottom-[0px] -left-44 z-[10] bg-[#141417] rounded-2xl"
+                initial={{ opacity: 0, y: 200, left: 0 }}
+                animate={{ opacity: 1, y: 0, left: "-11rem" }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
               />
-              <div className="h-[80%] md:h-[58px] w-[50%] md:w-[292px] absolute bottom-20 md:bottom-80 hidden  -left-[17rem] md:flex bg-cover bg-no-repeat">
+              <motion.div
+                className="h-[80%] md:h-[58px] w-[50%] md:w-[292px] absolute bottom-20 md:bottom-80 hidden  -left-[17rem] md:flex bg-cover bg-no-repeat"
+                initial={{ opacity: 0, y: 200, left: 0 }}
+                animate={{ opacity: 1, y: 0, left: "-17rem" }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+              >
                 <img
                   alt="gas-refund"
                   src="/header_gas_refund.webp"
                   className=""
                 />
-              </div>
+              </motion.div>
 
-              <div className="hidden md:block h-[10%] md:h-[73px] w-[40%] md:w-[314px] absolute top-24 -right-60 md:top-40 z-[20] bg-cover bg-no-repeat">
+              <motion.div
+                className="hidden md:block h-[10%] md:h-[73px] w-[40%] md:w-[314px] absolute top-24 -right-60 md:top-40 z-[20] bg-cover bg-no-repeat"
+                initial={{ opacity: 0, y: 200, right: 0 }}
+                animate={{ opacity: 1, y: 0, right: "-15rem" }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+              >
                 <img
                   alt="congrats_text"
                   src="/header_congratulations.webp"
                   className=""
                 />
-              </div>
+              </motion.div>
             </div>
             <img
               alt="mockup-mobile"
@@ -108,7 +124,12 @@ function Hero() {
             <img
               alt="middle-blend-bg"
               src="/hero-bg-blend.png"
-              className="absolute -bottom-10 left-0 z-10"
+              className="absolute md:-bottom-10 bottom-0 left-0 z-10"
+            />
+            <img
+              alt="middle-blend-bg"
+              src="/middle-blend-blur.svg"
+              className="absolute md:hidden -bottom-4 left-0 z-10"
             />
           </div>
 

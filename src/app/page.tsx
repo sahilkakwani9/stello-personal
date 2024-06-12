@@ -20,7 +20,7 @@ export default function Home() {
       <SectionContainer />
       <GridSection />
       <FAQs />
-      <Tutorials/>
+      {/* <Tutorials/> */}
       <DownloadSection />
       <Footer />
     </div>

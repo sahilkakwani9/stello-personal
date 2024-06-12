@@ -100,7 +100,7 @@ body {
 
   /* Gradient */
   .card-wrapper::before {
-    background: conic-gradient(#ffffff, #ffffff1d, transparent 200deg);
+    background: conic-gradient(#ffffff, #ffffff1d, transparent 100deg);
     content: "";
     position: absolute;
     left: -250%;

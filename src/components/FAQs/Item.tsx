@@ -31,7 +31,7 @@ const ToggleExpand = ({ isOpen }: { isOpen: boolean }) => {
 };
 
 const FaqCardTitle = ({title}:{title:string})=>{
-  return <div className="font-primary-regular font-semibold text-sm lg:text-[18px] leading-6 text-left text-white">
+  return <div className="font-secondary-regular font-semibold text-sm lg:text-[18px] leading-6 text-left text-white">
       {title}
     </div>
 }
