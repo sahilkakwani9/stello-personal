@@ -25,10 +25,10 @@ function Hero() {
       <div className="pt-[140px] min-h-screen">
         <div className="w-[90%] lg:w-[50%] self-center m-auto">
           <div className="overflow-hidden">
-            <AnimatedText className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-start-gradient-secondary to-end-gradient-secondary leading-none">
+            <AnimatedText className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-15% to-90%  from-start-gradient-secondary to-end-gradient-secondary leading-none">
               {HERO_HEADLINE_TOP}
             </AnimatedText>
-            <AnimatedText className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient leading-none">
+            <AnimatedText className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-to-r bg-clip-text from-start-gradient to-end-gradient leading-none">
               {HERO_HEADLINE_BOTTOM}
             </AnimatedText>
           </div>
@@ -50,11 +50,14 @@ function Hero() {
               />
             </div>
           </div>
-          <div className="w-max mt-4 mx-auto rounded-[32px] border border-[#FFFFFF1D] px-4 py-[10px] flex gap-2 justify-center items-center bg-[#141417]">
-            <Image src={"/gift.svg"} height={24} width={24} alt="gift-svg" />
-            <p className="text-[#FFFFFFDE] font-primary-regular text-[16px]">
-              {HERO_GIFT_HEADLINE}
-            </p>
+
+          <div className="card-wrapper h-[44px] w-[300px] md:w-[334px] mt-4 m-auto">
+            <div className="mx-auto rounded-[32px] card-content px-4 py-[10px] flex gap-2 justify-center items-center bg-[#141417]">
+              <Image src={"/gift.svg"} height={24} width={24} alt="gift-svg" />
+              <p className="text-[#FFFFFFDE] font-primary-regular text-[14px] md:text-[16px]">
+                {HERO_GIFT_HEADLINE}
+              </p>
+            </div>
           </div>
         </div>
         <div className="relative z-30 mt-8">
@@ -102,11 +105,11 @@ function Hero() {
               className="md:hidden absolute left-0 bottom-10 w-[30%]"
             />
 
-            {/* <img
+            <img
               alt="middle-blend-bg"
-              src="/middle-blend-blur.svg"
-              className="absolute -bottom-10 md:hidden left-0 z-10"
-            /> */}
+              src="/hero-bg-blend.png"
+              className="absolute -bottom-10 left-0 z-10"
+            />
           </div>
 
           <motion.img
