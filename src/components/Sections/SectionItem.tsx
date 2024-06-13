@@ -31,7 +31,7 @@ const Section1 = () => {
     controls.start("visible");
   }
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-28">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-28 md:mt-40">
       <motion.main
         className="border-gradient-light bg-[#141417] w-full md:w-[45%] md:h-[68%] 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative"
         style={{ paddingTop: "60px" }}

@@ -100,23 +100,23 @@ body {
 
   /* Gradient */
   .card-wrapper::before {
-    background: conic-gradient(#ffffff, #ffffff1d, transparent 100deg);
+    background: conic-gradient(#ffffff, #ffffff1d, transparent 360deg);
     content: "";
     position: absolute;
-    left: -250%;
-    top: -300%;
-    height: 700%;
-    width: 600%;
-    animation: border-spin 5s linear infinite;
+    left: 0%;
+    top: -350%;
+    height: 800%;
+    width: 100%;
+    animation: border-spin 20s linear infinite;
   }
 
   /* Body */
   .card-content {
     position: absolute;
-    left: 1px;
-    top: 1px;
-    height: calc(100% - 2px);
-    width: calc(100% - 2px);
+    left: 1.5px;
+    top: 1.5px;
+    height: calc(100% - 3px);
+    width: calc(100% - 3px);
     border-radius: 1rem; /* Equivalent to rounded-2xl */
     background: #ffffff14;
   }
@@ -144,7 +144,7 @@ body {
       rgba(0, 0, 0, 0) 34.83%,
       #606060 64.14%
     );
-    animation: "border-spin 7s linear infinite";
+    animation: "border-spin 20s linear infinite";
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
