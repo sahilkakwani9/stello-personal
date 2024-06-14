@@ -94,69 +94,82 @@ function Txns() {
   });
 
   return (
-    <main
-      ref={ref}
-      className="relative md:w-[70%] bg-introToOrbsMobile md:bg-introToOrbs mx-auto self-center md:bg-cover overflow-hidden md:-mt-8"
-    >
-      {coinPositions.map((pos, index) => (
-        <motion.img
-          key={index}
-          src={`/dapps/dapp${index + 1}.svg`}
-          alt={`coin${index + 1}`}
-          initial={
-            window.innerWidth < 768
-              ? {
-                  x: pos.x,
-                  y: pos.y,
-                  opacity: 1,
-                }
-              : {
-                  x: startPositions[index]?.x,
-                  y: startPositions[index]?.y,
-                  opacity: 0,
-                }
-          }
-          animate={
-            window.innerWidth < 768 && inView
-              ? getMobileAnimation(index)
-              : inView
-              ? { x: pos.x, y: pos.y, opacity: 1 }
-              : undefined
-          }
-          transition={{
-            delay: index * 0.3,
-            duration: 1,
-            ease: "backInOut",
-          }}
-          className="absolute w-[60px] h-[60px] md:w-[10%] md:h-[10%]"
+    <div className="md:bg-introToOrbs md:bg-cover relative">
+      <img
+        alt="middle-blend-bg"
+        src="/bg-blur-middle.png"
+        className="hidden md:block absolute -top-40 z-10"
+      />
+      <main
+        ref={ref}
+        className="relative md:w-[70%] bg-introToOrbsMobile md:bg-none mx-auto self-center md:bg-cover overflow-hidden z-10 md:-mt-12"
+      >
+        {coinPositions.map((pos, index) => (
+          <motion.img
+            key={index}
+            src={`/dapps/dapp${index + 1}.svg`}
+            alt={`coin${index + 1}`}
+            initial={
+              window.innerWidth < 768
+                ? {
+                    x: pos.x,
+                    y: pos.y,
+                    opacity: 1,
+                  }
+                : {
+                    x: startPositions[index]?.x,
+                    y: startPositions[index]?.y,
+                    opacity: 0,
+                  }
+            }
+            animate={
+              window.innerWidth < 768 && inView
+                ? getMobileAnimation(index)
+                : inView
+                ? { x: pos.x, y: pos.y, opacity: 1 }
+                : undefined
+            }
+            transition={{
+              delay: index * 0.3,
+              duration: 1,
+              ease: "backInOut",
+            }}
+            className="absolute w-[60px] h-[60px] md:w-[10%] md:h-[10%]"
+          />
+        ))}
+        <img
+          alt="mockup-with-chains"
+          src="/txns/mockup-with-chains.png"
+          className="h-[30%] w-[90%] md:h-[700px] md:w-[420px] md:mx-auto pt-40 mr-8 z-20"
         />
-      ))}
-      <img
-        alt="mockup-with-chains"
-        src="/txns/mockup-with-chains.png"
-        className="h-[30%] w-[90%] md:h-[700px] md:w-[420px] md:mx-auto pt-40 mr-8"
-      />
-      <img
-        alt="middle-blend-bg"
-        src="/txn-bg-blend.png"
-        className="hidden absolute md:block -bottom-0 md:-bottom-0 left-0 z-20"
-      />
 
-      <img
-        alt="middle-blend-bg"
-        src="/txns/footer-blend.webp"
-        className="absolute -bottom-20 md:hidden left-0 z-1"
-      />
+        <img
+          alt="bottom-blend-bg"
+          src="/txn-bg-blend.png"
+          className="hidden absolute md:block -bottom-0 md:-bottom-0 left-0 z-20"
+        />
 
-      <div className="absolute z-20 bottom-0 left-0 md:left-[27.5%] md:w-[45%]">
-        <p className="font-primary-bold text-[32px] md:text-[44px] text-white relative text-center md:ml-8 tracking-wide">
-          {TxnText.heading}
-        </p>
-        <p className="font-primary-regular text-[18px] md:text-[22px] text-white text-center md:ml-8 px-12 md:px-4 md:mx-auto ">
-          {TxnText.subHeading}
-        </p>
-      </div>
-    </main>
+        <img
+          alt="middle-blend-bg"
+          src="/txns/footer-blend.webp"
+          className="absolute -bottom-20 md:hidden left-0 z-1"
+        />
+
+        <div className="absolute z-20 bottom-0 left-0 md:left-[27.5%] md:w-[45%]">
+          <p className="font-primary-bold text-[32px] md:text-[44px] text-white relative text-center md:ml-8 tracking-wide">
+            {TxnText.heading}
+          </p>
+          <p className="font-primary-regular text-[18px] md:text-[22px] text-white text-center md:ml-8 px-12 md:px-4 md:mx-auto ">
+            {TxnText.subHeading}
+          </p>
+        </div>
+      </main>
+      <img
+        alt="middle-blend-bg-extended"
+        src="/txns/footer-blend-extended.png"
+        className="absolute hidden bottom-0 md:block left-0 z-1"
+      />
+    </div>
   );
 }
 

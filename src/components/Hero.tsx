@@ -97,14 +97,14 @@ function Hero() {
               </motion.div>
 
               <motion.div
-                className="hidden md:block h-[10%] md:h-[73px] w-[40%] md:w-[314px] absolute top-24 -right-60 md:top-40 z-[20] bg-cover bg-no-repeat"
+                className="hidden md:block h-[10%] md:h-[73px] w-[40%] md:w-[328px] absolute top-24 -right-60 md:top-40 z-[20] bg-cover bg-no-repeat"
                 initial={{ opacity: 0, y: 200, right: 0 }}
                 animate={{ opacity: 1, y: 0, right: "-15rem" }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
               >
                 <img
                   alt="congrats_text"
-                  src="/header_congratulations.webp"
+                  src="/header_congratulations.png"
                   className=""
                 />
               </motion.div>
@@ -124,7 +124,7 @@ function Hero() {
             <img
               alt="middle-blend-bg"
               src="/hero-bg-blend.png"
-              className="absolute md:-bottom-10 bottom-0 left-0 z-10"
+              className="absolute md:bottom-0 bottom-0 left-0 z-10"
             />
             <img
               alt="middle-blend-bg"

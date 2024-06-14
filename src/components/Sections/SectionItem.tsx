@@ -58,34 +58,36 @@ const Section1 = () => {
 
         <img src={"/sections_img_1.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
-      <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <AnimatedText className="font-primary-semibold text-[24px] md:text-[40px] md:leading-[3rem] text-white">
+      <div className="md:w-[50%] flex flex-col justify-center gap-4">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[48px] md:leading-[3rem] text-white tracking-wide">
           Seamless Cashback Across Multiple Chains!
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-[#b3b3b2]">
           Earn orbs effortlessly and watch your cashback soar! The more orbs you
           hold, the higher your cashback percentage. Its that simple, that
           exciting!
         </AnimatedText>
-        <div className="flex items-center gap-2">
-          <img
-            src={"/sections_universal.webp"}
-            alt=""
-            className="w-[10%] md:w-[6%]"
-          />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
-            Universal Cashback
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <img
-            src={"/sections_universal_link.webp"}
-            alt=""
-            className="w-[10%] md:w-[6%]"
-          />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
-            Cross-Chain Benefits
-          </span>
+        <div className="gap-6 flex flex-col">
+          <div className="flex items-center gap-2">
+            <img
+              src={"/sections_universal.webp"}
+              alt=""
+              className="w-[10%] md:w-[6%]"
+            />
+            <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
+              Universal Cashback
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <img
+              src={"/sections_universal_link.webp"}
+              alt=""
+              className="w-[10%] md:w-[6%]"
+            />
+            <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
+              Cross-Chain Benefits
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -131,35 +133,37 @@ const Section2 = () => {
 
         <img src={"/sections_img_2.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
-      <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem] text-white">
+      <div className="md:w-[50%] flex flex-col justify-center gap-4">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[48px] md:leading-[3rem] text-white md:w-[80%] tracking-wide">
           Empowers Privacy, Ensures Authority
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-[#b3b3b2]">
           Discover the power of privacy and authority with our platform. Take
           control of your data and decisions, navigating the digital world with
           confidence. With us, your privacy is protected, your authority
           respected. Embrace empowerment in the digital age.
         </AnimatedText>
-        <div className="flex items-center gap-2">
-          <img
-            src={"/sections_empowers_lock.webp"}
-            alt=""
-            className="w-[10%] md:w-[6%]"
-          />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-regular 2xl:text-[20px]">
-            Privacy Empowerment
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <img
-            src={"/sections_empowers_privacy.webp"}
-            alt=""
-            className="w-[10%] md:w-[6%]"
-          />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
-            Authority Assurance
-          </span>
+        <div className="gap-6 flex flex-col">
+          <div className="flex items-center gap-2">
+            <img
+              src={"/sections_empowers_lock.webp"}
+              alt=""
+              className="w-[10%] md:w-[6%]"
+            />
+            <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-regular 2xl:text-[20px]">
+              Privacy Empowerment
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <img
+              src={"/sections_empowers_privacy.webp"}
+              alt=""
+              className="w-[10%] md:w-[6%]"
+            />
+            <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
+              Authority Assurance
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -203,8 +207,8 @@ const Section3 = () => {
 
         <img src={"/sections_img_3.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
-      <div className="md:w-[50%] flex flex-col justify-center gap-3">
-        <AnimatedText className="font-primary-medium text-[24px] md:text-[40px] md:leading-[3rem] text-white">
+      <div className="md:w-[50%] flex flex-col justify-center gap-4">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[48px] md:leading-[3rem] text-white md:w-[80%] tracking-wide">
           Swap Crypto With Zero Fees
         </AnimatedText>
         <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 md:text-justify">
@@ -212,25 +216,27 @@ const Section3 = () => {
           transactions and maximize your assets without worrying about extra
           charges. Experience the freedom of fee-free crypto swapping today!
         </AnimatedText>
-        <div className="flex items-center gap-2">
-          <img
-            src={"/sections_crypto_swap.webp"}
-            alt=""
-            className="w-[10%] md:w-[6%]"
-          />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
-            Fee-Free Swapping
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <img
-            src={"/sections_crypto_wallet.webp"}
-            alt=""
-            className="w-[10%] md:w-[6%]"
-          />
-          <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
-            Maximize Your Assets
-          </span>
+        <div className="gap-6 flex flex-col">
+          <div className="flex items-center gap-2">
+            <img
+              src={"/sections_crypto_swap.webp"}
+              alt=""
+              className="w-[10%] md:w-[6%]"
+            />
+            <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
+              Fee-Free Swapping
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <img
+              src={"/sections_crypto_wallet.webp"}
+              alt=""
+              className="w-[10%] md:w-[6%]"
+            />
+            <span className="text-transparent bg-gradient-radial bg-clip-text from-start-gradient to-end-gradient font-secondary-light 2xl:text-[20px]">
+              Maximize Your Assets
+            </span>
+          </div>
         </div>
       </div>
     </div>

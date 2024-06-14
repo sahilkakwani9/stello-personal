@@ -15,7 +15,7 @@ function FourthGrid() {
   }
   return (
     <motion.div
-      className="col-span-1 md:col-span-2 row-span-2 bg-[#141417] text-white text-xl grid-border-gradient-secondary md:h-[380px]"
+      className="col-span-1 md:col-span-2 row-span-2 bg-[#141417] text-white text-xl grid-border-gradient-secondary md:h-[380px] overflow-hidden"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -43,7 +43,7 @@ function FourthGrid() {
             alt="grid-card"
           />
         </section> */}
-        <div className="border-gradient-light w-[90%] md:w-[80%] bg-cardBg mt-8 md:mt-0">
+        <div className="border-gradient-light w-[90%] md:w-[80%] bg-cardBg mt-8 md:mt-0 -mb-4">
           <div className="p-4">
             <p className="text-[16px] font-secondary-regular text-white opacity-70">
               This Month

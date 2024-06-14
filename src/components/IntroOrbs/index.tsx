@@ -18,7 +18,7 @@ function IntroToOrbs() {
         setIsSticky(false);
       }
     } else {
-      if (window.scrollY < 5.2 * vh) {
+      if (window.scrollY < 6 * vh) {
         console.log("making postion fixed");
         setIsSticky(true);
       } else {
@@ -38,42 +38,37 @@ function IntroToOrbs() {
     };
   }, []);
   return (
-    <div
-      className={`md:w-[70%] mx-auto min-h-[400vh] md:min-h-[500vh] self-center relative bg-[#080808]`}
-    >
+    <div className={`min-h-[400vh] md:min-h-[500vh] self-center relative`}>
       <div
         className={`${
           isSticky
-            ? "sticky top-20 overflow-hidden md:overflow-visible"
-            : "absolute bottom-0 left-0 w-full overflow-hidden md:overflow-visible"
+            ? "sticky top-20 overflow-hidden md:overflow-visible md:bg-introToOrbs bg-none"
+            : "absolute bottom-0 left-0 w-full overflow-hidden md:overflow-visible md:bg-introToOrbs bg-none"
         }`}
       >
-        <img
-          alt="middle-blend-bg"
-          src="/middle-blend-blur.svg"
-          className="md:hidden absolute -top-40 opacity-30 z-10 left-0"
-        />
-        <section className="bg-introToOrbsMobile md:bg-introToOrbs relative w-full bg-contain md:bg-cover  bg-opacity-20 h-[100vh] md:min-h-screen">
-          <div className="relative" id="dark_overlay">
-            <AnimatedText className="pt-12 pb-8 font-primary-semibold text-[50px] w-[70%] mx-auto md:w-full md:px-0 md:text-[52px] text-center text-transparent bg-gradient-to-r bg-clip-text from-start-gradient to-end-gradient leading-tight">
-              {INTRO_ORBS_HEADLINE}
-            </AnimatedText>
-          </div>
-
-          <Wallet />
-
+        <div className="md:w-[70%] mx-auto z-10 ">
           <img
             alt="middle-blend-bg"
             src="/middle-blend-blur.svg"
-            className="hidden md:block absolute bottom-0"
+            className="absolute -top-20 md:-top-[30%] opacity-100 md:opacity-100 -z-10 left-0"
           />
-        </section>
+          <section className="relative w-full bg-contain bg-introToOrbsMobile md:bg-none md:bg-cover  bg-opacity-20 h-[100vh] md:min-h-screen bg-transparent z-10">
+            <div className="relative z-10" id="dark_overlay">
+              <AnimatedText className="pt-12 md:pt-0 pb-8 font-primary-semibold text-[50px] w-[70%] mx-auto md:w-full md:px-0 md:text-[52px] text-center text-transparent bg-gradient-to-r bg-clip-text from-start-gradient to-end-gradient leading-tight z-1">
+                {INTRO_ORBS_HEADLINE}
+              </AnimatedText>
+            </div>
+
+            <Wallet />
+
+            <img
+              alt="middle-blend-bg"
+              src="/bg-blur-middle.png"
+              className="absolute -top-10 md:top-40 md:-z-10 w-screen md:w-full"
+            />
+          </section>
+        </div>
       </div>
-      <img
-        alt="middle-blend-bg"
-        src="/middle-blend-blur.svg"
-        className="hidden md:block absolute -top-[6%] -z-10"
-      />
     </div>
   );
 }

@@ -63,7 +63,7 @@ function Wallet() {
       case 1:
         firstDivControls.start({
           maxHeight: "280px",
-          top: window.innerWidth > 1536 ? "-80%" : "-105%",
+          top: window.innerWidth > 1536 ? "-80%" : "-110%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -113,7 +113,7 @@ function Wallet() {
       case 3:
         secondDivControls.start({
           maxHeight: "280px",
-          top: window.innerWidth > 1536 ? "-60%" : "-80%",
+          top: window.innerWidth > 1536 ? "-60%" : "-85%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -156,7 +156,7 @@ function Wallet() {
       case 5:
         thirdDivControls.start({
           maxHeight: "280px",
-          top: window.innerWidth > 1536 ? "-40%" : "-60%",
+          top: window.innerWidth > 1536 ? "-40%" : "-65%",
           transition: {
             maxHeight: { duration: 0.5, ease: "easeOut" },
             top: { duration: 0.5, ease: "easeOut" },
@@ -198,7 +198,7 @@ function Wallet() {
 
   return (
     <div
-      className="w-[100%] relative min-h-[90vh] md:min-h-screen"
+      className="w-[100%] relative min-h-[90vh] md:min-h-screen md:top-8"
       ref={walletRef}
     >
       <img
@@ -224,7 +224,7 @@ function Wallet() {
           className="w-[95%] md:w-[34vw] absolute -top-[18%]  -z-10"
         />
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom p-3 md:p-4 -z-10"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom p-3 md:p-4 -z-10 md:pb-8"
           animate={thirdDivControls}
           initial={{
             maxHeight: "60px",
@@ -252,7 +252,7 @@ function Wallet() {
 
       <div className="absolute left-[5%] md:left-[18vw] top-[20%] md:top-[25%]">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom p-3 md:p-4"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom p-3 md:p-4 md:pb-8"
           animate={secondDivControls}
           initial={{
             maxHeight: "60px",
@@ -283,7 +283,7 @@ function Wallet() {
       </div>
       <div className="absolute left-[5%] md:left-[18vw] top-[27%] md:top-[33%] z-30">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom md:pb-4"
           animate={firstDivControls}
           initial={{
             maxHeight: "50px",

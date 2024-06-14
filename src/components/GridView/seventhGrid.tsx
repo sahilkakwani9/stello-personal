@@ -38,8 +38,13 @@ function SeventhGrid() {
         </h1>
         <section className="w-full h-[80%] relative">
           <img
-            src={"/seventh_grid.webp"}
-            className="md:absolute md:top-10"
+            src={"/seventh_grid.png"}
+            className="hidden md:block md:absolute md:top-10"
+            alt="timeline"
+          />
+            <img
+            src={"/seventh_grid_mobile.png"}
+            className="md:hidden -mt-4"
             alt="timeline"
           />
           <img
