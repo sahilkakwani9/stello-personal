@@ -283,7 +283,7 @@ function Wallet() {
       </div>
       <div className="absolute left-[5%] md:left-[18vw] top-[27%] md:top-[33%] z-30">
         <motion.div
-          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom md:pb-4"
+          className="absolute border-gradient mx-auto left-[5%] w-[85%] md:w-[90%] z-30 bg-gradient-to-r from-wallet-card-start-gradient to-wallet-card-end-gradient backdrop-blur-custom md:pb-8"
           animate={firstDivControls}
           initial={{
             maxHeight: "50px",

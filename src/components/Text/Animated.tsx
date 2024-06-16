@@ -14,7 +14,7 @@ function AnimatedText({
   const [ref, inView] = useInView({
     triggerOnce: true, // Ensures animation is triggered only once
     threshold: 0.1,
-    delay: 500
+    delay: 1000
   });
   if (inView) {
     controls.start("visible");
