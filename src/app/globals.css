@@ -144,7 +144,7 @@ body {
       rgba(0, 0, 0, 0) 34.83%,
       #606060 64.14%
     );
-    animation: "border-spin 20s linear infinite";
+    animation: "border-spin 10s linear infinite";
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
