@@ -100,6 +100,7 @@ const FooterSVG = () => {
               return (
                 <motion.stop
                   offset={index / 3}
+                  key={index}
                   stop-color="#DD1D63"
                   animate={{
                     stopColor: Array.from({ length: 4 }).map(
@@ -132,6 +133,7 @@ const FooterSVG = () => {
               return (
                 <motion.stop
                   offset={index / 3}
+                  key={index}
                   stop-color="#DD1D63"
                   animate={{
                     stopColor: Array.from({ length: 4 }).map(
@@ -164,6 +166,7 @@ const FooterSVG = () => {
               return (
                 <motion.stop
                   offset={index / 3}
+                  key={index}
                   stop-color="#DD1D63"
                   animate={{
                     stopColor: Array.from({ length: 4 }).map(
@@ -229,6 +232,7 @@ const FooterSVG = () => {
               return (
                 <motion.stop
                   offset={index / 3}
+                  key={index}
                   stop-color="#DD1D63"
                   animate={{
                     stopColor: Array.from({ length: 4 }).map(
@@ -261,6 +265,7 @@ const FooterSVG = () => {
               return (
                 <motion.stop
                   offset={index / 3}
+                  key={index}
                   stop-color="#DD1D63"
                   animate={{
                     stopColor: Array.from({ length: 4 }).map(
