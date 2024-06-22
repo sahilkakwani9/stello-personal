@@ -100,14 +100,14 @@ body {
 
   /* Gradient */
   .card-wrapper::before {
-    background: conic-gradient(#ffffff, #ffffff1d, transparent 580deg);
+    background: conic-gradient(#ffffff, #ffffff1d, transparent 280deg);
     content: "";
     position: absolute;
     left: 0%;
     top: -350%;
     height: 800%;
     width: 100%;
-    animation: border-spin 20s linear infinite;
+    animation: border-spin 4s linear infinite;
   }
 
   /* Body */

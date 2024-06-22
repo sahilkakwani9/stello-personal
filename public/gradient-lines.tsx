@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 function GradientLines() {
   return (
     <motion.svg
-      width="1440"
+      // width="1440"
       height="700"
-      viewBox="0 0 1440 700"
+      // viewBox="0 0 1440 700"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={"hidden md:block w-full -z-10 absolute bottom-0"}
+      className={"hidden md:block w-screen -z-10 absolute bottom-0"}
     >
       <path
         fill-rule="evenodd"
