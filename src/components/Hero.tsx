@@ -65,11 +65,11 @@ function Hero() {
           <div className="block md:hidden">
             <GradientLinesPhone />
           </div>
-          <div className="relative">
+          <div className="relative overflow-hidden">
             <div className="relative w-fit mx-auto">
               <motion.img
                 alt="iphone-mockup"
-                src="/mockup.webp"
+                src="/mockup.png"
                 className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] w-[60%] mx-auto z-40"
                 initial={{ opacity: 0.3, y: 200 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ function Hero() {
             <img
               alt="middle-blend-bg"
               src="/hero-bg-blend.png"
-              className="absolute md:bottom-0 bottom-0 left-0 z-10"
+              className="absolute md:-bottom-80 bottom-0 left-0 z-10"
             />
             <img
               alt="middle-blend-bg"

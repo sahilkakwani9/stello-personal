@@ -49,7 +49,7 @@ function IntroToOrbs() {
         <div className="md:w-[70%] mx-auto z-10 ">
           <img
             alt="middle-blend-bg"
-            src="/middle-blend-blur.svg"
+            src="/hero-bg-blend.png"
             className="absolute -top-20 md:-top-[30%] opacity-100 md:opacity-100 -z-10 left-0"
           />
           <section className="relative w-full bg-contain bg-introToOrbsMobile md:bg-none md:bg-cover  bg-opacity-20 h-[100vh] md:min-h-screen bg-transparent z-10">

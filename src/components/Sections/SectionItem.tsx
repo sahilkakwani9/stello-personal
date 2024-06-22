@@ -62,7 +62,7 @@ const Section1 = () => {
         <AnimatedText className="font-primary-medium text-[24px] md:text-[48px] md:leading-[3rem] text-white tracking-wide">
           Seamless Cashback Across Multiple Chains!
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-[#b3b3b2]">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[19px] text-[#b3b3b2] leading-6">
           Earn orbs effortlessly and watch your cashback soar! The more orbs you
           hold, the higher your cashback percentage. Its that simple, that
           exciting!
@@ -137,7 +137,7 @@ const Section2 = () => {
         <AnimatedText className="font-primary-medium text-[24px] md:text-[48px] md:leading-[3rem] text-white md:w-[80%] tracking-wide">
           Empowers Privacy, Ensures Authority
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-[#b3b3b2]">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[19px] text-[#b3b3b2]">
           Discover the power of privacy and authority with our platform. Take
           control of your data and decisions, navigating the digital world with
           confidence. With us, your privacy is protected, your authority
@@ -208,10 +208,10 @@ const Section3 = () => {
         <img src={"/sections_img_3.webp"} alt="phone-1" className="w-[60%]" />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-4">
-        <AnimatedText className="font-primary-medium text-[24px] md:text-[48px] md:leading-[3rem] text-white md:w-[80%] tracking-wide">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[48px] md:leading-[3rem] text-white md:w-[70%] tracking-wide">
           Swap Crypto With Zero Fees
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] text-white opacity-70 md:text-justify">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[19px] text-[#b3b3b2] opacity-70 md:text-justify">
           Swap cryptocurrencies effortlessly, without any fees. Enjoy seamless
           transactions and maximize your assets without worrying about extra
           charges. Experience the freedom of fee-free crypto swapping today!
