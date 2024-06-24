@@ -9,7 +9,7 @@ function GradientLines() {
       // viewBox="0 0 1440 700"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={"hidden md:block w-screen min-w-screen -z-10 absolute bottom-0"}
+      className={"hidden md:block w-screen min-w-screen -z-10 absolute bottom-0 mx-auto"}
     >
       <path
         fill-rule="evenodd"
