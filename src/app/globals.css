@@ -100,7 +100,7 @@ body {
 
   /* Gradient */
   .card-wrapper::before {
-    background: conic-gradient(#ffffff, #ffffff1d, transparent 160deg);
+    background: conic-gradient(#000000, #fe756c, #dd1d63, transparent 160deg);
     content: "";
     position: absolute;
     left: 0%;
@@ -113,10 +113,10 @@ body {
   /* Body */
   .card-content {
     position: absolute;
-    left: 1px;
-    top: 1px;
-    height: calc(100% - 2px);
-    width: calc(100% - 2px);
+    left: 1.5px;
+    top: 1.5px;
+    height: calc(100% - 3px);
+    width: calc(100% - 3px);
     border-radius: 1rem; /* Equivalent to rounded-2xl */
     background: #ffffff14;
   }

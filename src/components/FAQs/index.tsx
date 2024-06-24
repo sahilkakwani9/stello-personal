@@ -11,7 +11,7 @@ function FAQs() {
   };
   return (
     <div
-      className="hidden md:flex p-12 lg:py-[100px] flex-col lg:flex-row justify-center lg:justify-center items-center lg:items-start gap-10 "
+      className="md:flex p-6 md:p-12 lg:py-[100px] flex-col lg:flex-row justify-center lg:justify-center items-center lg:items-start gap-10 "
       id="faq"
     >
       <FaqHeader />
@@ -32,7 +32,7 @@ function FAQs() {
 
 const FaqHeader = () => {
   return (
-    <div className="font-secondary-light font-semibold text-2xl lg:text-5xl leading-5xl text-center flex-1 min-w-fit text-white">
+    <div className="font-primary-light md:font-primary-semibold text-[40px] font-semibold text- md:text-2xl lg:text-5xl leading-10 md:leading-5xl md:text-center flex-1 min-w-fit text-white mb-16 md:mb-0">
       {FAQ_HEADER}
     </div>
   );

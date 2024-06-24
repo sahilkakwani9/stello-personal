@@ -52,7 +52,7 @@ function Hero() {
           </div>
 
           <div className="card-wrapper h-[44px] w-[300px] md:w-[334px] mt-4 m-auto">
-            <div className="mx-auto rounded-[32px] card-content px-4 py-[10px] flex gap-2 justify-center items-center bg-[#141417]">
+            <div className="mx-auto rounded-[32px] card-content px-4 py-[10px] flex gap-2 justify-center items-center bg-black">
               <Image src={"/gift.svg"} height={24} width={24} alt="gift-svg" />
               <p className="text-[#FFFFFFDE] font-primary-regular text-[14px] md:text-[16px]">
                 {HERO_GIFT_HEADLINE}
@@ -111,25 +111,25 @@ function Hero() {
             </div>
             <img
               alt="mockup-mobile"
-              src="/mockup-mobile.webp"
-              className="md:hidden"
+              src="/mockup-mobile.png"
+              className="md:hidden mt-12"
             />
 
-            <img
+            {/* <img
               alt="secondary-mockup-svg"
               src="/secondary-mockup-phone.webp"
               className="md:hidden absolute left-0 bottom-10 w-[30%]"
-            />
+            /> */}
 
             <img
               alt="middle-blend-bg"
               src="/hero-bg-blend.png"
-              className="absolute md:-bottom-80 bottom-0 left-0 z-10"
+              className="hidden md:block absolute md:-bottom-80 bottom-0 left-0 z-10"
             />
             <img
               alt="middle-blend-bg"
               src="/middle-blend-blur.svg"
-              className="absolute md:hidden -bottom-4 left-0 z-10"
+              className="absolute md:hidden -bottom-16 left-0 z-10"
             />
           </div>
 

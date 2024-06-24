@@ -79,7 +79,7 @@ const PlusToCrossIcon = ({ isCross }: { isCross: boolean }) => {
         initial={false}
         animate={{
           rotate: isCross ? 45 : 0,
-          x: 0,
+          x: isCross ? 10 : 0,
           y: 0,
         }}
         transition={{ duration: 0.3 }}
@@ -93,7 +93,7 @@ const PlusToCrossIcon = ({ isCross }: { isCross: boolean }) => {
         initial={false}
         animate={{
           rotate: isCross ? 45 : 0,
-          x: 0,
+          x: isCross ? 10 : 0,
           y: 0,
         }}
         transition={{ duration: 0.3 }}
