@@ -16,7 +16,7 @@ export const Navbar = () => {
   return (
     <div
       className="fixed top-0 px-4 md:px-[140px] flex flex-row items-center justify-between
-    z-50 w-screen backdrop-blur-custom pt-8 md:py-4"
+    z-50 w-screen backdrop-blur-custom py-4"
     >
       <StelloLogo height={32} width={84} onClick={refreshPage} />
       <div className="md:flex flex-row items-center justify-center gap-[48px] hidden">

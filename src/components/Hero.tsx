@@ -51,10 +51,10 @@ function Hero() {
             </div>
           </div>
 
-          <div className="card-wrapper h-[44px] w-[300px] md:w-[334px] mt-4 m-auto">
+          <div className="card-wrapper h-[48px] w-[320px] md:w-[360px] mt-4 m-auto">
             <div className="mx-auto rounded-[32px] card-content px-4 py-[10px] flex gap-2 justify-center items-center bg-black">
               <Image src={"/gift.svg"} height={24} width={24} alt="gift-svg" />
-              <p className="text-[#FFFFFFDE] font-primary-regular text-[14px] md:text-[16px]">
+              <p className="text-[#FFFFFFDE] font-secondary-semibold text-[14px] md:text-[16px] tracking-wide">
                 {HERO_GIFT_HEADLINE}
               </p>
             </div>

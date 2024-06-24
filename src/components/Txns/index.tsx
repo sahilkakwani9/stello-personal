@@ -94,7 +94,7 @@ function Txns() {
   });
 
   return (
-    <div className="md:bg-introToOrbs md:bg-cover relative pb-20">
+    <div className="md:bg-introToOrbs md:bg-cover relative pb-20 -mt-24 md:mt-0">
       <img
         alt="middle-blend-bg"
         src="/bg-blur-middle.png"
