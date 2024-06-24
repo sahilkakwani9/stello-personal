@@ -295,7 +295,7 @@ const FooterSVG = () => {
         viewBox="0 0 1433 599"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="hidden md:block bg-black"
+        className="hidden md:block bg-black w-screen"
       >
         <g clip-path="url(#clip0_347_138)">
           <rect width="1433" height="599" fill="black" />
