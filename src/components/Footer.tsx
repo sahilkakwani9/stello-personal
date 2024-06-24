@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <div className="w-full flex flex-row justify-center items-center relative overflow-hidden">
+    <div className="w-screen flex flex-row justify-center items-center relative overflow-hidden">
       <div id="radial_overlay" className="hidden md:block"></div>
       <img
         src="/footer-top-blend.svg"
@@ -43,7 +43,7 @@ const FooterSVG = () => {
         viewBox="0 0 1434 599"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="hidden md:block absolute -top-[0.9rem] opacity-70"
+        className="hidden md:block absolute -top-[0.9rem] opacity-70 w-screen"
       >
         <path
           d="M1432.49 502.332L1388.17 477.604L1331.24 448.253L1275.72 422.717L1221.94 401.669L1170.21 385.804L1120.94 375.751L1074.46 372.07L1024.38 374.113L979.14 380.665L938.547 391.166L902.441 405.169L870.555 422.201"
