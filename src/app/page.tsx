@@ -12,7 +12,7 @@ import Tutorials from "@/components/Tutorials/Index";
 
 export default function Home() {
   return (
-    <div className="container min-w-[100%]">
+    <div className="w-screen">
       <Navbar />
       <Hero />
       <IntroToOrbs />

@@ -3,10 +3,11 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import MobileFooterSVG from "./Footer/MobileFooter";
 
 function Footer() {
   return (
-    <div className="w-screen flex flex-row justify-center items-center relative overflow-hidden">
+    <div className="w-screen min-w-[100vw] flex flex-row justify-center items-center relative overflow-hidden">
       <div id="radial_overlay" className="hidden md:block"></div>
       <img
         src="/footer-top-blend.svg"
@@ -20,14 +21,13 @@ function Footer() {
         alt="Stello"
         className="absolute mt-8 md:my-14 h-40 w-40 object-contain lg:my-36 lg:w-80 lg:h-40 md:mr-8 z-10"
       />
-      <motion.img
+      {/* <img
         alt="footer-net-phone"
         src="footer-net-mobile.svg"
-        className="w-full -z-10 md:hidden object-fill"
-        animate={{ opacity: [1.2, 0.6, 1.2] }}
-        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-      />
+        className="w-screen -z-10 md:hidden object-cover"
+      /> */}
       <FooterSVG />
+      <MobileFooterSVG />
     </div>
   );
 }

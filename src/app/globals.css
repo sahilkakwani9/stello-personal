@@ -21,7 +21,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: var(--primaryBackground);
   max-width: 100vw;
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
 #radial_overlay {
