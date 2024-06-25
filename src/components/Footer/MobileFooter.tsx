@@ -5,7 +5,7 @@ const MobileFooterSVG = () => {
       viewBox="0 0 390 544"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="md:hidden w-screen px-0 object-fill"
+      className="md:hidden min-w-[100vw] px-0 object-fill"
     >
       <g clip-path="url(#clip0_150_656)">
         <rect className="w-screen" height="544" fill="#0A0A0A" />
