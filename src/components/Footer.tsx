@@ -38,7 +38,7 @@ const FooterSVG = () => {
   return (
     <div className="w-full h-full bg-black">
       <svg
-        width="1434"
+        // width="1434"
         height="599"
         viewBox="0 0 1434 599"
         fill="none"
@@ -290,7 +290,7 @@ const FooterSVG = () => {
       </svg>
 
       <svg
-        width="1433"
+        // width="1433"
         height="599"
         viewBox="0 0 1433 599"
         fill="none"
@@ -298,7 +298,7 @@ const FooterSVG = () => {
         className="hidden md:block bg-black w-screen"
       >
         <g clip-path="url(#clip0_347_138)">
-          <rect width="1433" height="599" fill="black" />
+          <rect className="w-screen" height="599" fill="black" />
           <path
             d="M0 579.508L10.1425 593.128L86.4596 667.852L165.335 725.275"
             stroke="url(#paint0_linear_347_138)"
