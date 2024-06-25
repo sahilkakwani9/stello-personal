@@ -18,7 +18,8 @@ export const HERO_HEADLINE_BOTTOM = "Pays Back Your Gas";
 export const HERO_SECONDARY_HEADLINE =
   "With Stello, when you transact → we refund your gas. We’re cool like that.";
 
-export const HERO_GIFT_HEADLINE = "20  free  orb  awaits  you  when  you  sign  up!";
+export const HERO_GIFT_HEADLINE =
+  "20  free  orb  awaits  you  when  you  sign  up!";
 
 export const WalletText = {
   topCard: {
@@ -55,28 +56,33 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
   },
   {
     question: "Is Stello safe to use?",
-    answer: "Yes, Stello safe to use.",
+    answer:
+      "Yes, Stello is completely safe. We never store your private keys or track your activity.",
   },
   {
     question: "Will it cost me to use Stello?",
-    answer: "No, It doesn't cost you to use stello.",
+    answer:
+      "Nope, Stello is 100% free to use. In fact, we reward you with Orbs for gas refunds.",
   },
   {
     question: "What are Orbs?",
-    answer: "Orbs are exclusive rewards created for Stello users",
+    answer:
+      " Orbs are rewards exclusive to the Stello ecosystem. You can earn Orbs by completing quests and playing games on the Stello Wallet App. Today, you can use Orbs to claim refunds on the gas you spend on transactions. Tomorrow — who knows? 👀",
   },
   {
     question: "Can I use Stello for interacting with dApps?",
     answer:
-      "Yes, Stello has inbuilt DApp Browser,which you can use to interact witch dApps.",
+      "Yes, Stello can be used to interact with any EVM/SOLANA dApp or website.",
   },
   {
     question: "Do you have access to my private keys?",
-    answer: "No,As Stello is self-custodial wallet,we don't store your keys.",
+    answer:
+      "Never. We take security very seriously and never store your private keys or track your activity.",
   },
   {
     question: "I need help. How can I reach out to your team?",
-    answer: "Contact us at help@stello.com",
+    answer:
+      "Feel free to hop on our Discord here or shoot us an email at help@stello.com",
   },
 ];
 

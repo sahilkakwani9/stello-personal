@@ -211,11 +211,11 @@ function Wallet() {
         src="/coins/stellocoin.svg"
         className="hidden md:block absolute -right-6 md:right-0 top-0 h-[100px] w-[100px] md:h-[150px] md:w-[146px] -rotate-90"
       />
-      <img
+      {/* <img
         alt="stello-coin"
         src="/coins/stellocoin.svg"
         className="absolute md:hidden -right-6 -top-10 h-[100px] w-[100px] -rotate-90 scale-110"
-      />
+      /> */}
 
       <div className="absolute left-[5%] md:left-[18vw]  top-[15%] md:top-[18%] z-0">
         <img
