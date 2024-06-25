@@ -54,7 +54,7 @@ function IntroToOrbs() {
           />
           <section className="relative w-full bg-introToOrbsMobile md:bg-none bg-cover  bg-opacity-20 h-[100vh] md:min-h-screen bg-transparent z-10">
             <div className="relative z-10" id="dark_overlay">
-              <AnimatedText className="pt-4 md:pt-0 pb-8 font-primary-semibold text-[50px] w-[70%] mx-auto md:w-full md:px-0 md:text-[52px] text-center text-transparent bg-gradient-to-r bg-clip-text from-start-gradient to-end-gradient leading-tight z-1">
+              <AnimatedText className="pt-4 md:pt-0 pb-8 font-primary-semibold text-[50px] w-[70%] mx-auto md:w-full md:px-0 md:text-[52px] 2xl:text-[80px] text-center text-transparent bg-gradient-to-r bg-clip-text from-start-gradient to-end-gradient leading-tight z-1">
                 {INTRO_ORBS_HEADLINE}
               </AnimatedText>
             </div>

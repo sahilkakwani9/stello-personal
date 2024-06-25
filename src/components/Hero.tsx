@@ -124,7 +124,7 @@ function Hero() {
             <img
               alt="middle-blend-bg"
               src="/hero-bg-blend.png"
-              className="hidden md:block absolute md:-bottom-80 bottom-0 left-0 z-10"
+              className="hidden md:block absolute md:-bottom-80 2xl:-bottom-[26rem] bottom-0 left-0 z-10"
             />
             <img
               alt="middle-blend-bg"

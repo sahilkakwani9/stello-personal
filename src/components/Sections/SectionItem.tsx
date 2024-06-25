@@ -40,7 +40,7 @@ const Section1 = () => {
         animate={controls}
         variants={sectionVariants}
       >
-        <img
+        {/* <img
           src={"/gradient-ellipse.svg"}
           alt="gradient-ellipse"
           className="absolute bottom-20 left-0"
@@ -49,11 +49,11 @@ const Section1 = () => {
           src={"/gradient-ellipse-vertical.svg"}
           alt="gradient-ellipse-vertical"
           className="absolute top-0 right-16 "
-        />
+        /> */}
         <img
           src={"/section-bottom-blend.svg"}
           alt="section-bottom-blend"
-          className="absolute bottom-0 left-0"
+          className="absolute bottom-0 left-0 2xl:rounded-xl"
         />
 
         <img src={"/sections_img_1.webp"} alt="phone-1" className="w-[60%]" />
@@ -115,7 +115,7 @@ const Section2 = () => {
         animate={controls}
         variants={sectionVariants}
       >
-        <img
+        {/* <img
           src={"/gradient-ellipse.svg"}
           alt="gradient-ellipse"
           className="absolute bottom-60 right-0 rotate-180"
@@ -124,11 +124,11 @@ const Section2 = () => {
           src={"/gradient-ellipse-vertical.svg"}
           alt="gradient-ellipse-vertical"
           className="absolute top-0 left-16 "
-        />
+        /> */}
         <img
           src={"/section-bottom-blend.svg"}
           alt="section-bottom-blend"
-          className="absolute bottom-0 left-0"
+          className="absolute bottom-0 left-0 2xl:rounded-xl"
         />
 
         <img src={"/sections_img_2.webp"} alt="phone-1" className="w-[60%]" />
@@ -189,7 +189,7 @@ const Section3 = () => {
         animate={controls}
         variants={sectionVariants}
       >
-        <img
+        {/* <img
           src={"/gradient-ellipse.svg"}
           alt="gradient-ellipse"
           className="absolute top-20 left-0"
@@ -198,11 +198,11 @@ const Section3 = () => {
           src={"/gradient-ellipse-vertical.svg"}
           alt="gradient-ellipse-vertical"
           className="absolute top-0 right-16 "
-        />
+        /> */}
         <img
           src={"/section-bottom-blend.svg"}
           alt="section-bottom-blend"
-          className="absolute bottom-0 left-0"
+          className="absolute bottom-0 left-0 2xl:rounded-xl"
         />
 
         <img src={"/sections_img_3.webp"} alt="phone-1" className="w-[60%]" />
