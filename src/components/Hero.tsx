@@ -12,6 +12,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import GradientLines from "../../public/gradient-lines";
 import GradientLinesPhone from "../../public/gradient-lines-phone";
 import AnimatedText from "./Text/Animated";
+import { HoverBorderGradient } from "./HoverBorderGradient";
 
 function Hero() {
   const { scrollY } = useScroll();
@@ -51,14 +52,24 @@ function Hero() {
             </div>
           </div>
 
-          <div className="card-wrapper h-[48px] w-[320px] md:w-[360px] mt-4 m-auto">
+          {/* <div className="card-wrapper h-[48px] w-[320px] md:w-[360px] my-4 m-auto">
             <div className="mx-auto rounded-[32px] card-content px-4 py-[10px] flex gap-2 justify-center items-center bg-black">
               <Image src={"/gift.svg"} height={24} width={24} alt="gift-svg" />
-              <p className="text-[#FFFFFFDE] font-secondary-semibold text-[14px] md:text-[16px] tracking-wide">
+              <span className="text-[#FFFFFFDE] font-secondary-semibold text-[14px] md:text-[16px] tracking-wide">
                 {HERO_GIFT_HEADLINE}
-              </p>
+              </span>
             </div>
-          </div>
+          </div> */}
+          <HoverBorderGradient
+            containerClassName="rounded-full mt-4"
+            as="button"
+            className="flex gap-2 items-center bg-black mx-auto px-4 py-[10px]"
+          >
+            <Image src={"/gift.svg"} height={24} width={24} alt="gift-svg" />
+            <span className="text-[#FFFFFFDE] font-secondary-semibold text-[14px] md:text-[16px] tracking-wide">
+              {HERO_GIFT_HEADLINE}
+            </span>
+          </HoverBorderGradient>
         </div>
         <div className="relative z-30 mt-8 min-w-screen">
           <GradientLines />
