@@ -146,7 +146,7 @@ function Txns() {
         <img
           alt="bottom-blend-bg"
           src="/txn-bg-blend.png"
-          className="hidden absolute md:block -bottom-0 md:-bottom-0 left-0 z-20 2xl:hidden"
+          className="hidden absolute md:block -bottom-0 md:-bottom-0 left-0 z-20 2xl:bottom-20"
         />
 
         <img

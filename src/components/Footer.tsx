@@ -36,14 +36,14 @@ export default Footer;
 
 const FooterSVG = () => {
   return (
-    <div className="w-full h-full bg-black">
+    <div className="w-screen h-full bg-black">
       <svg
         // width="1434"
         height="599"
         viewBox="0 0 1434 599"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="hidden md:block absolute -top-[0.9rem] opacity-70 w-screen"
+        className="hidden md:block absolute -top-[0.9rem] opacity-70 w-screen object-fill"
       >
         <path
           d="M1432.49 502.332L1388.17 477.604L1331.24 448.253L1275.72 422.717L1221.94 401.669L1170.21 385.804L1120.94 375.751L1074.46 372.07L1024.38 374.113L979.14 380.665L938.547 391.166L902.441 405.169L870.555 422.201"
