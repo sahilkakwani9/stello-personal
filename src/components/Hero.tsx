@@ -23,7 +23,7 @@ function Hero() {
   const yLitecoin = useTransform(scrollY, [0, 1000], [0, -200]);
   return (
     <>
-      <div className="pt-[140px] min-h-screen min-w-screen">
+      <div className="pt-[140px] md:pt-[210px] xl:pt-[140px] min-h-screen md:min-h-full xl:min-h-screen min-w-screen">
         <div className="w-[90%] lg:w-[50%] self-center m-auto">
           <div className="overflow-hidden">
             <AnimatedText className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-15% to-90%  from-start-gradient-secondary to-end-gradient-secondary leading-none">
