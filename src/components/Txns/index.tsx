@@ -36,7 +36,7 @@ function Txns() {
           { x: 890, y: 160 },
           { x: 980, y: 260 },
         ]);
-      } else {
+      } else if (window.innerWidth >= 1024) {
         setCoinPositions([
           { x: 150, y: 260 },
           { x: 210, y: 160 },
@@ -47,6 +47,18 @@ function Txns() {
           { x: 690, y: 80 },
           { x: 770, y: 160 },
           { x: 850, y: 260 },
+        ]);
+      } else {
+        setCoinPositions([
+          { x: 20, y: 260 },
+          { x: 80, y: 160 },
+          { x: 160, y: 80 },
+          { x: 260, y: 16 },
+          { x: 360, y: 0 },
+          { x: 460, y: 16 },
+          { x: 560, y: 80 },
+          { x: 640, y: 160 },
+          { x: 690, y: 260 },
         ]);
       }
     };
@@ -102,7 +114,7 @@ function Txns() {
       />
       <main
         ref={ref}
-        className="relative md:w-[70%] bg-introToOrbsMobile md:bg-none mx-auto self-center md:bg-cover overflow-hidden z-10 md:-mt-12"
+        className="relative xl:w-[70%] bg-introToOrbsMobile md:bg-none mx-auto self-center md:bg-cover overflow-hidden z-10 md:-mt-12"
       >
         {coinPositions.map((pos, index) => (
           <motion.img
@@ -134,7 +146,7 @@ function Txns() {
               duration: 1,
               ease: "backInOut",
             }}
-            className="absolute w-[60px] h-[60px] md:w-[10%] md:h-[10%]"
+            className="absolute w-[60px] h-[60px] xl:w-[10%] xl:h-[10%]"
           />
         ))}
         <img
@@ -155,7 +167,7 @@ function Txns() {
           className="absolute -bottom-20 md:hidden left-0 z-1"
         />
 
-        <div className="absolute z-20 bottom-0 left-0 md:left-[27.5%] md:w-[45%]">
+        <div className="absolute z-20 bottom-0 left-0 md:w-[80%] md:left-[10%] xl:left-[27.5%] xl:w-[45%]">
           <p className="font-primary-bold text-[32px] md:text-[44px] text-white relative text-center md:ml-8 tracking-wide">
             {TxnText.heading}
           </p>
