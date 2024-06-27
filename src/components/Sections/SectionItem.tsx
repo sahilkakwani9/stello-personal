@@ -59,7 +59,7 @@ const Section1 = () => {
         <img
           src={"/sections_img_1.webp"}
           alt="phone-1"
-          className="w-[55%] md:w-[58%] h-full object-contain"
+          className="w-[55%] md:w-[50%] xl:w-[58%] h-full object-contain"
         />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-4">
@@ -138,7 +138,7 @@ const Section2 = () => {
         <img
           src={"/sections_img_2.webp"}
           alt="phone-1"
-          className="w-[55%] md:w-[58%] h-full object-contain"
+          className="w-[55%] md:[50%] xl:w-[58%] h-full object-contain"
         />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-4">
@@ -216,7 +216,7 @@ const Section3 = () => {
         <img
           src={"/sections_img_3.webp"}
           alt="phone-1"
-          className="w-[55%] md:w-[58%] object-contain overflow-hidden"
+          className="w-[55%] md:w-[50%] xl:w-[58%] object-contain overflow-hidden"
         />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-4">

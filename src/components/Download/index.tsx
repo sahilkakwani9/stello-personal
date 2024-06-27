@@ -70,7 +70,7 @@ function DownloadSection() {
             width={180}
             height={180}
             alt="Stello"
-            className="hidden md:block absolute top-[-25px] right-12 md:right-0 my-14 md:my-24 h-16 w-16 md:h-12 md:w-12 object-contain  xl:my-36 xl:w-84 xl:h-28 "
+            className="hidden md:block absolute top-[-25px] right-12 md:right-0 xl:right-12 my-14 md:my-24 h-16 w-16 md:h-12 md:w-12 object-contain  xl:my-36 xl:w-84 xl:h-28 "
           />
         </section>
       </div>
