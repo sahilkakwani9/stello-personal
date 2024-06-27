@@ -40,12 +40,12 @@ function SixthGrid() {
           <div className="h-full w-full">
             <img
               src={"/sixth_grid_coin.webp"}
-              className="absolute bottom-[60%] md:bottom-[40%] xl:bottom-[65%] left-[30px] h-[20%] w-[80%] md:h-[35%] xl:h-[25%] md:w-full"
+              className="absolute bottom-[60%] md:bottom-[60%] xl:bottom-[65%] left-[30px] h-[20%] w-[80%] md:h-[35%] xl:h-[25%] md:w-full"
               alt="coinbase"
             />
             <img
               src={"/sixth_grid_moonpay.webp"}
-              className="absolute bottom-[35%] md:bottom-[15%] xl:bottom-[35%] md:left-[40px] left-[20%]  h-[20%] w-[80%]  md:h-[35%] xl:h-[25%] md:w-full"
+              className="absolute bottom-[35%] md:bottom-[20%] xl:bottom-[35%] md:left-[40px] left-[20%]  h-[20%] w-[80%]  md:h-[35%] xl:h-[25%] md:w-full"
               alt="moonpay"
             />
             <img
@@ -58,7 +58,7 @@ function SixthGrid() {
 
           <img
             src={"/sixth_grid_dollar_sign.webp"}
-            className="absolute bottom-8 right-10 h-[68%] md:h-[80%] w-[30%] md:w-[35%] object-center z-10 left-[50%]"
+            className="absolute bottom-8 md:bottom-4 xl:bottom-8 right-10 h-[68%] md:h-[80%] w-[30%] md:w-[35%] object-center z-10 left-[50%]"
             alt="dollar-sign"
           />
         </section>

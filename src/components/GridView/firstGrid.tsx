@@ -37,12 +37,12 @@ function FirstGrid() {
           <img
             src={"/grid/grid1/vectorLinesLeft.svg"}
             alt="lines-left"
-            className="absolute -top-24 -left-28 md:top-0 md:left-0 xl:-left-8 w-[40%] md:w-[80%] xl:w-[40%] scale-[1.3]"
+            className="absolute -top-24 -left-28 md:top-0 lg:-top-4 xl:top-0 md:left-0 xl:-left-8 w-[40%] md:w-[80%] xl:w-[40%] scale-[1.3]"
           />
           <img
             src={"/grid/grid1/encryption.webp"}
             alt="encryption"
-            className="absolute -top-24 md:top-6 xl:top-10 left-0 w-[40%] md:w-[40%] xl:w-[20%] z-[15] md:left-28"
+            className="absolute -top-24 md:top-6 xl:top-10 left-0 w-[40%] md:w-[40%] xl:w-[20%] z-[15] md:left-28 lg:left-32 xl:left-28"
           />
           <img
             src={"grid/grid1/vectorLinesRight.webp"}
