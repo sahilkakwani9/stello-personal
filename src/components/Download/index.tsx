@@ -32,13 +32,13 @@ function DownloadSection() {
       <div className="md:flex justify-between items-center bg-gradient-to-b from-[#D2D2D214] to-[#08080800] rounded-[32px] md:max-h-[350px] border-gradient-light">
         <section className="flex flex-col items-start justify-center gap-4 md:pl-20 p-4 md:p-0">
           <div className="">
-            <h1 className="font-secondary-medium text-white text-[34px] md:text-4xl leading-none md:w-[70%]">
+            <h1 className="font-secondary-medium text-white text-[34px] md:text-2xl xl:text-4xl leading-none md:w-[90%] xl:w-[70%]">
               {DOWNLOAD_HEADLINE_FIRST}
             </h1>
           </div>
           <div className="flex gap-1 items-center">
             <p
-              className="py-3 w-[70vw] md:w-full md:px-20 cursor-pointer text-sm text-center rounded-[33px] bg-white text-black leading-5 font-secondary-medium"
+              className="py-3 md:py-2 xl:py-3 w-[70vw] md:w-full md:px-10 xl:px-20 cursor-pointer text-sm text-center rounded-[33px] bg-white text-black leading-5 font-secondary-medium"
               onClick={() =>
                 (window.location.href =
                   "https://drive.google.com/drive/u/2/folders/1ZZTj-ZkiE4RH1zJQgMONOkYpIzd4TH5q")
@@ -58,7 +58,7 @@ function DownloadSection() {
           <img
             src={"/cta-banner.webp"}
             alt="download-icon"
-            className="hidden md:block md:h-[350px] md:object-cover rounded-[28px]"
+            className="hidden md:block md:h-[200px] w-full xl:h-[350px] md:object-cover md:rounded-[28px]"
           />
           <img
             src={"/cta-banner-mobile.webp"}
@@ -70,7 +70,7 @@ function DownloadSection() {
             width={180}
             height={180}
             alt="Stello"
-            className="hidden md:block absolute top-[-25px] right-12 my-14 h-16 w-16 object-contain lg:my-36 lg:w-84 lg:h-28 "
+            className="hidden md:block absolute top-[-25px] right-12 md:right-0 my-14 md:my-24 h-16 w-16 md:h-12 md:w-12 object-contain  xl:my-36 xl:w-84 xl:h-28 "
           />
         </section>
       </div>

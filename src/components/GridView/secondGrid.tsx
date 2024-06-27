@@ -15,7 +15,7 @@ function SecondGrid() {
   }
   return (
     <motion.div
-      className="flex col-span-1 row-span-2 h-[320px] md:h-[350px] justify-center grid-border-gradient-secondary items-center bg-[#141417] text-white"
+      className="flex col-span-1 row-span-2 h-[320px] md:h-[200px] xl:h-[350px] justify-center grid-border-gradient-secondary items-center bg-[#141417] text-white"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -34,7 +34,7 @@ function SecondGrid() {
     >
       <div className="flex flex-col justify-between gap-4 h-full w-full z-20 overflow-hidden">
         <section className="md:px-4 pt-8 py-4 md:pb-2 md:pt-4">
-          <h1 className="font-secondary-regular text-center md:text-start md:w-[80%] text-[30px] leading-tight">
+          <h1 className="font-secondary-regular text-center md:text-start md:w-[80%] text-[30px] md:text-[12px] xl:text-[30px] leading-tight">
             {SECOND_GRID_HEADLINE}
           </h1>
         </section>
