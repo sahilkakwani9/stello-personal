@@ -36,6 +36,18 @@ function Txns() {
           { x: 890, y: 160 },
           { x: 980, y: 260 },
         ]);
+      } else if (window.innerWidth > 1280) {
+        setCoinPositions([
+          { x: 150, y: 260 },
+          { x: 210, y: 160 },
+          { x: 290, y: 80 },
+          { x: 390, y: 16 },
+          { x: 490, y: 0 },
+          { x: 590, y: 16 },
+          { x: 690, y: 80 },
+          { x: 770, y: 160 },
+          { x: 850, y: 260 },
+        ]);
       } else if (window.innerWidth >= 1024) {
         const screenWidth = window.innerWidth;
         setCoinPositions([
