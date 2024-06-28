@@ -37,28 +37,30 @@ function Txns() {
           { x: 980, y: 260 },
         ]);
       } else if (window.innerWidth >= 1024) {
+        const screenWidth = window.innerWidth;
         setCoinPositions([
-          { x: 150, y: 260 },
-          { x: 210, y: 160 },
-          { x: 290, y: 80 },
-          { x: 390, y: 16 },
-          { x: 490, y: 0 },
-          { x: 590, y: 16 },
-          { x: 690, y: 80 },
-          { x: 770, y: 160 },
-          { x: 850, y: 260 },
+          { x: 0.1 * screenWidth, y: 260 }, // 5% of screen width
+          { x: 0.15 * screenWidth, y: 160 }, // 20% of screen width
+          { x: 0.25 * screenWidth, y: 80 }, // 40% of screen width
+          { x: 0.35 * screenWidth, y: 16 }, // 65% of screen width
+          { x: 0.5 * screenWidth, y: 0 }, // 90% of screen width
+          { x: 0.6 * screenWidth, y: 16 }, // 115% of screen width (may need to adjust)
+          { x: 0.7 * screenWidth, y: 80 }, // 140% of screen width (may need to adjust)
+          { x: 0.8 * screenWidth, y: 160 }, // 160% of screen width (may need to adjust)
+          { x: 0.85 * screenWidth, y: 260 },
         ]);
       } else {
+        const screenWidth = window.innerWidth;
         setCoinPositions([
-          { x: 20, y: 260 },
-          { x: 80, y: 160 },
-          { x: 160, y: 80 },
-          { x: 260, y: 16 },
-          { x: 360, y: 0 },
-          { x: 460, y: 16 },
-          { x: 560, y: 80 },
-          { x: 640, y: 160 },
-          { x: 690, y: 260 },
+          { x: 0.1 * screenWidth, y: 260 }, // 5% of screen width
+          { x: 0.15 * screenWidth, y: 160 }, // 20% of screen width
+          { x: 0.25 * screenWidth, y: 80 }, // 40% of screen width
+          { x: 0.35 * screenWidth, y: 16 }, // 65% of screen width
+          { x: 0.5 * screenWidth, y: 0 }, // 90% of screen width
+          { x: 0.6 * screenWidth, y: 16 }, // 115% of screen width (may need to adjust)
+          { x: 0.7 * screenWidth, y: 80 }, // 140% of screen width (may need to adjust)
+          { x: 0.8 * screenWidth, y: 160 }, // 160% of screen width (may need to adjust)
+          { x: 0.85 * screenWidth, y: 260 },
         ]);
       }
     };
@@ -106,7 +108,7 @@ function Txns() {
   });
 
   return (
-    <div className="md:bg-introToOrbs md:bg-cover relative pb-20 -mt-24 md:mt-0">
+    <div className="md:bg-introToOrbs md:bg-cover relative pb-20 -mt-24 md:mt-0 bg-black">
       <img
         alt="middle-blend-bg"
         src="/bg-blur-middle.png"

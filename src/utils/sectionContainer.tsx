@@ -8,7 +8,7 @@ import SectionItem from "@/components/Sections/SectionItem";
 const SectionContainer = ({ data }: any) => {
   return (
     <div
-      className="flex flex-col min-h-screen justify-center items-center w-[90%] md:w-[80%] mx-auto"
+      className="flex flex-col min-h-screen justify-center items-center w-[90%] md:w-[80%] mx-auto z-10 bg-black"
       id="features"
     >
       {/* {data.map((section: any, index: number) => {
