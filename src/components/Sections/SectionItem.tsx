@@ -33,7 +33,7 @@ const Section1 = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-28 md:mt-16">
       <motion.main
-        className="border-gradient-light bg-sectionBg object-cover bg-contain bg-no-repeat w-full md:w-[45%] md:h-full 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden"
+        className="border-gradient-light bg-sectionBg object-cover bg-cover bg-no-repeat w-full md:w-[45%] md:h-full 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden"
         style={{ paddingTop: "60px" }}
         ref={ref}
         initial="hidden"
@@ -113,7 +113,7 @@ const Section2 = () => {
       className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-24 mx-auto mt-12"
     >
       <motion.main
-        className="border-gradient-light bg-sectionBg object-cover bg-contain bg-no-repeat w-full md:w-[45%] h-10vh md:h-[68%] 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden"
+        className="border-gradient-light bg-sectionBg object-cover bg-cover bg-no-repeat w-full md:w-[45%] h-10vh md:h-[68%] 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden"
         style={{ paddingTop: "60px" }}
         initial="hidden"
         animate={controls}
@@ -190,7 +190,7 @@ const Section3 = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-12">
       <motion.main
-        className="border-gradient-light bg-sectionBg object-fill bg-contain bg-no-repeat w-full md:w-[45%] md:h-[68%] 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden"
+        className="border-gradient-light bg-sectionBg object-fill bg-cover bg-no-repeat w-full md:w-[45%] md:h-[68%] 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden"
         style={{ paddingTop: "60px" }}
         ref={ref}
         initial="hidden"
