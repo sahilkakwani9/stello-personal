@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 export const DesktopFooterSVG = () => {
   return (
-    <div className="w-screen h-full bg-black">
+    <div className="hidden 2xl:block w-screen h-full bg-black">
       <svg
         // width="1434"
         // height="599"
