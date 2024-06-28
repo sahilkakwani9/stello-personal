@@ -37,16 +37,17 @@ function Txns() {
           { x: 980, y: 260 },
         ]);
       } else if (window.innerWidth > 1280) {
+        const screenWidth = window.innerWidth;
         setCoinPositions([
-          { x: 150, y: 260 },
-          { x: 210, y: 160 },
-          { x: 290, y: 80 },
-          { x: 390, y: 16 },
-          { x: 490, y: 0 },
-          { x: 590, y: 16 },
-          { x: 690, y: 80 },
-          { x: 770, y: 160 },
-          { x: 850, y: 260 },
+          { x: 0.1 * screenWidth, y: 260 }, // 5% of screen width
+          { x: 0.13 * screenWidth, y: 160 }, // 20% of screen width
+          { x: 0.18 * screenWidth, y: 80 }, // 40% of screen width
+          { x: 0.25 * screenWidth, y: 16 }, // 65% of screen width
+          { x: 0.33 * screenWidth, y: 0 }, // 90% of screen width
+          { x: 0.42 * screenWidth, y: 16 }, // 115% of screen width (may need to adjust)
+          { x: 0.48 * screenWidth, y: 80 }, // 140% of screen width (may need to adjust)
+          { x: 0.52 * screenWidth, y: 160 }, // 160% of screen width (may need to adjust)
+          { x: 0.55 * screenWidth, y: 260 },
         ]);
       } else if (window.innerWidth >= 1024) {
         const screenWidth = window.innerWidth;
