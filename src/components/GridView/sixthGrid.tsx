@@ -15,7 +15,7 @@ function SixthGrid() {
   }
   return (
     <motion.div
-      className="flex col-span-1 row-span-2 justify-center bg-[#141417] text-white text-xl relative h-[40vh] grid-border-gradient-secondary md:h-[140px] xl:h-[300px] xl:-mt-10"
+      className="flex col-span-1 row-span-2 justify-center bg-[#141417] text-white text-xl relative pb-6 md:pb-0 grid-border-gradient-secondary md:h-[140px] xl:h-[300px] xl:-mt-10"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -33,24 +33,24 @@ function SixthGrid() {
       }}
     >
       <div className="pt-6 flex flex-col justify-between md:gap-4 h-full w-full items-center z-10 overflow-hidden">
-        <h1 className="font-primary-regular text-[32px] md:text-[14px] xl:text-[24px] text-center px-6 xl:px-10 md:leading-4">
+        <h1 className="font-primary-regular text-[32px] md:text-[14px] xl:text-[24px] text-center px-6 xl:px-8 md:leading-4 leading-10 xl:leading-6">
           {SIXTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-full relative md:py-4">
-          <div className="h-full w-full">
+          <div className="h-full w-full flex flex-col gap-4 md:gap-0 md:block mt-[10%] md:mt-0">
             <img
               src={"/sixth_grid_coin.webp"}
-              className="absolute bottom-[60%] md:bottom-[60%] xl:bottom-[65%] left-[30px] h-[20%] w-[80%] md:h-[35%] xl:h-[25%] md:w-full"
+              className="md:absolute md:bottom-[60%] xl:bottom-[65%] ml-[73px] md:ml-0 h-[42px] w-[234px] md:h-[35%] xl:h-[25%] md:w-full"
               alt="coinbase"
             />
             <img
               src={"/sixth_grid_moonpay.webp"}
-              className="absolute bottom-[35%] md:bottom-[20%] xl:bottom-[35%] md:left-[40px] left-[20%]  h-[20%] w-[80%]  md:h-[35%] xl:h-[25%] md:w-full"
+              className="md:absolute bottom-[35%] md:bottom-[20%] xl:bottom-[35%] md:left-[40px] ml-[103px] md:ml-0  h-[42px] w-[234px]  md:h-[35%] xl:h-[25%] md:w-full"
               alt="moonpay"
             />
             <img
               src={"/sixth_grid_pancake.webp"}
-              className="absolute bottom-[10%] md:bottom-[5%] md:left-[50px] left-[20%] h-[20%] w-[80%]  md:h-[25%]  md:w-full z-20 md:hidden xl:block"
+              className="md:absolute bottom-[10%] md:bottom-[5%] md:left-[50px] ml-[103px] md:ml-0 h-[42px] w-[234px]  md:h-[25%]  md:w-full z-20 md:hidden xl:block"
               alt="pancake"
             />
             <div className="h-[90%] absolute top-[0] right-0 w-[20%] blur-3xl bg-[#141417] z-30" />
@@ -58,7 +58,12 @@ function SixthGrid() {
 
           <img
             src={"/sixth_grid_dollar_sign.webp"}
-            className="absolute bottom-8 md:bottom-4 xl:bottom-8 right-10 h-[68%] md:h-[80%] w-[30%] md:w-[35%] object-center z-10 left-[50%]"
+            className="absolute hidden md:block bottom-8 md:bottom-4 xl:bottom-8 right-10 h-[138px] md:h-[80%] w-[82px] md:w-[35%] object-center z-10 left-[50%]"
+            alt="dollar-sign"
+          />
+          <img
+            src={"/sixth_grid_dollar_sign_mobile.png"}
+            className="absolute top-[12%]  right-10 w-[35%] z-10 left-[50%] md:hidden"
             alt="dollar-sign"
           />
         </section>
