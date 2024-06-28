@@ -8,7 +8,7 @@ const MobileFooterSVG = () => {
         viewBox="0 0 390 544"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute -bottom-[8vh] md:hidden  w-screen h-full"
+        className="absolute -bottom-[12.5%] md:hidden  w-screen h-full"
       >
         <path
           d="M124.504 340.771L98.5039 332.771L82.1369 332L62.7103 335.905L40.9831 344.836L16.8203 359.353L-5.69977 377.871L-29.6498 403.097L-54.9339 434.509L-81.3585 471.507L-108.827 513.434L-135 556.058"
