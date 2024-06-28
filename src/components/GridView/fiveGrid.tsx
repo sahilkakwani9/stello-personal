@@ -28,7 +28,7 @@ function FiveGrid() {
         visible: {
           opacity: 1,
           scale: 1,
-          transition: { duration: 1, delay: 0.2 },
+          transition: { duration: 0.8 },
         },
       }}
     >

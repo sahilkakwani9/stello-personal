@@ -13,7 +13,12 @@ function Footer() {
       <img
         src="/footer-top-blend.png"
         alt="footer-blend"
-        className="absolute top-0 left-0 z-10"
+        className="hidden md:block absolute top-0 left-0 z-10"
+      />
+        <img
+        src="/footer-top-blend-mobile.png"
+        alt="footer-blend"
+        className="md:hidden absolute top-0 left-0 z-10"
       />
       <Image
         src="/footer-logo.webp"
