@@ -190,7 +190,7 @@ const Section3 = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-12">
       <motion.main
-        className="border-gradient-light bg-sectionBg object-fill bg-cover bg-no-repeat w-full md:w-[45%] md:h-[68%] 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden"
+        className="border-gradient-light bg-sectionBg object-fill bg-cover bg-no-repeat w-full md:w-[45%] md:h-[68%] 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden z-10"
         style={{ paddingTop: "60px" }}
         ref={ref}
         initial="hidden"
