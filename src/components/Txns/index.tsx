@@ -123,11 +123,11 @@ function Txns() {
 
   return (
     <div className="md:bg-introToOrbs md:bg-cover relative pb-20 -mt-24 md:mt-0 bg-black">
-      <img
+      {/* <img
         alt="middle-blend-bg"
         src="/bg-blur-middle.png"
         className="hidden md:block absolute -top-40 z-10"
-      />
+      /> */}
       <main
         ref={ref}
         className="relative xl:w-[70%] bg-introToOrbsMobile md:bg-none mx-auto self-center md:bg-cover overflow-hidden z-10 md:-mt-12"
@@ -202,4 +202,3 @@ function Txns() {
 }
 
 export default Txns;
-``;
