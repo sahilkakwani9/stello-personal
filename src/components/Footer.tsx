@@ -34,7 +34,7 @@ function Footer() {
       /> */}
       <FooterSVG />
       <MobileFooterSVG />
-      <DesktopFooterSVG />
+      {/* <DesktopFooterSVG /> */}
     </div>
   );
 }
@@ -43,14 +43,14 @@ export default Footer;
 
 const FooterSVG = () => {
   return (
-    <div className="w-screen h-full bg-black 2xl:hidden">
+    <div className="w-screen h-full bg-black ">
       <svg
         width="1434"
         height="599"
         viewBox="0 0 1434 599"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="hidden xl:block absolute md:top-[20.3%] lg:top-[4.6rem] xl:-top-[2.6%] opacity-70 2xl:hidden w-screen object-contain"
+        className="hidden xl:block absolute md:top-[20.3%] lg:top-[4.6rem] xl:-top-[2.6%] opacity-70  w-screen object-contain"
       >
         <path
           d="M1432.49 502.332L1388.17 477.604L1331.24 448.253L1275.72 422.717L1221.94 401.669L1170.21 385.804L1120.94 375.751L1074.46 372.07L1024.38 374.113L979.14 380.665L938.547 391.166L902.441 405.169L870.555 422.201"
