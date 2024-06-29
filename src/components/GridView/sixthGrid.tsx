@@ -37,20 +37,20 @@ function SixthGrid() {
           {SIXTH_GRID_HEADLINE}
         </h1>
         <section className="w-full h-full relative md:py-4">
-          <div className="h-full w-full flex flex-col gap-4 md:gap-0 md:block mt-[10%] md:mt-0">
+          <div className="h-full w-full flex flex-col gap-4 md:gap-2 mt-[10%] ">
             <img
               src={"/sixth_grid_coin.webp"}
-              className="md:absolute md:bottom-[60%] xl:bottom-[65%] ml-[73px] md:ml-0 h-[42px] w-[234px] md:h-[35%] xl:h-[25%] md:w-full"
+              className=" ml-[73px] md:ml-[47px] h-[42px] w-[234px] md:h-[42px] xl:h-[42px] md:w-[258px]"
               alt="coinbase"
             />
             <img
               src={"/sixth_grid_moonpay.webp"}
-              className="md:absolute bottom-[35%] md:bottom-[20%] xl:bottom-[35%] md:left-[40px] ml-[103px] md:ml-0  h-[42px] w-[234px]  md:h-[35%] xl:h-[25%] md:w-full"
+              className="md:left-[40px] ml-[103px] md:ml-[60px]  h-[42px] w-[234px] md:h-[42px] xl:h-[42px] md:w-[258px]"
               alt="moonpay"
             />
             <img
               src={"/sixth_grid_pancake.webp"}
-              className="md:absolute bottom-[10%] md:bottom-[5%] md:left-[50px] ml-[103px] md:ml-0 h-[42px] w-[234px]  md:h-[25%]  md:w-full z-20 md:hidden xl:block"
+              className="md:left-[50px] ml-[103px] md:ml-[82px] h-[42px] w-[234px]  md:h-[42px] xl:h-[42px] md:w-[258px] z-20 md:hidden xl:block"
               alt="pancake"
             />
             <div className="h-[90%] absolute top-[0] right-0 w-[20%] blur-3xl bg-[#141417] z-30" />
@@ -58,7 +58,7 @@ function SixthGrid() {
 
           <img
             src={"/sixth_grid_dollar_sign.webp"}
-            className="absolute hidden md:block bottom-8 md:bottom-4 xl:bottom-8 right-10 h-[138px] md:h-[80%] w-[82px] md:w-[35%] object-center z-10 left-[50%]"
+            className="absolute hidden md:block bottom-8 md:bottom-4 xl:bottom-8 right-10 h-[138px] md:h-[147px] w-[72px] md:w-[87px] object-center z-10 left-[50%]"
             alt="dollar-sign"
           />
           <img
