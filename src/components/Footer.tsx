@@ -45,8 +45,8 @@ const FooterSVG = () => {
   return (
     <div className="w-screen h-full bg-black ">
       <svg
-        width="1434"
-        height="599"
+        // width="1434"
+        // height="599"
         viewBox="0 0 1434 599"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -297,8 +297,8 @@ const FooterSVG = () => {
       </svg>
 
       <svg
-        width="1434"
-        height="599"
+        // width="1434"
+        // height="599"
         viewBox="0 0 1434 599"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
