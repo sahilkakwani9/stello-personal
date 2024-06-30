@@ -125,7 +125,7 @@ function Txns() {
     <div className="md:bg-introToOrbs md:bg-cover relative pb-20 -mt-24 md:mt-0 bg-black">
       {/* <img
         alt="middle-blend-bg"
-        src="/bg-blur-middle.png"
+        src="/bg-blur-middle.webp"
         className="hidden md:block absolute -top-40 z-10"
       /> */}
       <main
@@ -167,13 +167,13 @@ function Txns() {
         ))}
         <img
           alt="mockup-with-chains"
-          src="/txns/mockup-with-chains.png"
+          src="/txns/mockup-with-chains.webp"
           className="h-[30%] w-[90%] md:h-[700px] md:w-[420px] md:mx-auto pt-40 mr-8 z-20"
         />
 
         <img
           alt="bottom-blend-bg"
-          src="/txn-bg-blend.png"
+          src="/txn-bg-blend.webp"
           className="hidden absolute md:block -bottom-0 md:-bottom-0 left-0 z-20 2xl:bottom-0"
         />
 
@@ -194,7 +194,7 @@ function Txns() {
       </main>
       <img
         alt="middle-blend-bg-extended"
-        src="/txns/footer-blend-extended.png"
+        src="/txns/footer-blend-extended.webp"
         className="absolute hidden bottom-0 md:block left-0 z-1"
       />
     </div>

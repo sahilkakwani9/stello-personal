@@ -62,7 +62,7 @@ function SixthGrid() {
             alt="dollar-sign"
           />
           <img
-            src={"/sixth_grid_dollar_sign_mobile.png"}
+            src={"/sixth_grid_dollar_sign_mobile.webp"}
             className="absolute top-[12%]  right-10 w-[35%] z-10 left-[50%] md:hidden"
             alt="dollar-sign"
           />

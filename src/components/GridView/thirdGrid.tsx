@@ -39,7 +39,7 @@ function ThirdGrid() {
         </h1>
         <section className="h-full px-12 max-h-56 md:max-h-full overflow-hidden">
           <img
-            src={"/grid/grid3/card.png"}
+            src={"/grid/grid3/card.webp"}
             className="md:w-full mx-auto my-0 w-[90%] md:h-full"
             alt="muliti-chain-asset"
           />

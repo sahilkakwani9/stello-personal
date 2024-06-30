@@ -11,12 +11,12 @@ function Footer() {
     <div className="justify-center items-center relative overflow-hidden">
       <div id="radial_overlay" className="hidden md:block"></div>
       <img
-        src="/footer-top-blend.png"
+        src="/footer-top-blend.webp"
         alt="footer-blend"
         className="hidden md:block absolute top-0 left-0 z-10"
       />
         <img
-        src="/footer-top-blend-mobile.png"
+        src="/footer-top-blend-mobile.webp"
         alt="footer-blend"
         className="md:hidden absolute top-0 left-0 z-10"
       />

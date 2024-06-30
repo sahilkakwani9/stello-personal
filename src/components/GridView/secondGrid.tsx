@@ -55,7 +55,7 @@ function SecondGrid() {
             className="md:hidden absolute z-20 bottom-0 -right-4 h-[60%]"
           />
           <img
-            src={"/grid/grid2/card1.png"}
+            src={"/grid/grid2/card1.webp"}
             alt="grid-card"
             className="hidden md:block absolute z-20 right-0 bottom-0 h-[60%] w-[45%]"
           />
