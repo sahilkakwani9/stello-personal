@@ -3,6 +3,13 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { WalletText } from "@/constants";
 
+export const debounce = (func: () => void, wait: number) => {
+  let timeout: NodeJS.Timeout;
+  return (...args: []) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+};
 function Wallet() {
   const walletRef = useRef<HTMLDivElement>(null);
   const firstDivControls = useAnimation();
@@ -51,10 +58,11 @@ function Wallet() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const debouncedHandleScroll = debounce(handleScroll, 100);
+    window.addEventListener("scroll", debouncedHandleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedHandleScroll);
     };
   }, []);
 

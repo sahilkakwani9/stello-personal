@@ -2,49 +2,50 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { INTRO_ORBS_HEADLINE } from "../../constants";
-import Wallet from "./Wallet";
+import Wallet, { debounce } from "./Wallet";
 import AnimatedText from "../Text/Animated";
 
 function IntroToOrbs() {
-  const [isSticky, setIsSticky] = useState(false);
 
-  const handleScroll = () => {
-    const vh = window.innerHeight;
-    if (window.innerWidth < 768) {
-      if (window.scrollY < 4.2 * vh) {
-        console.log("making postion fixed");
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    } else {
-      if (window.scrollY < 6 * vh) {
-        console.log("making postion fixed");
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    }
-  };
   useEffect(() => {
-    const handleScrollY = () => {
-      handleScroll();
+    const element = document.getElementById('orbs');
+
+    const handleScroll = () => {
+      if (!element) return
+      const vh = window.innerHeight;
+      if (window.innerWidth < 768) {
+        if (window.scrollY < 4.2 * vh) {
+          console.log("making position fixed");
+          element.classList.add('sticky', 'top-20', 'overflow-hidden', 'bg-none');
+          element.classList.remove('absolute', 'bottom-0', 'left-0', 'w-full');
+        } else {
+          element.classList.remove('sticky', 'top-20');
+          element.classList.add('absolute', 'bottom-0', 'left-0', 'w-full', 'overflow-hidden', 'bg-none');
+        }
+      } else {
+        if (window.scrollY < 6 * vh) {
+          console.log("making position fixed");
+          element.classList.add('sticky', 'top-20', 'overflow-hidden', 'md:overflow-visible', 'md:bg-introToOrbs', 'bg-none');
+          element.classList.remove('absolute', 'bottom-0', 'left-0', 'w-full');
+        } else {
+          element.classList.remove('sticky', 'top-20');
+          element.classList.add('absolute', 'bottom-0', 'left-0', 'w-full', 'overflow-hidden', 'md:overflow-visible', 'md:bg-introToOrbs', 'bg-none');
+        }
+      }
     };
 
-    window.addEventListener("scroll", handleScrollY);
+    const debounced=debounce(handleScroll,100);
 
+    window.addEventListener('scroll', debounced);
+
+    // Cleanup function to remove the event listener
     return () => {
-      window.removeEventListener("scroll", handleScrollY);
+      window.removeEventListener('scroll', debounced);
     };
   }, []);
   return (
     <div className={`min-h-[400vh] md:min-h-[500vh] self-center relative`}>
-      <div
-        className={`${
-          isSticky
-            ? "sticky top-20 overflow-hidden md:overflow-visible md:bg-introToOrbs bg-none"
-            : "absolute bottom-0 left-0 w-full overflow-hidden md:overflow-visible md:bg-introToOrbs bg-none"
-        }`}
+      <div id="orbs"
       >
         <div className="md:w-[70%] mx-auto z-10 ">
           <img
