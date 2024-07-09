@@ -13,16 +13,17 @@ function Txns() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
+        const screenWidth = window.innerWidth;
         setCoinPositions([
-          { x: -60, y: 130 },
-          { x: -30, y: 80 },
-          { x: 30, y: 40 },
-          { x: 100, y: 8 },
-          { x: 180, y: 0 },
-          { x: 260, y: 8 },
-          { x: 330, y: 40 },
-          { x: 390, y: 80 },
-          { x: 430, y: 130 },
+          { x: -0.145 * screenWidth, y: 130 },
+          { x: -0.072 * screenWidth, y: 80 },
+          { x: 0.072 * screenWidth, y: 40 },
+          { x: 0.241 * screenWidth, y: 8 },
+          { x: 0.435 * screenWidth, y: 0 },
+          { x: 0.628 * screenWidth, y: 8 },
+          { x: 0.797 * screenWidth, y: 40 },
+          { x: 0.942 * screenWidth, y: 80 },
+          { x: 1.039 * screenWidth, y: 130 },
         ]);
       } else if (window.innerWidth > 1536) {
         const screenWidth = window.innerWidth;
@@ -162,7 +163,7 @@ function Txns() {
               duration: 1,
               ease: "backInOut",
             }}
-            className="absolute w-[60px] h-[60px] xl:w-[10%] xl:h-[10%]"
+            className="absolute w-[60px] h-[60px] lg:w-[10%] lg:h-[10%]"
           />
         ))}
         <img
@@ -187,7 +188,7 @@ function Txns() {
           <p className="font-primary-bold text-[32px] md:text-[44px] text-white relative text-center md:ml-8 tracking-wide">
             {TxnText.heading}
           </p>
-          <p className="font-primary-regular text-[18px] md:text-[22px] text-white text-center md:ml-8 px-12 md:px-4 md:mx-auto ">
+          <p className="font-primary-regular text-[18px] md:text-[22px] text-white text-center md:ml-8 px-12 md:px-4 lg:px-40 xl:px-4 md:mx-auto ">
             {TxnText.subHeading}
           </p>
         </div>

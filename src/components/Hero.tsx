@@ -23,7 +23,7 @@ function Hero() {
   const yLitecoin = useTransform(scrollY, [0, 1000], [0, -200]);
   return (
     <>
-      <div className="pt-[140px] md:pt-[210px] xl:pt-[140px] min-h-screen md:min-h-full min-w-screen">
+      <div className="min-h-screen  min-w-screen  md:flex md:flex-col pt-[140px]">
         <div className="w-[90%] lg:w-[50%] self-center m-auto">
           <div className="overflow-hidden">
             <AnimatedText className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-15% to-90%  from-start-gradient-secondary to-end-gradient-secondary leading-none">
@@ -81,7 +81,7 @@ function Hero() {
               <motion.img
                 alt="iphone-mockup"
                 src="/mockup.webp"
-                className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] w-[60%] mx-auto z-40"
+                className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] lg:w-[440px] xl:w-[330px] w-[60%] mx-auto z-40"
                 initial={{ opacity: 0.3, y: 200 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
@@ -147,25 +147,25 @@ function Hero() {
           <motion.img
             alt="bitcoin"
             src="/coins/bitcoin.webp"
-            className="hidden md:block absolute top-0 h-40 w-40 left-20"
+            className="hidden md:block absolute top-0 h-40 w-40 left-10 xl:left-20"
             style={{ y: yBitcoin }}
           />
           <motion.img
             alt="stellarcoin"
             src="/coins/stellarcoin.webp"
-            className="hidden md:block absolute bottom-10 h-40 w-40 left-44"
+            className="hidden md:block absolute bottom-10 h-40 w-40 left-10 xl:left-44"
             style={{ y: yStellar }}
           />
           <motion.img
             alt="ethereumcoin"
             src="/coins/ethereumcoin.webp"
-            className="hidden md:block absolute -top-20 h-40 w-40 right-16"
+            className="hidden md:block absolute -top-20 h-40 w-40 right-8 xl:right-16"
             style={{ y: yEthereum }}
           />
           <motion.img
             alt="litecoin"
             src="/coins/litecoin.webp"
-            className="hidden md:block absolute bottom-16 h-40 w-40 right-32"
+            className="hidden md:block absolute bottom-16 h-40 w-40 right-10 xl:right-32"
             style={{ y: yLitecoin }}
           />
         </div>

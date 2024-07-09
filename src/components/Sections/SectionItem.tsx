@@ -31,9 +31,9 @@ const Section1 = () => {
     controls.start("visible");
   }
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-28 md:mt-16">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12 lg:gap-24  mx-auto mt-28 md:mt-16">
       <motion.main
-        className="border-gradient-light bg-sectionBg object-cover bg-cover bg-no-repeat w-full md:w-[45%] md:h-full 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden z-10"
+        className="border-gradient-light bg-sectionBg object-cover bg-cover bg-no-repeat w-full md:w-[50%] xl:w-[45%] md:h-full 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden z-10"
         style={{ paddingTop: "60px" }}
         ref={ref}
         initial="hidden"
@@ -63,10 +63,10 @@ const Section1 = () => {
         />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-4">
-        <AnimatedText className="font-primary-medium text-[24px] md:text-[30px] lg:text-[42px] xl:text-[48px] md:leading-[2rem] lg:leading-[3rem] text-white tracking-wide">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[30px] lg:text-[34px] xl:text-[48px] md:leading-[2rem] xl:leading-[3rem] text-white tracking-wide">
           Seamless Cashback Across Multiple Chains!
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] xl:text-[19px] text-[#b3b3b2] leading-6">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[14px] xl:text-[19px] text-[#b3b3b2] leading-6">
           Earn orbs effortlessly and watch your cashback soar! The more orbs you
           hold, the higher your cashback percentage. Its that simple, that
           exciting!
@@ -110,10 +110,10 @@ const Section2 = () => {
   return (
     <div
       ref={ref}
-      className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-24 mx-auto mt-12"
+      className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 md:gap-12 lg:gap-24  mx-auto mt-12"
     >
       <motion.main
-        className="border-gradient-light bg-sectionBg object-cover bg-cover bg-no-repeat w-full md:w-[45%] h-10vh md:h-[68%] 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden z-10"
+        className="border-gradient-light bg-sectionBg object-cover bg-cover bg-no-repeat w-full md:w-[50%] xl:w-[45%] md:h-full 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden z-10"
         style={{ paddingTop: "60px" }}
         initial="hidden"
         animate={controls}
@@ -142,10 +142,10 @@ const Section2 = () => {
         />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-4">
-        <AnimatedText className="font-primary-medium text-[24px] md:text-[30px] lg:text-[42px] xl:text-[48px] md:leading-[2rem] lg:leading-[3rem] text-white xl:w-[80%] tracking-wide">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[30px] lg:text-[34px] xl:text-[48px] md:leading-[2rem] xl:leading-[3rem] text-white xl:w-[80%] tracking-wide">
           Empowers Privacy, Ensures Authority
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] xl:text-[19px] text-[#b3b3b2]">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[14px] xl:text-[19px] text-[#b3b3b2]">
           Discover the power of privacy and authority with our platform. Take
           control of your data and decisions, navigating the digital world with
           confidence. With us, your privacy is protected, your authority
@@ -188,9 +188,9 @@ const Section3 = () => {
     controls.start("visible");
   }
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-24 mx-auto mt-12">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12 lg:gap-24 mx-auto mt-12">
       <motion.main
-        className="border-gradient-light bg-sectionBg object-fill bg-cover bg-no-repeat w-full md:w-[45%] md:h-[68%] 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden z-10"
+        className="border-gradient-light bg-sectionBg object-cover bg-cover bg-no-repeat w-full md:w-[50%] xl:w-[45%] md:h-full 2xl:h-[670px] 2xl:w-[632px] rounded-xl flex justify-center relative overflow-hidden z-10"
         style={{ paddingTop: "60px" }}
         ref={ref}
         initial="hidden"
@@ -220,10 +220,10 @@ const Section3 = () => {
         />
       </motion.main>
       <div className="md:w-[50%] flex flex-col justify-center gap-4">
-        <AnimatedText className="font-primary-medium text-[24px] md:text-[30px] lg:text-[42px] xl:text-[48px]   md:leading-[2rem] lg:leading-[3rem] text-white xl:w-[70%] tracking-wide">
+        <AnimatedText className="font-primary-medium text-[24px] md:text-[30px] lg:text-[34px] xl:text-[48px]   md:leading-[2rem] xl:leading-[3rem] text-white xl:w-[70%] tracking-wide">
           Swap Crypto With Zero Fees
         </AnimatedText>
-        <AnimatedText className="font-secondary-regular text-[14px] md:text-[16px] xl:text-[19px] text-[#b3b3b2] opacity-70">
+        <AnimatedText className="font-secondary-regular text-[14px] md:text-[14px] xl:text-[19px] text-[#b3b3b2] opacity-70">
           Swap cryptocurrencies effortlessly, without any fees. Enjoy seamless
           transactions and maximize your assets without worrying about extra
           charges. Experience the freedom of fee-free crypto swapping today!
