@@ -25,7 +25,7 @@ function Footer() {
         width={100}
         height={140}
         alt="Stello"
-        className="absolute bottom-[33%] left-[30%] md:left-[44%] md:bottom-4 md:my-48 w-[40%] object-contain lg:my-40 md:w-[10%] md:mr-8 z-10"
+        className="absolute bottom-[33%] left-[30%] md:left-[44%] md:bottom-[30%] w-[40%] object-contain xl:my-40 md:w-[10%] md:mr-8 z-10"
       />
       {/* <img
         alt="footer-net-phone"
@@ -50,7 +50,7 @@ const FooterSVG = () => {
         viewBox="0 0 1434 599"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="hidden xl:block absolute md:top-[20.3%] lg:top-[4.6rem] xl:-top-[2.6%] opacity-70  w-screen object-contain"
+        className="hidden md:block absolute md:-top-[2.8%] xl:-top-[2.6%] opacity-70  w-screen object-contain"
       >
         <path
           d="M1432.49 502.332L1388.17 477.604L1331.24 448.253L1275.72 422.717L1221.94 401.669L1170.21 385.804L1120.94 375.751L1074.46 372.07L1024.38 374.113L979.14 380.665L938.547 391.166L902.441 405.169L870.555 422.201"
