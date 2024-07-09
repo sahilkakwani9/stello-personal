@@ -25,7 +25,7 @@ function Footer() {
         width={100}
         height={140}
         alt="Stello"
-        className="absolute bottom-[33%] left-[30%] md:left-[44%] md:bottom-[30%] w-[40%] object-contain xl:my-40 md:w-[10%] md:mr-8 z-10"
+        className="absolute bottom-[33%] left-[30%] md:left-[44%] md:bottom-[30%] w-[40%] object-contain md:w-[10%] md:mr-8 z-10"
       />
       {/* <img
         alt="footer-net-phone"
