@@ -15,7 +15,7 @@ export default function Home() {
     <div className="w-screen">
       <Navbar />
       <Hero />
-      <IntroToOrbs />
+      {/* <IntroToOrbs /> */}
       <Txns />
       <SectionContainer />
       <GridSection />
