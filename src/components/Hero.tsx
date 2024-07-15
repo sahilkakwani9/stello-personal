@@ -23,7 +23,7 @@ function Hero() {
   const yLitecoin = useTransform(scrollY, [0, 1000], [0, -200]);
   return (
     <>
-      <div className="pt-[140px] md:pt-[210px] xl:pt-[140px] min-h-screen md:min-h-full xl:min-h-screen min-w-screen">
+      <div className="min-h-screen  min-w-screen  md:flex md:flex-col pt-[140px]">
         <div className="w-[90%] lg:w-[50%] self-center m-auto">
           <div className="overflow-hidden">
             <AnimatedText className="font-primary-semibold text-[40px] md:text-[56px] text-center text-transparent bg-gradient-radial bg-clip-text from-15% to-90%  from-start-gradient-secondary to-end-gradient-secondary leading-none">
@@ -80,8 +80,8 @@ function Hero() {
             <div className="relative w-fit mx-auto">
               <motion.img
                 alt="iphone-mockup"
-                src="/mockup.png"
-                className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] w-[60%] mx-auto z-40"
+                src="/mockup.webp"
+                className="h-[80%] hidden md:block md:h-[70%] md:w-[330px] lg:w-[440px] xl:w-[330px] w-[60%] mx-auto z-40"
                 initial={{ opacity: 0.3, y: 200 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
@@ -115,14 +115,14 @@ function Hero() {
               >
                 <img
                   alt="congrats_text"
-                  src="/header_congratulations.png"
+                  src="/header_congratulations.webp"
                   className=""
                 />
               </motion.div>
             </div>
             <img
               alt="mockup-mobile"
-              src="/mockup-mobile.png"
+              src="/mockup-mobile.webp"
               className="md:hidden mt-12"
             />
 
@@ -134,7 +134,7 @@ function Hero() {
 
             <img
               alt="middle-blend-bg"
-              src="/hero-bg-blend.png"
+              src="/hero-bg-blend.webp"
               className="hidden md:block absolute md:-bottom-80 2xl:-bottom-[26rem] bottom-0 left-0 z-10"
             />
             <img
@@ -147,25 +147,25 @@ function Hero() {
           <motion.img
             alt="bitcoin"
             src="/coins/bitcoin.webp"
-            className="hidden md:block absolute top-0 h-40 w-40 left-20"
+            className="hidden md:block absolute top-0 h-40 w-40 left-10 xl:left-20"
             style={{ y: yBitcoin }}
           />
           <motion.img
             alt="stellarcoin"
             src="/coins/stellarcoin.webp"
-            className="hidden md:block absolute bottom-10 h-40 w-40 left-44"
+            className="hidden md:block absolute bottom-10 h-40 w-40 left-10 xl:left-44"
             style={{ y: yStellar }}
           />
           <motion.img
             alt="ethereumcoin"
             src="/coins/ethereumcoin.webp"
-            className="hidden md:block absolute -top-20 h-40 w-40 right-16"
+            className="hidden md:block absolute -top-20 h-40 w-40 right-8 xl:right-16"
             style={{ y: yEthereum }}
           />
           <motion.img
             alt="litecoin"
             src="/coins/litecoin.webp"
-            className="hidden md:block absolute bottom-16 h-40 w-40 right-32"
+            className="hidden md:block absolute bottom-16 h-40 w-40 right-10 xl:right-32"
             style={{ y: yLitecoin }}
           />
         </div>

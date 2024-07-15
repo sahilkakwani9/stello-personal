@@ -15,7 +15,7 @@ function SecondGrid() {
   }
   return (
     <motion.div
-      className="flex col-span-1 row-span-2 h-[320px] md:h-[200px] xl:h-[350px] justify-center grid-border-gradient-secondary items-center bg-[#141417] text-white"
+      className="flex col-span-1 row-span-2 h-[320px] md:h-[248px] xl:h-[350px] justify-center grid-border-gradient-secondary items-center bg-[#141417] text-white"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -28,13 +28,13 @@ function SecondGrid() {
         visible: {
           opacity: 1,
           scale: 1,
-          transition: { duration: 1, delay: 0.2 },
+          transition: { duration: 0.8,},
         },
       }}
     >
       <div className="flex flex-col justify-between gap-4 h-full w-full z-20 overflow-hidden">
         <section className="md:px-4 pt-8 py-4 md:pb-2 md:pt-4">
-          <h1 className="font-secondary-regular text-center md:text-start md:w-[80%] text-[30px] md:text-[12px] xl:text-[30px] leading-tight">
+          <h1 className="font-secondary-regular text-center md:text-start xl:w-[80%] text-[30px] md:text-[20px] xl:text-[30px] leading-tight">
             {SECOND_GRID_HEADLINE}
           </h1>
         </section>
@@ -57,17 +57,17 @@ function SecondGrid() {
           <img
             src={"/grid/grid2/card1.webp"}
             alt="grid-card"
-            className="hidden md:block absolute z-20 right-0 bottom-0 h-[60%] w-[45%]"
+            className="hidden md:block absolute z-20 right-0 bottom-0 xl:h-[60%] xl:w-[45%] md:h-[50%] md:w-[50%]"
           />
           <img
             src={"/grid/grid2/card2.svg"}
             alt="grid-card"
-            className="absolute z-20 right-10 md:right-0 bottom-0"
+            className="absolute z-20 right-10 md:right-0 bottom-0 xl:h-[45%] xl:w-[55%] md:h-[35%] md:w-[65%] lg:w-[70%]"
           />
           <img
             src={"/grid/grid2/card3.svg"}
             alt="grid-card"
-            className="absolute z-20 right-10 md:right-0 bottom-0 "
+            className="absolute z-20 right-10 md:right-0 bottom-0 xl:h-[35%] xl:w-[65%] md:h-[25%] md:w-[80%] lg:w-[80%]"
           />
         </section>
       </div>

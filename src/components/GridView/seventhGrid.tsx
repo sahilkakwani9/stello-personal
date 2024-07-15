@@ -15,7 +15,7 @@ function SeventhGrid() {
   }
   return (
     <motion.div
-      className="flex col-span-1 md:col-span-2 row-span-1 justify-center bg-[#141417] text-white text-xl pt-2 bg-gradient-to-t from-[#5110107A] grid-border-gradient-secondary md:h-[140px] xl:h-[260px]"
+      className="flex col-span-1 md:col-span-2 row-span-1 justify-center bg-[#141417] text-white text-xl pt-2 bg-gradient-to-t from-[#5110107A] grid-border-gradient-secondary md:h-[166px] xl:h-[260px]"
       style={{
         background:
           "linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)), linear-gradient(168.09deg, rgba(255, 255, 255, 0.05) 0.56%, rgba(255, 255, 255, 0.01) 101.66%)",
@@ -28,22 +28,22 @@ function SeventhGrid() {
         visible: {
           opacity: 1,
           scale: 1,
-          transition: { duration: 1, delay: 0.2 },
+          transition: { duration: 0.8 },
         },
       }}
     >
       <div className="py-6 flex flex-col justify-between h-full w-full  items-center gap-16 md:gap-12 pb-20" >
-        <h1 className="font-primary-regular text-[34px] md:text-[20px] xl:text-[34px] md:text-start flex md:self-start md:px-8">
+        <h1 className="font-primary-regular text-[34px] md:text-[22px] lg:text-[25px] xl:text-[34px] md:text-start flex md:self-start md:px-8">
           {SEVENTH_GRID_HEADLINE}
         </h1>
         <section className="w-full xl:h-[80%] relative">
           <img
-            src={"/seventh_grid.png"}
+            src={"/seventh_grid.webp"}
             className="hidden md:block md:absolute md:-top-4 xl:top-10"
             alt="timeline"
           />
             <img
-            src={"/seventh_grid_mobile.png"}
+            src={"/seventh_grid_mobile.webp"}
             className="md:hidden -mt-4"
             alt="timeline"
           />

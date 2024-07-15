@@ -13,40 +13,43 @@ function Txns() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
+        const screenWidth = window.innerWidth;
         setCoinPositions([
-          { x: -60, y: 130 },
-          { x: -30, y: 80 },
-          { x: 30, y: 40 },
-          { x: 100, y: 8 },
-          { x: 180, y: 0 },
-          { x: 260, y: 8 },
-          { x: 330, y: 40 },
-          { x: 390, y: 80 },
-          { x: 430, y: 130 },
+          { x: -0.145 * screenWidth, y: 130 },
+          { x: -0.072 * screenWidth, y: 80 },
+          { x: 0.072 * screenWidth, y: 40 },
+          { x: 0.241 * screenWidth, y: 8 },
+          { x: 0.435 * screenWidth, y: 0 },
+          { x: 0.628 * screenWidth, y: 8 },
+          { x: 0.797 * screenWidth, y: 40 },
+          { x: 0.942 * screenWidth, y: 80 },
+          { x: 1.039 * screenWidth, y: 130 },
         ]);
       } else if (window.innerWidth > 1536) {
+        const screenWidth = window.innerWidth;
         setCoinPositions([
-          { x: 280, y: 260 },
-          { x: 340, y: 160 },
-          { x: 420, y: 80 },
-          { x: 520, y: 16 },
-          { x: 620, y: 0 },
-          { x: 720, y: 16 },
-          { x: 820, y: 80 },
-          { x: 890, y: 160 },
-          { x: 980, y: 260 },
+          { x: 0.1 * screenWidth, y: 260 }, // 5% of screen width
+          { x: 0.13 * screenWidth, y: 160 }, // 20% of screen width
+          { x: 0.18 * screenWidth, y: 80 }, // 40% of screen width
+          { x: 0.25 * screenWidth, y: 16 }, // 65% of screen width
+          { x: 0.33 * screenWidth, y: 0 }, // 90% of screen width
+          { x: 0.42 * screenWidth, y: 16 }, // 115% of screen width (may need to adjust)
+          { x: 0.48 * screenWidth, y: 80 }, // 140% of screen width (may need to adjust)
+          { x: 0.52 * screenWidth, y: 160 }, // 160% of screen width (may need to adjust)
+          { x: 0.55 * screenWidth, y: 260 },
         ]);
       } else if (window.innerWidth > 1280) {
+        const screenWidth = window.innerWidth;
         setCoinPositions([
-          { x: 150, y: 260 },
-          { x: 210, y: 160 },
-          { x: 290, y: 80 },
-          { x: 390, y: 16 },
-          { x: 490, y: 0 },
-          { x: 590, y: 16 },
-          { x: 690, y: 80 },
-          { x: 770, y: 160 },
-          { x: 850, y: 260 },
+          { x: 0.1 * screenWidth, y: 260 }, // 5% of screen width
+          { x: 0.13 * screenWidth, y: 160 }, // 20% of screen width
+          { x: 0.18 * screenWidth, y: 80 }, // 40% of screen width
+          { x: 0.25 * screenWidth, y: 16 }, // 65% of screen width
+          { x: 0.33 * screenWidth, y: 0 }, // 90% of screen width
+          { x: 0.42 * screenWidth, y: 16 }, // 115% of screen width (may need to adjust)
+          { x: 0.48 * screenWidth, y: 80 }, // 140% of screen width (may need to adjust)
+          { x: 0.52 * screenWidth, y: 160 }, // 160% of screen width (may need to adjust)
+          { x: 0.55 * screenWidth, y: 260 },
         ]);
       } else if (window.innerWidth >= 1024) {
         const screenWidth = window.innerWidth;
@@ -121,11 +124,11 @@ function Txns() {
 
   return (
     <div className="md:bg-introToOrbs md:bg-cover relative pb-20 -mt-24 md:mt-0 bg-black">
-      <img
+      {/* <img
         alt="middle-blend-bg"
-        src="/bg-blur-middle.png"
+        src="/bg-blur-middle.webp"
         className="hidden md:block absolute -top-40 z-10"
-      />
+      /> */}
       <main
         ref={ref}
         className="relative xl:w-[70%] bg-introToOrbsMobile md:bg-none mx-auto self-center md:bg-cover overflow-hidden z-10 md:-mt-12"
@@ -160,18 +163,18 @@ function Txns() {
               duration: 1,
               ease: "backInOut",
             }}
-            className="absolute w-[60px] h-[60px] xl:w-[10%] xl:h-[10%]"
+            className="absolute w-[60px] h-[60px] lg:w-[10%] lg:h-[10%]"
           />
         ))}
         <img
           alt="mockup-with-chains"
-          src="/txns/mockup-with-chains.png"
+          src="/txns/mockup-with-chains.webp"
           className="h-[30%] w-[90%] md:h-[700px] md:w-[420px] md:mx-auto pt-40 mr-8 z-20"
         />
 
         <img
           alt="bottom-blend-bg"
-          src="/txn-bg-blend.png"
+          src="/txn-bg-blend.webp"
           className="hidden absolute md:block -bottom-0 md:-bottom-0 left-0 z-20 2xl:bottom-0"
         />
 
@@ -185,14 +188,14 @@ function Txns() {
           <p className="font-primary-bold text-[32px] md:text-[44px] text-white relative text-center md:ml-8 tracking-wide">
             {TxnText.heading}
           </p>
-          <p className="font-primary-regular text-[18px] md:text-[22px] text-white text-center md:ml-8 px-12 md:px-4 md:mx-auto ">
+          <p className="font-primary-regular text-[18px] md:text-[22px] text-white text-center md:ml-8 px-12 md:px-4 lg:px-40 xl:px-4 md:mx-auto ">
             {TxnText.subHeading}
           </p>
         </div>
       </main>
       <img
         alt="middle-blend-bg-extended"
-        src="/txns/footer-blend-extended.png"
+        src="/txns/footer-blend-extended.webp"
         className="absolute hidden bottom-0 md:block left-0 z-1"
       />
     </div>
@@ -200,4 +203,3 @@ function Txns() {
 }
 
 export default Txns;
-``;
