@@ -13,7 +13,7 @@ function Footer() {
       <img
         src="/footer-top-blend.svg"
         alt="footer-blend"
-        className="hidden md:block absolute top-0 left-0 z-10"
+        className="hidden md:block absolute top-0 left-0 z-10 w-screen"
       />
         <img
         src="/footer-top-blend-mobile.webp"
