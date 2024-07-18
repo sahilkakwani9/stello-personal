@@ -63,8 +63,8 @@ function IntroToOrbs() {
 
             <img
               alt="middle-blend-bg"
-              src="/bg-blur-middle.webp"
-              className="absolute -top-28 md:top-40 md:-z-10 w-screen md:w-full md:hidden"
+              src="/bg-blur-middle.svg"
+              className="absolute -top-4 md:top-40 md:-z-10 w-screen md:w-full md:hidden"
             />
           </section>
         </div>
