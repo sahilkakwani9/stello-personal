@@ -27,8 +27,8 @@ function SectionItem({
   }
   return (
     <div
-      className={`flex flex-col md:${
-        index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+      className={`flex flex-col ${
+        index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
       } justify-center items-center gap-4 md:gap-12 lg:gap-24  mx-auto mt-28 md:mt-16`}
     >
       <motion.div
