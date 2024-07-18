@@ -71,7 +71,7 @@ function Hero() {
             </span>
           </HoverBorderGradient>
         </div>
-        <div className="relative z-30 mt-8 min-w-screen">
+        <div className="relative z-30 md:mt-12 min-w-screen">
           <GradientLines />
           <div className="block md:hidden">
             <GradientLinesPhone />
@@ -123,7 +123,7 @@ function Hero() {
             <img
               alt="mockup-mobile"
               src="/mockup-mobile.webp"
-              className="md:hidden mt-12"
+              className="md:hidden mt-[22%] h-full"
             />
 
             {/* <img
