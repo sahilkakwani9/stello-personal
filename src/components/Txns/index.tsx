@@ -169,12 +169,12 @@ function Txns() {
         <img
           alt="mockup-with-chains"
           src="/txns/mockup-with-chains.webp"
-          className="h-[30%] w-[90%] md:h-[700px] md:w-[420px] md:mx-auto pt-40 mr-8 z-20"
+          className="h-[30%] w-[90%] md:h-[700px] md:w-[420px] md:mx-auto pt-40 mr-8 z-20 md:-mb-10"
         />
 
         <img
           alt="bottom-blend-bg"
-          src="/txn-bg-blend.webp"
+          src="/txns/bg-blend.svg"
           className="hidden absolute md:block -bottom-0 md:-bottom-0 left-0 z-20 2xl:bottom-0"
         />
 
