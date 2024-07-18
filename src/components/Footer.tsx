@@ -11,7 +11,7 @@ function Footer() {
     <div className="justify-center items-center relative overflow-hidden">
       <div id="radial_overlay" className="hidden md:block"></div>
       <img
-        src="/footer-top-blend.webp"
+        src="/footer-top-blend.svg"
         alt="footer-blend"
         className="hidden md:block absolute top-0 left-0 z-10"
       />
