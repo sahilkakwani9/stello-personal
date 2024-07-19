@@ -190,7 +190,7 @@ function Txns() {
       </main>
       <img
         alt="middle-blend-bg-extended"
-        src="/txns/footer-blend-extended.webp"
+        src="/footer-blend-extended.svg"
         className="absolute hidden bottom-0 md:block left-0 z-1"
       />
     </div>

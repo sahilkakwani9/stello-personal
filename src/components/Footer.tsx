@@ -15,10 +15,10 @@ function Footer() {
         alt="footer-blend"
         className="hidden md:block absolute top-0 left-0 z-10 w-screen"
       />
-        <img
-        src="/footer-top-blend-mobile.webp"
+      <img
+        src="/footer-top-blend-mobile.svg"
         alt="footer-blend"
-        className="md:hidden absolute top-0 left-0 z-10"
+        className="md:hidden absolute top-0 left-0 z-10 w-screen"
       />
       <Image
         src="/footer-logo.webp"
