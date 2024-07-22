@@ -123,7 +123,7 @@ function Hero() {
             <img
               alt="mockup-mobile"
               src="/mockup-mobile.webp"
-              className="md:hidden mt-[22%] h-full"
+              className="md:hidden mt-[22%]"
             />
 
             {/* <img
