@@ -9,7 +9,7 @@ function GradientLinesPhone() {
       viewBox="0 0 390 467"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={"-bottom-20 w-full absolute"}
+      className={"-top-20 w-full absolute"}
     >
       <path
         fill-rule="evenodd"
